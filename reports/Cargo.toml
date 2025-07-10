@@ -1,0 +1,23 @@
+[package]
+name = "reports"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "reports"
+path = "src/lib.rs"
+
+[dependencies]
+axum = { version = "0.8.4", features = ["json", "multipart", "macros"]}
+genpdf = { version = "0.2.0", features = ["images"]}
+aws-sdk-s3 = { version = "1.94.0", features = ["behavior-version-latest"]}
+services = { path = "../services"}
+entity = { path = "../entity"}
+tracing = "0.1.41"
+image = "0.25.6"
+sea-orm = "1.1.12"
+serde_json = "1.0.140"
+num-format = "0.4.4"
+tokio = { version = "1.45.1", features = ["full"]}
+printpdf = { version = "0.8.2", features = ["jpeg"]}
+rusttype = "0.9.3"

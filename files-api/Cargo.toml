@@ -1,0 +1,18 @@
+[package]
+name = "files-api"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+path = "src/lib.rs"
+name = "files_api"
+
+[dependencies]
+axum = { version = "0.8.4", features = ["json", "multipart"]}
+aws-sdk-s3 = { version = "1.94.0", features = ["behavior-version-latest"]}
+services = { path = "../services"}
+entity = { path = "../entity"}
+mime = "0.3.17"
+sea-orm = "1.1.12"
+tracing = "0.1.41"
+uuid = { version = "1.17.0", features = ["v4"]}

@@ -1,0 +1,9 @@
+pub mod reports_projects;
+pub mod reports_projects_remarks;
+pub mod summary_list_of_projects;
+pub mod summary_implementation_by_year;
+pub mod summary_projects_per_type;
+pub mod summary_projects_savings;
+pub mod reports_slippage_projects;
+pub mod reports_financial_per_projects;
+pub mod reports_financial_status;
