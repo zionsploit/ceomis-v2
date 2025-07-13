@@ -146,7 +146,7 @@ async fn auth_middleware(
 
     let get_path = req.uri().path();
 
-    if get_path.eq("/api/users/login") {
+    if get_path.eq("/api/users/login") || get_path.starts_with("/sse-connection") {
         return Ok(next.run(req).await);
     }
 
