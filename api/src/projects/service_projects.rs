@@ -26,7 +26,7 @@ pub async fn get_projects_infra_code_by_projects_id(
         .one(&db.db_connection).await.unwrap();
 
     if response.is_some() {
-        redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+        redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
     }
 
     return (StatusCode::OK, Json(response))
@@ -214,7 +214,7 @@ pub async fn get_projects_by_id(
         projects_payment: get_projects_payment
     };
 
-    redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(response))
 
@@ -262,7 +262,7 @@ pub async fn get_projects_stats_overview(
         ), "total_completed")
         .into_model::<ResponseProjectsOverview>().one(&db.db_connection).await.unwrap();
     
-    redis.stored_value(&serde_json::to_string(&get_all_projects_count).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&get_all_projects_count).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(get_all_projects_count))
 
@@ -291,7 +291,7 @@ pub async fn get_projects_stats_by_types(
         .into_model::<ResponseProjectsStatsTypes>()
         .all(&db.db_connection).await.unwrap();
 
-    redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(response))
 }
@@ -319,7 +319,7 @@ pub async fn get_projects_stats_by_category(
         .all(&db.db_connection).await.unwrap();
 
     if !response.is_empty() {
-        redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+        redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
     }
 
     (StatusCode::OK, Json(response))
@@ -393,7 +393,7 @@ pub async fn get_projects_appropriation_by_sector(
 
     let response =  projects_appropriation.into_values().collect::<Vec<ResponseProjectsSectorWithAppropriation>>();
 
-    redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
 
     return (StatusCode::OK, Json(response))
 
@@ -424,7 +424,7 @@ pub async fn get_projects_top_10_by_appropriation(
         .into_model::<ResponseProjectsTop10Appropriation>()
         .all(&db.db_connection).await.unwrap();
 
-    redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(response))
 
@@ -458,7 +458,7 @@ pub async fn get_projects_top_10_by_awarded_contractors(
         .all(&db.db_connection).await.unwrap();
 
     if response.len().gt(&0) {
-        redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+        redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
     }
 
 
@@ -501,7 +501,7 @@ pub async fn get_projects_by_fund(
         .all(&db.db_connection).await.unwrap();
 
     if response.len().gt(&0) {
-        redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+        redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
     }
 
     (StatusCode::OK, Json(response))
@@ -556,7 +556,7 @@ pub async fn get_prepare_add_projects(
         s_takers: response.8
     };
 
-    redis.stored_value(&serde_json::to_string(&prepare_response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&prepare_response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(prepare_response))
 }

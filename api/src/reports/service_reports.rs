@@ -56,7 +56,7 @@ pub async fn summary_list_of_projects(
         total_contract_cost: total_contract_cost
     };
 
-    redis.stored_value(&serde_json::to_string(&make_response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&make_response).unwrap(), None).await.unwrap();
     
 
     return (StatusCode::OK, Json(make_response))
@@ -125,7 +125,7 @@ pub async fn summary_implementation_by_year (
         }),
     };
 
-    redis.stored_value(&serde_json::to_string(&make_response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&make_response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(make_response))
 
@@ -163,7 +163,7 @@ pub async fn summary_projects_per_type (
         total_appropriation: get_projects_type.iter().fold(0, |acc, n| acc + n.total_appropriation),
     };
 
-    redis.stored_value(&serde_json::to_string(&make_response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&make_response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(make_response))
 }
@@ -211,7 +211,7 @@ pub async fn summary_project_savings_report (
         total_savings: get_response.iter().fold(0, |acc, v| acc + v.savings as i64),
     };
 
-    redis.stored_value(&serde_json::to_string(&make_response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&make_response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(make_response))
 }
@@ -262,7 +262,7 @@ pub async fn summary_slippage_report(
         total_records: get_projects.len()
     };
 
-    redis.stored_value(&serde_json::to_string(&make_response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&make_response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(make_response))
 
@@ -318,7 +318,7 @@ pub async fn summary_financial_status_project (
         total_balance: total_contract_cost - total_paid
     };
 
-    redis.stored_value(&serde_json::to_string(&make_response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&make_response).unwrap(), None).await.unwrap();
     
 
     (StatusCode::OK, Json(make_response))
@@ -535,7 +535,7 @@ pub async fn summary_financial_status_report (
         data_summary: get_all_projects.unwrap()
     };
 
-    redis.stored_value(&serde_json::to_string(&make_response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&make_response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(make_response))
 }

@@ -19,7 +19,7 @@ pub async fn get_all_roles(
 
     let response = user_roles::Entity::find().all(&db.db_connection).await.unwrap();
 
-    redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(response))
 }

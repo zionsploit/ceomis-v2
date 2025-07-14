@@ -23,7 +23,7 @@ pub async fn get_all_contractors (
         .filter(contractors::Column::IsDelete.eq(false))
         .order_by_asc(contractors::Column::Id).all(&db.db_connection).await.unwrap();
 
-    redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(response))
 }
@@ -90,7 +90,7 @@ pub async fn get_contractors_by_id (
         projects: find_projects,
     };
 
-    redis.stored_value(&serde_json::to_string(&make_response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&make_response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(make_response))
 

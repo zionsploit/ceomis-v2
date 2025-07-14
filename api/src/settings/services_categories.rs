@@ -19,7 +19,7 @@ pub async fn get_all_categories(
 
     let get_all_categories = settings_categories::Entity::find().all(&db.db_connection).await.unwrap();
 
-    redis.stored_value(&serde_json::to_string(&get_all_categories).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&get_all_categories).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(get_all_categories))
 
@@ -44,7 +44,7 @@ pub async fn get_categories_by_id(
         return (StatusCode::OK, Json::default());
     }
 
-    redis.stored_value(&serde_json::to_string(&get_categories_by_id).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&get_categories_by_id).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(get_categories_by_id.unwrap()))
 

@@ -24,7 +24,7 @@ pub async fn get_all_type(
 
         let json_data = serde_json::to_string(&x).unwrap();
 
-        redis.stored_value(&json_data).await.unwrap();
+        redis.stored_value(&json_data, None).await.unwrap();
     }
 
     (StatusCode::OK, Json::from(response))
@@ -49,7 +49,7 @@ pub async fn get_type_by_id(
         return (StatusCode::OK, Json::default());
     }
 
-    redis.stored_value(&serde_json::to_string(&get_sof_by_id.clone().unwrap()).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&get_sof_by_id.clone().unwrap()).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(get_sof_by_id.unwrap()))
 }

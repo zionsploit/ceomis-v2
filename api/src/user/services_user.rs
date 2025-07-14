@@ -41,7 +41,7 @@ pub async fn get_users_all_info_by_id(
         return (StatusCode::OK, Json::default());
     }
 
-    redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(response))
 }
@@ -74,7 +74,7 @@ pub async fn get_all_users_with_roles(
         .await.unwrap();
 
 
-    redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(response))
 
@@ -101,7 +101,7 @@ pub async fn get_all_users(
         .filter(user::Column::IsDelete.eq(false)).into_model::<ResponseUsers>().all(&db.db_connection).await.unwrap();
 
     
-    redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(response))
 
@@ -128,7 +128,7 @@ pub async fn get_all_account_info(
             user_info::Column::LastName,
         ]).into_model::<ResponseAccountInfo>().all(&db.db_connection).await.unwrap();
 
-    redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(response))
 

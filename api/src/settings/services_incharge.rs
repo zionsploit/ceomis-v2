@@ -19,7 +19,7 @@ pub async fn get_all_incharge(
 
     let get_all_incharge = settings_incharge::Entity::find().all(&db.db_connection).await.unwrap();
 
-    redis.stored_value(&serde_json::to_string(&get_all_incharge).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&get_all_incharge).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(get_all_incharge))
 
@@ -44,7 +44,7 @@ pub async fn get_incharge_by_id(
         return (StatusCode::OK, Json::default());
     }
 
-    redis.stored_value(&serde_json::to_string(&get_incharge_by_id).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&get_incharge_by_id).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(get_incharge_by_id.unwrap()))
 
