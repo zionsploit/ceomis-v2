@@ -19,7 +19,7 @@ pub async fn get_all_takers(
     
     let response = settings_takers::Entity::find().order_by_asc(settings_takers::Column::Name).all(&db.db_connection).await.unwrap();
 
-    redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(response))
 }
@@ -43,7 +43,7 @@ pub async fn get_takers_by_id(
         return (StatusCode::OK, Json::default());
     }
 
-    redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(response.unwrap()))
     

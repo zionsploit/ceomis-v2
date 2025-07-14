@@ -19,7 +19,7 @@ pub async fn get_all_barangays(
 
     let response = settings_barangay::Entity::find().all(&db.db_connection).await.unwrap();
 
-    redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
     
     return (StatusCode::OK, Json(response));
 }
@@ -43,7 +43,7 @@ pub async fn get_barangay_by_id(
         return (StatusCode::OK, Json::default());
     }
 
-    redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(response.unwrap()))
 

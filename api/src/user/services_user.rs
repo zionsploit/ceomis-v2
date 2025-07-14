@@ -1,6 +1,6 @@
 use std::sync::Arc;
 
-use axum::{extract::Path, http::StatusCode, response::IntoResponse, Extension, Json};
+use axum::{extract::Path, http::{header, Response, StatusCode}, response::IntoResponse, Extension, Json};
 use entity::{user, user_info, user_roles};
 use sea_orm::{prelude::*, ActiveValue::{NotSet, Set}, InsertResult, IntoActiveModel, QueryOrder, QuerySelect};
 use services::{db_connection::DB, redis::Redis, request::user::{RequestAddUpdateUserInfoById, RequestAddUser, RequestDeleteUserById, RequestUpdateUser, RequestUserInfo, RequestUserLogin}, response::user::{ResponseAccountInfo, ResponseLogin, ResponseUsers, ResponseUsersWithFullInfo, ResponseUsersWithRoles}};
@@ -41,7 +41,7 @@ pub async fn get_users_all_info_by_id(
         return (StatusCode::OK, Json::default());
     }
 
-    redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(response))
 }
@@ -74,7 +74,7 @@ pub async fn get_all_users_with_roles(
         .await.unwrap();
 
 
-    redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(response))
 
@@ -101,7 +101,7 @@ pub async fn get_all_users(
         .filter(user::Column::IsDelete.eq(false)).into_model::<ResponseUsers>().all(&db.db_connection).await.unwrap();
 
     
-    redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(response))
 
@@ -128,7 +128,7 @@ pub async fn get_all_account_info(
             user_info::Column::LastName,
         ]).into_model::<ResponseAccountInfo>().all(&db.db_connection).await.unwrap();
 
-    redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(response))
 
@@ -262,7 +262,10 @@ pub async fn post_login(
         .filter(user::Column::Email.eq(&request.email)).one(&db.db_connection).await.unwrap();
 
     if let None = find_users {
-        return (StatusCode::OK, Json::default());
+        return Response::builder()
+            .status(StatusCode::UNAUTHORIZED)
+            .body(())
+            .unwrap().body().into_response();
     }
 
     let users: user::Model = find_users.unwrap();
@@ -271,17 +274,27 @@ pub async fn post_login(
 
         let users_token = users.jwt_signed_with_key("PASSWORD_TEST");
         
-        let mut redis = Redis::new(format!("users_session_{}", users.id), db.redis_connection.clone());
-        redis.stored_value(&users_token[1]).await.unwrap();
+        let mut redis = Redis::new(users_token[1].to_string(), db.redis_connection.clone());
+        redis.stored_value(&users_token[0], Some(604_800)).await.unwrap();
 
-        return (StatusCode::OK, Json(ResponseLogin {
+        let make_response_body = ResponseLogin {
             jwt_token: users_token[0].to_string(),
             session_id: users_token[1].to_string()
-        }));
+        };
+
+
+        return Response::builder()
+            .status(StatusCode::CREATED)
+            .header(header::COOKIE, format!("Authorization={}", users_token[0].to_string()))
+            .header(header::COOKIE, format!("_sid={}", users_token[1].to_string()))
+            .body(Json(&make_response_body))
+            .unwrap().headers().clone().into_response();
     }
 
-    (StatusCode::OK, Json::default())
-
+    Response::builder()
+            .status(StatusCode::UNAUTHORIZED)
+            .body(())
+            .unwrap().body().into_response()
 }
 
 pub async fn delete_user(

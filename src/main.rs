@@ -7,10 +7,10 @@ use tower::ServiceBuilder;
 use tower_http::cors::{CorsLayer, Any};
 use tracing_subscriber;
 use api::api_route;
-use axum::{extract::{DefaultBodyLimit, Path}, http::{header, Method}, response::{sse::{Event, KeepAlive}, Sse}, routing::get, Extension, Router};
+use axum::{extract::{DefaultBodyLimit, Path, Request}, http::{self, header, HeaderName, Method, StatusCode}, middleware::{self, Next}, response::{sse::{Event, KeepAlive}, Response, Sse}, routing::get, Extension, Router};
 use sea_orm::Database;
 use tracing::{info, error};
-use services::{db_connection::{ReportBroadcaster, DB}, dotenv::Dotenv};
+use services::{db_connection::{ReportBroadcaster, DB}, dotenv::Dotenv, redis::Redis};
 use tokio_stream::wrappers::BroadcastStream;
 
 #[tokio::main]
@@ -78,15 +78,17 @@ async fn main() {
         .nest("/api", api_route())
         .route("/sse-connection/{event_id}", get(sse_handler)).layer(
             ServiceBuilder::new()
-                .layer(Extension(shared_state))
+                .layer(Extension(shared_state.clone()))
                 .layer(DefaultBodyLimit::max(50 * 1024 * 1024))
                 .layer(CorsLayer::new()
                     .allow_methods([Method::GET, Method::POST])
                     .allow_origin(Any)
                     .allow_headers([
-                        header::CONTENT_TYPE
+                        header::CONTENT_TYPE,
+                        header::AUTHORIZATION,
+                        HeaderName::from_static("_sid")
                     ])
-                )
+                ).layer(middleware::from_fn_with_state(Extension(shared_state), auth_middleware))
         )
         .route("/", get(|| async { "Hello, World!" }));
 
@@ -94,7 +96,7 @@ async fn main() {
     axum::serve(listener, app.into_make_service()).await.unwrap();
 }
 
-
+// HANDLING SERVER SEND EVENTS
 async fn sse_handler(
     Extension(db): Extension<Arc<DB>>,
     Path(event_id): Path<String>
@@ -125,4 +127,60 @@ async fn sse_handler(
             .interval(Duration::from_secs(30))
             .text("keep-alive")
     )
+}
+
+
+// HANDLING AUTH MIDDLEWARE
+async fn auth_middleware(
+    Extension(db): Extension<Arc<DB>>,
+    req: Request, next: Next
+) -> Result<Response, StatusCode> {
+    
+    let auth_header = req.headers()
+        .get(http::header::AUTHORIZATION)
+        .and_then(|header| header.to_str().ok());
+
+    let auth_ssid_key = req.headers()
+        .get("_SID")
+        .and_then(|header| header.to_str().ok());
+
+    let get_path = req.uri().path();
+
+    if get_path.eq("/api/users/login") || get_path.starts_with("/sse-connection") {
+        return Ok(next.run(req).await);
+    }
+
+    let auth_header = if let Some(auth_header) = auth_header {
+        auth_header
+    } else {
+        return Err(StatusCode::UNAUTHORIZED);
+    };
+
+    let auth_ssid_key = if let Some(auth_ssid_key) = auth_ssid_key {
+        auth_ssid_key
+    } else {
+        return Err(StatusCode::UNAUTHORIZED);
+    };
+
+    let get_token = if let Some(token) = auth_header.split_once(" ") {
+        token.1
+    } else {
+        return Err(StatusCode::UNAUTHORIZED);
+    };
+
+
+    let mut redis = Redis::new(auth_ssid_key.to_string(), db.redis_connection.clone());
+    
+    if let Some(response_redis) = redis.get_value().await {
+        if response_redis == get_token {
+            Ok(next.run(req).await)
+        } else {
+            Err(StatusCode::UNAUTHORIZED)
+        }
+    } else {
+        Err(StatusCode::UNAUTHORIZED)
+    }
+
+    
+
 }

@@ -19,7 +19,7 @@ pub async fn get_all_sector(
 
     let response = settings_sector::Entity::find().all(&db.db_connection).await.unwrap();
 
-    redis.stored_value(&serde_json::to_string(&response).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(response))
 
@@ -44,7 +44,7 @@ pub async fn get_sector_by_id(
         return (StatusCode::OK, Json::default());
     }
 
-    redis.stored_value(&serde_json::to_string(&response.as_ref().unwrap()).unwrap()).await.unwrap();
+    redis.stored_value(&serde_json::to_string(&response.as_ref().unwrap()).unwrap(), None).await.unwrap();
 
     (StatusCode::OK, Json(response.unwrap()))
 

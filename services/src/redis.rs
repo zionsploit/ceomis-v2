@@ -14,11 +14,13 @@ impl Redis {
          }
     }
 
-    pub async fn stored_value(&mut self, value: &str) -> Result<bool, RedisError> {
+    pub async fn stored_value(&mut self, value: &str, time: Option<i32>) -> Result<bool, RedisError> {
+        
+        let time = time.unwrap_or(3600);
 
         let stored_value = redis::cmd("SETEX")
             .arg(self.key.as_str()) 
-            .arg(3600)
+            .arg(time)
             .arg(value)
             .exec_async(&mut self.connection)
             .await;
