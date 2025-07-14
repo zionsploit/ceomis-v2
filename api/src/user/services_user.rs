@@ -275,7 +275,7 @@ pub async fn post_login(
         let users_token = users.jwt_signed_with_key("PASSWORD_TEST");
         
         let mut redis = Redis::new(users_token[1].to_string(), db.redis_connection.clone());
-        redis.stored_value(&users_token[0]).await.unwrap();
+        redis.stored_value(&users_token[0], Some(604_800)).await.unwrap();
 
         let make_response_body = ResponseLogin {
             jwt_token: users_token[0].to_string(),
