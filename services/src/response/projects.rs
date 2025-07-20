@@ -8,13 +8,13 @@ use crate::response::settings::{ResponseBarangays, ResponseSector, ResponseSusta
 #[derive(Serialize, Default, TS, Deserialize, FromQueryResult)]
 #[ts(export, export_to = "../../../client/src/types/Settings.ts")]
 pub struct ResponseProjectsOverview {
-    pub total_projects: i64,
-    pub total_unimplemented: i64,
-    pub total_preparing: i64,
-    pub total_bidded: i64,
-    pub total_bidding: i64,
-    pub total_ongoing: i64,
-    pub total_completed: i64,
+    pub total_projects: Option<i64>,
+    pub total_unimplemented: Option<i64>,
+    pub total_preparing: Option<i64>,
+    pub total_bidded: Option<i64>,
+    pub total_bidding: Option<i64>,
+    pub total_ongoing: Option<i64>,
+    pub total_completed: Option<i64>,
 }
 
 #[derive(Serialize, Default, TS, Deserialize, FromQueryResult)]
