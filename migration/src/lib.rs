@@ -33,6 +33,7 @@ mod m20250630_091955_create_projects_remarks_img_table;
 mod m20250630_092943_alter_add_original_file_name_column_in_project_remarks_img_table;
 mod m20250701_135425_alter_add_project_id_column_in_projects_monitoring_remarks_table;
 mod m20250701_145702_create_projects_payment_table;
+mod m20250720_083706_seed_initial_admin_users;
 
 #[async_trait::async_trait]
 impl MigratorTrait for Migrator {
@@ -65,6 +66,7 @@ impl MigratorTrait for Migrator {
             Box::new(m20250630_092943_alter_add_original_file_name_column_in_project_remarks_img_table::Migration),
             Box::new(m20250701_135425_alter_add_project_id_column_in_projects_monitoring_remarks_table::Migration),
             Box::new(m20250701_145702_create_projects_payment_table::Migration),
+            Box::new(m20250720_083706_seed_initial_admin_users::Migration),
         ]
     }
 }
