@@ -9,7 +9,7 @@ impl MigrationTrait for Migration {
         // Replace the sample below with your own migration scripts
         manager.alter_table(TableAlterStatement::new()
             .table(ProjectsMonitoringImg::Table)
-            .add_column(string(ProjectsMonitoringImg::ImagesOriginalName))
+            .add_column_if_not_exists(string(ProjectsMonitoringImg::ImagesOriginalName))
             .to_owned()
         ).await
     }
