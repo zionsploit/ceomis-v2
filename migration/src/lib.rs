@@ -26,13 +26,11 @@ mod m20250612_155550_seed_contractors_data;
 mod m20250612_170355_alter_add_is_delete_column_in_contractors_table;
 mod m20250614_060710_create_project_status_enum_table;
 mod m20250617_035855_create_project_table;
-mod m20250617_071650_seed_barangay_type_data_in_projects_table;
 mod m20250620_181759_alter_new_column_is_disposed_in_projects_table;
 mod m20250629_112258_create_projects_infra_code_table;
 mod m20250630_091430_create_projects_remarks_table;
 mod m20250630_091955_create_projects_remarks_img_table;
 mod m20250630_092943_alter_add_original_file_name_column_in_project_remarks_img_table;
-mod m20250701_134951_alter_remove_project_id_column_in_projects_monitoring_img_table;
 mod m20250701_135425_alter_add_project_id_column_in_projects_monitoring_remarks_table;
 mod m20250701_145702_create_projects_payment_table;
 
@@ -60,13 +58,11 @@ impl MigratorTrait for Migrator {
             Box::new(m20250612_170355_alter_add_is_delete_column_in_contractors_table::Migration),
             Box::new(m20250614_060710_create_project_status_enum_table::Migration),
             Box::new(m20250617_035855_create_project_table::Migration),
-            Box::new(m20250617_071650_seed_barangay_type_data_in_projects_table::Migration),
             Box::new(m20250620_181759_alter_new_column_is_disposed_in_projects_table::Migration),
             Box::new(m20250629_112258_create_projects_infra_code_table::Migration),
             Box::new(m20250630_091430_create_projects_remarks_table::Migration),
             Box::new(m20250630_091955_create_projects_remarks_img_table::Migration),
             Box::new(m20250630_092943_alter_add_original_file_name_column_in_project_remarks_img_table::Migration),
-            Box::new(m20250701_134951_alter_remove_project_id_column_in_projects_monitoring_img_table::Migration),
             Box::new(m20250701_135425_alter_add_project_id_column_in_projects_monitoring_remarks_table::Migration),
             Box::new(m20250701_145702_create_projects_payment_table::Migration),
         ]
