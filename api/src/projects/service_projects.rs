@@ -291,8 +291,9 @@ pub async fn get_projects_stats_by_types(
         .into_model::<ResponseProjectsStatsTypes>()
         .all(&db.db_connection).await.unwrap();
 
-    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
-
+    if response.len().gt(&0) {
+        redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
+    }
     (StatusCode::OK, Json(response))
 }
 

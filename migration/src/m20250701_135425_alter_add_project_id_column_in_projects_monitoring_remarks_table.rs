@@ -9,7 +9,7 @@ impl MigrationTrait for Migration {
         // Replace the sample below with your own migration scripts
         manager.alter_table(TableAlterStatement::new()
             .table(ProjectsMonitoringRemarks::Table)
-            .add_column(integer(ProjectsMonitoringRemarks::ProjectId))
+            .add_column_if_not_exists(integer(ProjectsMonitoringRemarks::ProjectId))
             .add_foreign_key(
                 &TableForeignKey::new()
                     .name("fk-projects_monitoring_remarks-projects_id-id")

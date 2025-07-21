@@ -11,7 +11,7 @@ impl MigrationTrait for Migration {
         manager.alter_table(
             TableAlterStatement::new()
                 .table(Projects::Table)
-                .add_column(boolean(Projects::IsDisposed).default(false))
+                .add_column_if_not_exists(boolean(Projects::IsDisposed).default(false))
                 .to_owned()
         ).await
     }

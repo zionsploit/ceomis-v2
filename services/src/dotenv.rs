@@ -19,7 +19,8 @@ impl Dotenv {
             let current_dir = current_dir();
 
             // If getting the current directory fails, return None.
-            if current_dir.is_err() {
+            if let Err(err) = current_dir {
+                eprintln!("Failed to get current_dir: {:?}", err);
                 return None;
             }
 
@@ -30,7 +31,8 @@ impl Dotenv {
             let get_env_file = File::open(format!("{}/.env", current_dir.to_str().unwrap()));
 
             // If opening the file fails, return None.
-            if get_env_file.is_err() {
+            if let Err(err) = get_env_file {
+                eprintln!("Faile to get ENV FILE: {:?}", err);
                 return None;
             }
 
