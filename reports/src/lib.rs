@@ -5,7 +5,6 @@ use crate::{contractors::reports_contractors_projects::reports_contractors_proje
 pub mod projects;
 pub mod helpers;
 pub mod contractors;
-pub mod document;
 
 pub fn api_generate_reports() -> Router {
     Router::new()
