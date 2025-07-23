@@ -34,6 +34,14 @@ mod m20250630_092943_alter_add_original_file_name_column_in_project_remarks_img_
 mod m20250701_135425_alter_add_project_id_column_in_projects_monitoring_remarks_table;
 mod m20250701_145702_create_projects_payment_table;
 mod m20250720_083706_seed_initial_admin_users;
+mod m20250723_122329_seed_project_goals_data;
+mod m20250723_132547_seed_project_sof_data;
+mod m20250723_133041_seed_project_type_data;
+mod m20250723_133353_seed_project_incharge_data;
+mod m20250723_145751_seed_project_categories_data;
+mod m20250723_150102_seed_project_sectors_data;
+mod m20250723_150945_seed_project_barangays_data;
+mod m20250723_152544_seed_project_takers_data;
 
 #[async_trait::async_trait]
 impl MigratorTrait for Migrator {
@@ -67,6 +75,14 @@ impl MigratorTrait for Migrator {
             Box::new(m20250701_135425_alter_add_project_id_column_in_projects_monitoring_remarks_table::Migration),
             Box::new(m20250701_145702_create_projects_payment_table::Migration),
             Box::new(m20250720_083706_seed_initial_admin_users::Migration),
+            Box::new(m20250723_122329_seed_project_goals_data::Migration),
+            Box::new(m20250723_132547_seed_project_sof_data::Migration),
+            Box::new(m20250723_133041_seed_project_type_data::Migration),
+            Box::new(m20250723_133353_seed_project_incharge_data::Migration),
+            Box::new(m20250723_145751_seed_project_categories_data::Migration),
+            Box::new(m20250723_150102_seed_project_sectors_data::Migration),
+            Box::new(m20250723_150945_seed_project_barangays_data::Migration),
+            Box::new(m20250723_152544_seed_project_takers_data::Migration),
         ]
     }
 }
