@@ -19,7 +19,9 @@ pub async fn get_all_incharge(
 
     let get_all_incharge = settings_incharge::Entity::find().all(&db.db_connection).await.unwrap();
 
-    redis.stored_value(&serde_json::to_string(&get_all_incharge).unwrap(), None).await.unwrap();
+    if get_all_incharge.len().gt(&0) {
+        redis.stored_value(&serde_json::to_string(&get_all_incharge).unwrap(), None).await.unwrap();
+    }
 
     (StatusCode::OK, Json(get_all_incharge))
 

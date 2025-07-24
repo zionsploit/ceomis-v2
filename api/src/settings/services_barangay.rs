@@ -19,7 +19,9 @@ pub async fn get_all_barangays(
 
     let response = settings_barangay::Entity::find().all(&db.db_connection).await.unwrap();
 
-    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
+    if response.len().gt(&0) {
+        redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
+    }
     
     return (StatusCode::OK, Json(response));
 }
