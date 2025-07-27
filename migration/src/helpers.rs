@@ -150,7 +150,12 @@ pub async fn convert_projects_into_active_model_v2<'c>(
         },
         project_type_id: {
             let prop_type = attributes["prop_type"].as_str().and_then(|v| v.parse::<i32>().ok());
-            Set(prop_type)
+
+            if prop_type.is_some_and(|v| v.gt(&10)) {
+                Set(None)
+            } else {
+                Set(prop_type)
+            }
         },
         project_category_id: {
             let prop_category = attributes["prop_category"].as_str().and_then(|v| v.parse::<i32>().ok());
