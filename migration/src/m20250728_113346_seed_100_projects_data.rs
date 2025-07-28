@@ -1,0 +1,5438 @@
+use entity::projects;
+use sea_orm::EntityTrait;
+use sea_orm_migration::prelude::*;
+use serde_json::json;
+
+use crate::helpers::convert_projects_into_active_model_v2;
+
+#[derive(DeriveMigrationName)]
+pub struct Migration;
+
+#[async_trait::async_trait]
+impl MigrationTrait for Migration {
+    async fn up(&self, manager: &SchemaManager) -> Result<(), DbErr> {
+        // Replace the sample below with your own migration scripts
+        let db_connection = manager.get_connection();
+
+        let make_add: [projects::ActiveModel; 100] = [
+            convert_projects_into_active_model_v2(&json!({
+                "id": "376",
+                "attributes": {
+                    "name": "Construction of Regional Center Commercial Building ( 10M) AND  Const. of Two Storey Commercial Building at Regional Center Phase I (4M)",
+                    "code": "2SAIP22-8000R-C1b8 & 4SAIP21-8000G-C-1b6  (joint)",
+                    "location": "[\"2\"]",
+                    "cost": 13693989.86,
+                    "contractor": {
+                    "data": {
+                        "id": "1",
+                        "attributes": {
+                            "name": "CTG Construction",
+                            "street_purok": "Purok 1"
+                        }
+                    }
+                    },
+                    "duration": 240,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": "[]",
+                    "prop_fund": "8",
+                    "prop_type": "26",
+                    "prop_category": "1",
+                    "prop_sector": "[]",
+                    "prop_assign": "2",
+                    "accom_total": 45,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": "2024-02-19",
+                    "target": "2024-10-16",
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 14000000,
+                    "abc": 13696181.4,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": "On-going implementation of the project\n45% ACCOMPLISHMENT as of Dec. 6, 2024",
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": null,
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": null,
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "377",
+                "attributes": {
+                    "name": "Completion of Multi-Purpose Building at Pagadian Baywalk\n",
+                    "code": "4SAIP21 - 8000G - C - 1b7",
+                    "location": null,
+                    "cost": 0,
+                    "contractor": {
+                    "data": null
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": null,
+                    "prop_fund": "8",
+                    "prop_type": null,
+                    "prop_category": null,
+                    "prop_sector": null,
+                    "prop_assign": null,
+                    "accom_total": 0,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 5000000,
+                    "abc": 0,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": null,
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": null,
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": null,
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "378",
+                "attributes": {
+                    "name": "Continuation of Soil Laboratory Building at Brgy Danlugan",
+                    "code": "4SAIP21-8000G-C-1b8",
+                    "location": "[]",
+                    "cost": 3868798.14,
+                    "contractor": {
+                    "data": {
+                        "id": "6",
+                        "attributes": {
+                            "name": "DM Ventures",
+                            "street_purok": null
+                        }
+                    }
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": "[]",
+                    "prop_fund": "8",
+                    "prop_type": "26",
+                    "prop_category": "1",
+                    "prop_sector": "[]",
+                    "prop_assign": "2",
+                    "accom_total": 18,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 4000000,
+                    "abc": 3871604.66,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": "Implementation is currently ON-HOLD as of August 2, 2024 due to SOIL EROSION & recommended for the provision slope protection which is not included in the approved plans & POW",
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": "2023-03-29",
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": "CAPT. DACAL",
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "379",
+                "attributes": {
+                    "name": "Completion of DILG & Coa Office Building\n",
+                    "code": "4SAIP21 - 8000G - C - 1b9",
+                    "location": null,
+                    "cost": 967751.18,
+                    "contractor": {
+                    "data": {
+                        "id": "19",
+                        "attributes": {
+                            "name": "Jenrich Construction",
+                            "street_purok": null
+                        }
+                    }
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": null,
+                    "prop_fund": "8",
+                    "prop_type": null,
+                    "prop_category": null,
+                    "prop_sector": null,
+                    "prop_assign": null,
+                    "accom_total": 0,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 1000000,
+                    "abc": 0,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": null,
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": "2021-12-17",
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": null,
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+                convert_projects_into_active_model_v2(&json!({
+                "id": "380",
+                "attributes": {
+                    "name": "Improvement of City PNP Building Inc. Concreting of Pathways\n",
+                    "code": "4SAIP21 - 8000G - C - 1b10",
+                    "location": null,
+                    "cost": 474184.73,
+                    "contractor": {
+                    "data": {
+                        "id": "19",
+                        "attributes": {
+                            "name": "Jenrich Construction",
+                            "street_purok": null
+                        }
+                    }
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": null,
+                    "prop_fund": "8",
+                    "prop_type": null,
+                    "prop_category": null,
+                    "prop_sector": null,
+                    "prop_assign": null,
+                    "accom_total": 0,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 500000,
+                    "abc": 0,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": null,
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": "2021-10-25",
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": null,
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "381",
+                "attributes": {
+                    "name": "Construction of Mini Port & Waiting Shed at White Sand Beach\n",
+                    "code": "4SAIP21 - 8000G - C - 1c1",
+                    "location": null,
+                    "cost": 0,
+                    "contractor": {
+                    "data": null
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": null,
+                    "prop_fund": "8",
+                    "prop_type": null,
+                    "prop_category": null,
+                    "prop_sector": null,
+                    "prop_assign": null,
+                    "accom_total": 0,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 1500000,
+                    "abc": 0,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": null,
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": null,
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": null,
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "382",
+                "attributes": {
+                    "name": "Construction of Mini Port & Waiting Shed at Dao-dao Gamay Beach\n",
+                    "code": "4SAIP21 - 8000G - C - 1c2",
+                    "location": null,
+                    "cost": 0,
+                    "contractor": {
+                    "data": null
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": null,
+                    "prop_fund": "8",
+                    "prop_type": null,
+                    "prop_category": null,
+                    "prop_sector": null,
+                    "prop_assign": null,
+                    "accom_total": 0,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 1500000,
+                    "abc": 0,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": null,
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": null,
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": null,
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "383",
+                "attributes": {
+                    "name": "Construction of Mini Port & waiting Shed at Dao-dao Dako Beach\n",
+                    "code": "4SAIP21 - 8000G - C - 1c3",
+                    "location": null,
+                    "cost": 0,
+                    "contractor": {
+                    "data": null
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": null,
+                    "prop_fund": "8",
+                    "prop_type": null,
+                    "prop_category": null,
+                    "prop_sector": null,
+                    "prop_assign": null,
+                    "accom_total": 0,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 0,
+                    "abc": 0,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": null,
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": null,
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": null,
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "384",
+                "attributes": {
+                    "name": "Construction of Mini Port & waiting Shed at Poloyagan Beach",
+                    "code": "4SAIP21-8000G-C-1c4",
+                    "location": "[\"49\"]",
+                    "cost": 1467808.22,
+                    "contractor": {
+                    "data": {
+                        "id": "30",
+                        "attributes": {
+                            "name": "M&L Construction",
+                            "street_purok": null
+                        }
+                    }
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": "[]",
+                    "prop_fund": "8",
+                    "prop_type": "",
+                    "prop_category": "1",
+                    "prop_sector": "[]",
+                    "prop_assign": "2",
+                    "accom_total": 100,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 1500000,
+                    "abc": 1468800.99,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": "100% physically completed based on approved technical plans & specifications\n",
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": null,
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": "VIC2X CANETE",
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "385",
+                "attributes": {
+                    "name": "Const of Rotunda w/ Fountain at Regional Center (Inc. Beautification)\n",
+                    "code": "4SAIP21 - 8000G - C - 1c5",
+                    "location": null,
+                    "cost": 0,
+                    "contractor": {
+                    "data": null
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": null,
+                    "prop_fund": "8",
+                    "prop_type": null,
+                    "prop_category": null,
+                    "prop_sector": null,
+                    "prop_assign": null,
+                    "accom_total": 0,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 3000000,
+                    "abc": 0,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": null,
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": null,
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": null,
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "386",
+                "attributes": {
+                    "name": "Concreting of Parking Area at Rotunda, Pajares Ave\n",
+                    "code": "4SAIP21 - 8000G - C - 1c6",
+                    "location": null,
+                    "cost": 1931327.45,
+                    "contractor": {
+                    "data": {
+                        "id": "8",
+                        "attributes": {
+                            "name": "JAMT Construction",
+                            "street_purok": null
+                        }
+                    }
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": null,
+                    "prop_fund": "8",
+                    "prop_type": null,
+                    "prop_category": null,
+                    "prop_sector": null,
+                    "prop_assign": null,
+                    "accom_total": 0,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 2000000,
+                    "abc": 0,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": null,
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": "2021-11-08",
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": null,
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "387",
+                "attributes": {
+                    "name": "Concreting of Road at White Beach Road\n",
+                    "code": "4SAIP21 - 8000R - C - 2a1",
+                    "location": null,
+                    "cost": 771917.25,
+                    "contractor": {
+                    "data": {
+                        "id": "19",
+                        "attributes": {
+                            "name": "Jenrich Construction",
+                            "street_purok": null
+                        }
+                    }
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": null,
+                    "prop_fund": "8",
+                    "prop_type": null,
+                    "prop_category": null,
+                    "prop_sector": null,
+                    "prop_assign": null,
+                    "accom_total": 0,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 800000,
+                    "abc": 0,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": null,
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": "2023-01-23",
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": null,
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "388",
+                "attributes": {
+                    "name": "Concreting of Road at IBT\n",
+                    "code": "4SAIP21 - 8000R - C - 2a2",
+                    "location": null,
+                    "cost": 0,
+                    "contractor": {
+                    "data": null
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": null,
+                    "prop_fund": "8",
+                    "prop_type": null,
+                    "prop_category": null,
+                    "prop_sector": null,
+                    "prop_assign": null,
+                    "accom_total": 0,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 4000000,
+                    "abc": 0,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": null,
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": null,
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": null,
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "389",
+                "attributes": {
+                    "name": "Concreting of  Road Leading to Palpalan Drug Rehab Center",
+                    "code": "4SAIP21-8000R-C-2a3",
+                    "location": "[\"47\"]",
+                    "cost": 958252.28,
+                    "contractor": {
+                    "data": {
+                        "id": "30",
+                        "attributes": {
+                            "name": "M&L Construction",
+                            "street_purok": null
+                        }
+                    }
+                    },
+                    "duration": 45,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": "[]",
+                    "prop_fund": "8",
+                    "prop_type": "1",
+                    "prop_category": "2",
+                    "prop_sector": "[]",
+                    "prop_assign": "2",
+                    "accom_total": 100,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": "2023-10-16",
+                    "target": "2023-11-30",
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 1000000,
+                    "abc": 967818.96,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": "\"100% physically completed based on approved technical plans & specifications with time extension as per approved suspension order\n*Adjusted Target Completion Date:April 21, 2024  as per Suspension Order No. 1\n* Actual Completion Date: April 18, 2024\"\n",
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": null,
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": "NELY SISONA",
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+                convert_projects_into_active_model_v2(&json!({
+                "id": "390",
+                "attributes": {
+                    "name": "Concreting of Road at Danlugan Food Processing Complex",
+                    "code": "4SAIP21-8000R-C-2a4",
+                    "location": "[\"27\"]",
+                    "cost": 1998180.44,
+                    "contractor": {
+                    "data": {
+                        "id": "1",
+                        "attributes": {
+                            "name": "CTG Construction",
+                            "street_purok": "Purok 1"
+                        }
+                    }
+                    },
+                    "duration": 60,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": "[]",
+                    "prop_fund": "8",
+                    "prop_type": "1",
+                    "prop_category": "2",
+                    "prop_sector": "[]",
+                    "prop_assign": "2",
+                    "accom_total": 100,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": "2024-01-22",
+                    "target": "2024-03-22",
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 2000000,
+                    "abc": 1954395.97,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": "\"* 100% physically completed based on approved technical plans & specifications\n* Actual Completion Date: 5/22/2024\"\n",
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": null,
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": "LSC",
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "391",
+                "attributes": {
+                    "name": "Concreting of Road at Rotunda Fronting Site of Philpost & DENR New Building",
+                    "code": "4SAIP21 - 8000R - C - 2a5",
+                    "location": "[]",
+                    "cost": 965985,
+                    "contractor": {
+                    "data": {
+                        "id": "15",
+                        "attributes": {
+                            "name": "Aradel Construction",
+                            "street_purok": null
+                        }
+                    }
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": "[]",
+                    "prop_fund": "8",
+                    "prop_type": "1",
+                    "prop_category": "2",
+                    "prop_sector": "[]",
+                    "prop_assign": "2",
+                    "accom_total": 100,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 1000000,
+                    "abc": 0,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": null,
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": "2022-01-25",
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": null,
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "392",
+                "attributes": {
+                    "name": "Const/Conc/Impvt of Roads (Various barangays)\n",
+                    "code": "4SAIP21 - 8000R - C - 2a6",
+                    "location": null,
+                    "cost": 0,
+                    "contractor": {
+                    "data": null
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": null,
+                    "prop_fund": "8",
+                    "prop_type": null,
+                    "prop_category": null,
+                    "prop_sector": null,
+                    "prop_assign": null,
+                    "accom_total": 0,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 30000000,
+                    "abc": 0,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": null,
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": null,
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": null,
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "393",
+                "attributes": {
+                    "name": "Widening & Improvement of Road and Drainage at Brgy Tiguma (Beside Co Tek Chun), Tiguma\n",
+                    "code": "4SAIP21 - 8000R - C - 2a7",
+                    "location": null,
+                    "cost": 0,
+                    "contractor": {
+                    "data": null
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": null,
+                    "prop_fund": "8",
+                    "prop_type": null,
+                    "prop_category": null,
+                    "prop_sector": null,
+                    "prop_assign": null,
+                    "accom_total": 0,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 3000000,
+                    "abc": 0,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": null,
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": null,
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": null,
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "394",
+                "attributes": {
+                    "name": "Completion of the Renovation of Pag City International College Building\n",
+                    "code": "4SAIP21 - 8000G - C - 1b4",
+                    "location": null,
+                    "cost": 1936866.32,
+                    "contractor": {
+                    "data": {
+                        "id": "10",
+                        "attributes": {
+                            "name": "RSQ Construction",
+                            "street_purok": null
+                        }
+                    }
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": null,
+                    "prop_fund": "8",
+                    "prop_type": null,
+                    "prop_category": null,
+                    "prop_sector": null,
+                    "prop_assign": null,
+                    "accom_total": 0,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 2000000,
+                    "abc": 0,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": null,
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": "2023-03-27",
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": null,
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "395",
+                "attributes": {
+                    "name": "Const. of Two Storey Commercial Buildong at Regional Center Phase I\n",
+                    "code": "4SAIP21 - 8000G - C - 1b6",
+                    "location": null,
+                    "cost": 0,
+                    "contractor": {
+                    "data": null
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": null,
+                    "prop_fund": "8",
+                    "prop_type": null,
+                    "prop_category": null,
+                    "prop_sector": null,
+                    "prop_assign": null,
+                    "accom_total": 0,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 4000000,
+                    "abc": 0,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": null,
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": null,
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": null,
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "396",
+                "attributes": {
+                    "name": "Completion of Multi-Purpose Building at Pagadian Baywalk\n",
+                    "code": "4SAIP21 - 8000G - C - 1b7",
+                    "location": null,
+                    "cost": 0,
+                    "contractor": {
+                    "data": null
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": null,
+                    "prop_fund": "8",
+                    "prop_type": null,
+                    "prop_category": null,
+                    "prop_sector": null,
+                    "prop_assign": null,
+                    "accom_total": 0,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 5000000,
+                    "abc": 0,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": null,
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": null,
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": null,
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "397",
+                "attributes": {
+                    "name": "Conc/impvt of Road at Sunrise Village (Beside CO Tek Chun)\n",
+                    "code": "4SAIP21 - 8000D - C2a8",
+                    "location": "[]",
+                    "cost": 1926553.49,
+                    "contractor": {
+                    "data": {
+                        "id": "23",
+                        "attributes": {
+                            "name": "KS Agad Construction",
+                            "street_purok": null
+                        }
+                    }
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": "[]",
+                    "prop_fund": "8",
+                    "prop_type": "1",
+                    "prop_category": "2",
+                    "prop_sector": "[]",
+                    "prop_assign": "2",
+                    "accom_total": 100,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 2000000,
+                    "abc": 0,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": null,
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": "2022-02-09",
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": null,
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "398",
+                "attributes": {
+                    "name": "Completion of the Improvement of Covered Court (Fence and Other Structure)\n",
+                    "code": "4SAIP21 - 8000R - C1c8",
+                    "location": null,
+                    "cost": 1663931.75,
+                    "contractor": {
+                    "data": {
+                        "id": "8",
+                        "attributes": {
+                            "name": "JAMT Construction",
+                            "street_purok": null
+                        }
+                    }
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": null,
+                    "prop_fund": "8",
+                    "prop_type": null,
+                    "prop_category": null,
+                    "prop_sector": null,
+                    "prop_assign": null,
+                    "accom_total": 0,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 1700000,
+                    "abc": 0,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": null,
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": null,
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": null,
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+                "id": "399",
+                "attributes": {
+                    "name": "Conc of Road Towards Prk Daisy to Prk Cadena de Amor Leading to Barangay Kagawasan\n",
+                    "code": "2SAILP21 - 8000R - A1A1",
+                    "location": null,
+                    "cost": 960132.75,
+                    "contractor": {
+                    "data": {
+                        "id": "1",
+                        "attributes": {
+                            "name": "CTG Construction",
+                            "street_purok": "Purok 1"
+                        }
+                    }
+                    },
+                    "duration": null,
+                    "adjusted": null,
+                    "total": null,
+                    "weight": null,
+                    "prop_sdg": null,
+                    "prop_fund": "17",
+                    "prop_type": null,
+                    "prop_category": null,
+                    "prop_sector": null,
+                    "prop_assign": null,
+                    "accom_total": 0,
+                    "accom_value": null,
+                    "accom_date": null,
+                    "accom_elapse": null,
+                    "accom_slippage": null,
+                    "accom_period": null,
+                    "accom_todate": null,
+                    "accom_qty": null,
+                    "accom_amt": null,
+                    "date": null,
+                    "status": "CREATED",
+                    "start": null,
+                    "target": null,
+                    "office": "Engineer's Office",
+                    "assigned": null,
+                    "appropriation": 1000000,
+                    "abc": 0,
+                    "status_id": {
+                    "data": null
+                    },
+                    "remarks": null,
+                    "entry_type": "IMPLEMENTED",
+                    "bid_date": "2022-01-15",
+                    "year": 2021,
+                    "abc_published": null,
+                    "prop_takers": null,
+                    "prop_infra": null,
+                    "time_extension": null
+                }
+                }), db_connection).await,
+                convert_projects_into_active_model_v2(&json!({
+        "id": "400",
+        "attributes": {
+            "name": "Conc/Impvt of road Networks @ Resettlement Area, Bulatok",
+            "code": "DF20-8000-B1a",
+            "location": null,
+            "cost": 479206.88,
+            "contractor": {
+                "data": {
+                    "id": "33",
+                    "attributes": {
+                        "name": "GCMG Construction",
+                        "street_purok": null
+                    }
+                }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": null,
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": null,
+            "prop_assign": null,
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 500000,
+            "abc": 0,
+            "status_id": {
+                "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": "2020-09-11",
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+        }
+    }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+        "id": "401",
+        "attributes": {
+            "name": "Conc/Impvt of Entrance Muricay (Airport Side) Road",
+            "code": "DF20-8000-B1b",
+            "location": null,
+            "cost": 673945.2,
+            "contractor": {
+                "data": {
+                    "id": "33",
+                    "attributes": {
+                        "name": "GCMG Construction",
+                        "street_purok": null
+                    }
+                }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": null,
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": null,
+            "prop_assign": null,
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 700000,
+            "abc": 0,
+            "status_id": {
+                "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": "2020-05-13",
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+        }
+    }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+        "id": "402",
+        "attributes": {
+            "name": "Conc/Impvt of Brgy Banale Road (After School)",
+            "code": "DF20-8000-B1c",
+            "location": null,
+            "cost": 482991,
+            "contractor": {
+                "data": {
+                    "id": "30",
+                    "attributes": {
+                        "name": "M&L Construction",
+                        "street_purok": null
+                    }
+                }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": null,
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": null,
+            "prop_assign": null,
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 500000,
+            "abc": 0,
+            "status_id": {
+                "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": "2020-09-08",
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+        }
+    }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+        "id": "403",
+        "attributes": {
+            "name": "Widening/Concreting of Raod (1.0m both sides) from Brgy Tiguma to Airport (Leading to White Beach Road)",
+            "code": "DF20-8000-B1d",
+            "location": null,
+            "cost": 193765.25,
+            "contractor": {
+                "data": {
+                    "id": "1",
+                    "attributes": {
+                        "name": "CTG Construction",
+                        "street_purok": "Purok 1"
+                    }
+                }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": null,
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": null,
+            "prop_assign": null,
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 2000000,
+            "abc": 0,
+            "status_id": {
+                "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": "2020-08-17",
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+        }
+    }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+        "id": "404",
+        "attributes": {
+            "name": " Conc/Impvt of Kagawasan to Alegria Brgy. Road",
+            "code": "DF20-8000-B1e",
+            "location": null,
+            "cost": 480110.95,
+            "contractor": {
+                "data": {
+                    "id": "8",
+                    "attributes": {
+                        "name": "JAMT Construction",
+                        "street_purok": null
+                    }
+                }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": null,
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": null,
+            "prop_assign": null,
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 500000,
+            "abc": 0,
+            "status_id": {
+                "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": "2020-07-06",
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+        }
+    }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+        "id": "405",
+        "attributes": {
+            "name": "Widening/Conc of Road and Impvt of Rotonda Circumferencial Rd",
+            "code": "DF20-8000-B1f",
+            "location": null,
+            "cost": 4858526.59,
+            "contractor": {
+                "data": {
+                    "id": "13",
+                    "attributes": {
+                        "name": "Glenson Construction",
+                        "street_purok": null
+                    }
+                }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": null,
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": null,
+            "prop_assign": null,
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 5000000,
+            "abc": 0,
+            "status_id": {
+                "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": "2021-05-10",
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+        }
+    }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+        "id": "406",
+        "attributes": {
+            "name": "Road Impvt/Conc of Dao Road Leading to LGU Lot from Prk. Patag, Miliatr and Malipayon",
+            "code": "DF20-8000-B1g",
+            "location": null,
+            "cost": 674995.95,
+            "contractor": {
+                "data": {
+                    "id": "10",
+                    "attributes": {
+                        "name": "RSQ Construction",
+                        "street_purok": null
+                    }
+                }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": null,
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": null,
+            "prop_assign": null,
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 700000,
+            "abc": 0,
+            "status_id": {
+                "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": "2020-09-11",
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+        }
+    }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+        "id": "407",
+        "attributes": {
+            "name": "Concreting of Road Entrance @ Brgy Balintawak Leading to Nazareth",
+            "code": "DF20-8000-B1h",
+            "location": null,
+            "cost": 289358.44,
+            "contractor": {
+                "data": {
+                    "id": "10",
+                    "attributes": {
+                        "name": "RSQ Construction",
+                        "street_purok": null
+                    }
+                }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": null,
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": null,
+            "prop_assign": null,
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 300000,
+            "abc": 0,
+            "status_id": {
+                "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": "2021-03-23",
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+        }
+    }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+        "id": "408",
+        "attributes": {
+            "name": "Widening of BF Arao Ave.",
+            "code": "DF2A23:J676",
+            "location": null,
+            "cost": 0,
+            "contractor": {
+                "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": null,
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": null,
+            "prop_assign": null,
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 2000000,
+            "abc": 0,
+            "status_id": {
+                "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+        }
+    }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+        "id": "409",
+        "attributes": {
+            "name": "Conc/Impvt of Road @ PACIGEA Site Leading to Buenaobra Residence, Buenavista",
+            "code": "DF20-8000-B1j",
+            "location": null,
+            "cost": 1927691.4,
+            "contractor": {
+                "data": {
+                    "id": "1",
+                    "attributes": {
+                        "name": "CTG Construction",
+                        "street_purok": "Purok 1"
+                    }
+                }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": null,
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": null,
+            "prop_assign": null,
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 2000000,
+            "abc": 0,
+            "status_id": {
+                "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": "2020-07-15",
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+        }
+    }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+        "id": "410",
+        "attributes": {
+            "name": "Conc/Impvt of Road @ PACIGEA Site Leading to Saint Columban College, Buenavista",
+            "code": "DF20-8000-B1k",
+            "location": null,
+            "cost": 967948.25,
+            "contractor": {
+                "data": {
+                    "id": "1",
+                    "attributes": {
+                        "name": "CTG Construction",
+                        "street_purok": "Purok 1"
+                    }
+                }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": null,
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": null,
+            "prop_assign": null,
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1000000,
+            "abc": 0,
+            "status_id": {
+                "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": "2020-09-11",
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+        }
+    }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+        "id": "411",
+        "attributes": {
+            "name": "Conc/Impvt of Road @ PACIGEA Site Leading to Dumpsite, Buenavista",
+            "code": "DF20-8000-B1l",
+            "location": null,
+            "cost": 954310.37,
+            "contractor": {
+                "data": {
+                    "id": "23",
+                    "attributes": {
+                        "name": "KS Agad Construction",
+                        "street_purok": null
+                    }
+                }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": null,
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": null,
+            "prop_assign": null,
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1000000,
+            "abc": 0,
+            "status_id": {
+                "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": "2020-09-11",
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+        }
+    }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+        "id": "412",
+        "attributes": {
+            "name": "Impvt/Widening of Road at Aquino Street (Sabate St. - Northward)",
+            "code": "DF20-8000-B1m",
+            "location": null,
+            "cost": 963613.24,
+            "contractor": {
+                "data": {
+                    "id": "10",
+                    "attributes": {
+                        "name": "RSQ Construction",
+                        "street_purok": null
+                    }
+                }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": null,
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": null,
+            "prop_assign": null,
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1000000,
+            "abc": 0,
+            "status_id": {
+                "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": "2020-07-06",
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+        }
+    }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+        "id": "413",
+        "attributes": {
+            "name": "Impvt/Conc of Road at Tiguma Fronting Casa Emsa (Inc Intersection Road)",
+            "code": "DF20-8000-B1n",
+            "location": null,
+            "cost": 480000,
+            "contractor": {
+                "data": {
+                    "id": "33",
+                    "attributes": {
+                        "name": "GCMG Construction",
+                        "street_purok": null
+                    }
+                }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": null,
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": null,
+            "prop_assign": null,
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 500000,
+            "abc": 0,
+            "status_id": {
+                "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": "2020-03-06",
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+        }
+    }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+        "id": "414",
+        "attributes": {
+            "name": "Impvt/Conc of Road at Purok Gugma, Ballesteros Vill., Balangasan",
+            "code": "DF20-8000-B1o",
+            "location": null,
+            "cost": 333484.91,
+            "contractor": {
+                "data": {
+                    "id": "32",
+                    "attributes": {
+                        "name": "Pagadian Aggregates",
+                        "street_purok": null
+                    }
+                }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": null,
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": null,
+            "prop_assign": null,
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 350000,
+            "abc": 0,
+            "status_id": {
+                "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": "2020-05-13",
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+        }
+    }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+        "id": "415",
+        "attributes": {
+            "name": "Rep/Rehab of Access Road Leading to Urban Poor Relocation Subdv, Prk Nazareno, Nazareth, Buenavista",
+            "code": "DF20-8000-B1p",
+            "location": "[]",
+            "cost": 498523.91,
+            "contractor": {
+                "data": {
+                    "id": "30",
+                    "attributes": {
+                        "name": "M&L Construction",
+                        "street_purok": null
+                    }
+                }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": "[]",
+            "prop_assign": null,
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 500000,
+            "abc": 0,
+            "status_id": {
+                "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": "2020-05-25",
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+        }
+    }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+        "id": "416",
+        "attributes": {
+            "name": "Installation of Curb and Gutter at BF Arao Aveneu (Continuation)",
+            "code": "DF20-8000-B1q",
+            "location": null,
+            "cost": 968297.59,
+            "contractor": {
+                "data": {
+                    "id": "19",
+                    "attributes": {
+                        "name": "Jenrich Construction",
+                        "street_purok": null
+                    }
+                }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": null,
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": null,
+            "prop_assign": null,
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1000000,
+            "abc": 0,
+            "status_id": {
+                "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": "2021-11-24",
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+        }
+    }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+        "id": "417",
+        "attributes": {
+            "name": "Concreting of Road at Dao Leading to LGU Lot (Near Rotunda)",
+            "code": "DF20-8000-B1r",
+            "location": null,
+            "cost": 0,
+            "contractor": {
+                "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": null,
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": null,
+            "prop_assign": null,
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1000000,
+            "abc": 0,
+            "status_id": {
+                "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+        }
+    }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+        "id": "418",
+        "attributes": {
+            "name": "Widening/Conc of Road Along Datoc St. (Back of City Hall)",
+            "code": "DF20-8000-B1s",
+            "location": null,
+            "cost": 0,
+            "contractor": {
+                "data": {
+                    "id": "3",
+                    "attributes": {
+                        "name": "GAF TRADING & CONST",
+                        "street_purok": null
+                    }
+                }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": null,
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": null,
+            "prop_assign": null,
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1000000,
+            "abc": 0,
+            "status_id": {
+                "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": "2020-12-29",
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+        }
+    }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+        "id": "419",
+        "attributes": {
+            "name": "River Control of Bulatok",
+            "code": "DF20-8000-B2-a",
+            "location": null,
+            "cost": 575994.11,
+            "contractor": {
+                "data": {
+                    "id": "10",
+                    "attributes": {
+                        "name": "RSQ Construction",
+                        "street_purok": null
+                    }
+                }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": null,
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": null,
+            "prop_assign": null,
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 600000,
+            "abc": 0,
+            "status_id": {
+                "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": "2020-10-27",
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+        }
+    }), db_connection).await,
+    convert_projects_into_active_model_v2(&json!({
+    "id": "420",
+    "attributes": {
+        "name": "Rehab of Damaged Foot Bridge at Prk Romblon, Balangasan",
+        "code": "DF20-8000-B2-b",
+        "location": null,
+        "cost": 144711.44,
+        "contractor": {
+            "data": {
+                "id": "10",
+                "attributes": {
+                    "name": "RSQ Construction",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "2",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 100,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 150000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2020-10-27",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "421",
+    "attributes": {
+        "name": "Const of Building Structure at Pagadian Dumpsite Including Drainage System",
+        "code": "DF20-8000-B3a",
+        "location": "[\"1\"]",
+        "cost": 887284.74,
+        "contractor": {
+            "data": {
+                "id": "5",
+                "attributes": {
+                    "name": "MOLROW CONSTRUCTION",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": 100,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": "[]",
+        "prop_fund": "2",
+        "prop_type": "26",
+        "prop_category": "1",
+        "prop_sector": "[]",
+        "prop_assign": "2",
+        "accom_total": 100,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": "2023-08-23",
+        "target": "2023-12-01",
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 900000,
+        "abc": 866834.19,
+        "status_id": {
+            "data": null
+        },
+        "remarks": "* 100% physically completed base on approved technical plans & specifications\n* w/ time extension due to approved VO No.1\n* Adjusted Targe Date of Completion:Jan.8, 2023\"\n",
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "422",
+    "attributes": {
+        "name": "Expansion of IBT Complex",
+        "code": "DF20-8000-B3-b",
+        "location": null,
+        "cost": 0,
+        "contractor": {
+            "data": null
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "2",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 1500000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "423",
+    "attributes": {
+        "name": "Rehab of Taklobo Stage",
+        "code": "DF20-8000-B3-c",
+        "location": null,
+        "cost": 0,
+        "contractor": {
+            "data": null
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "2",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 500000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "424",
+    "attributes": {
+        "name": "Improvement of C3 Building (Installation of Fire Exit)",
+        "code": "DF20-8000-B3-d",
+        "location": null,
+        "cost": 572634.15,
+        "contractor": {
+            "data": {
+                "id": "12",
+                "attributes": {
+                    "name": "LC Construction",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "2",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 600000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2020-05-13",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "425",
+    "attributes": {
+        "name": "Improvement/Landscaping of Rotunda",
+        "code": "DF20-8000-B4-a",
+        "location": "[]",
+        "cost": 1925642.34,
+        "contractor": {
+            "data": {
+                "id": "8",
+                "attributes": {
+                    "name": "JAMT Construction",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": "[]",
+        "prop_fund": "2",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": "[]",
+        "prop_assign": null,
+        "accom_total": 85,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 2000000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": "85% physical accomplishment as of Oct. 20, 2023\n\n100% PHYSICALLY COMPLETED as of nov. 10, 2023 report",
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2021-04-07",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "426",
+    "attributes": {
+        "name": "Development of Boulevard (Santiago)",
+        "code": "DF20-8000-B4-b",
+        "location": null,
+        "cost": 9626902.74,
+        "contractor": {
+            "data": {
+                "id": "29",
+                "attributes": {
+                    "name": "Genetian Builders",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "2",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 100,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 10000000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2020-08-17",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "427",
+    "attributes": {
+        "name": "Const. of Parking Area at Palasyo (Continuation)",
+        "code": "DF20-8000-B4-c",
+        "location": null,
+        "cost": 9598097.97,
+        "contractor": {
+            "data": {
+                "id": "19",
+                "attributes": {
+                    "name": "Jenrich Construction",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "2",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 100,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 10000000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2021-02-02",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "428",
+    "attributes": {
+        "name": "Const/Impvt of Perimeter Fence Enclosing Plaza Luz",
+        "code": "DF20-8000-B4-d",
+        "location": null,
+        "cost": 1938434.54,
+        "contractor": {
+            "data": {
+                "id": "8",
+                "attributes": {
+                    "name": "JAMT Construction",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "2",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 100,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 2000000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2021-03-10",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "429",
+    "attributes": {
+        "name": "Development of Alegria Falls",
+        "code": "DF20-8000-B7-a",
+        "location": null,
+        "cost": 0,
+        "contractor": {
+            "data": null
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "2",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 1000000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "430",
+    "attributes": {
+        "name": "Development of Lison Valley Agri-Tourism",
+        "code": "DF20-8000-B7-b",
+        "location": null,
+        "cost": 0,
+        "contractor": {
+            "data": null
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "2",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 2300000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "431",
+    "attributes": {
+        "name": "Conc/Impvt of Road Leading to Manga Falls",
+        "code": "DF20-8000-B7-c",
+        "location": null,
+        "cost": 5789991.4,
+        "contractor": {
+            "data": {
+                "id": "1",
+                "attributes": {
+                    "name": "CTG Construction",
+                    "street_purok": "Purok 1"
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "2",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 100,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 2000000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2020-09-28",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "432",
+    "attributes": {
+        "name": "Development of Manga Falls",
+        "code": "3SAIP20-8000-B2a",
+        "location": "[]",
+        "cost": 484577.07,
+        "contractor": {
+            "data": {
+                "id": "1",
+                "attributes": {
+                    "name": "CTG Construction",
+                    "street_purok": "Purok 1"
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": "[]",
+        "prop_fund": "7",
+        "prop_type": "26",
+        "prop_category": "1",
+        "prop_sector": "[]",
+        "prop_assign": "2",
+        "accom_total": 100,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 500000,
+        "abc": 485276.79,
+        "status_id": {
+            "data": null
+        },
+        "remarks": "100% physically completed based on approved technical plans & specifications\n",
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": "LSC",
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "433",
+    "attributes": {
+        "name": " Development of Poloyagan Beach Resort",
+        "code": "DF20-8000-B7-e",
+        "location": null,
+        "cost": 4849478.8,
+        "contractor": {
+            "data": {
+                "id": "1",
+                "attributes": {
+                    "name": "CTG Construction",
+                    "street_purok": "Purok 1"
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "2",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 100,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 5000000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2020-11-23",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "434",
+    "attributes": {
+        "name": "Const of Tourism Structure at White Sand",
+        "code": "DF20-8000-B7-f",
+        "location": null,
+        "cost": 0,
+        "contractor": {
+            "data": null
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "2",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 2000000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "435",
+    "attributes": {
+        "name": "Const/Dev't of Kindes Cave and Improvement of Kendis Cave",
+        "code": "DF20-8000-B7g & DF21-8000-B7-b",
+        "location": "[\"28\"]",
+        "cost": 3916633,
+        "contractor": {
+            "data": {
+                "id": "1",
+                "attributes": {
+                    "name": "CTG Construction",
+                    "street_purok": "Purok 1"
+                }
+            }
+        },
+        "duration": 180,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": "[]",
+        "prop_fund": "2",
+        "prop_type": "26",
+        "prop_category": "1",
+        "prop_sector": "[]",
+        "prop_assign": "2",
+        "accom_total": 4,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": "2024-01-15",
+        "target": "2024-07-13",
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 4000000,
+        "abc": 3917133.43,
+        "status_id": {
+            "data": null
+        },
+        "remarks": "Not yet started due to site problem\n",
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": "YEN-YEN BONTILAO",
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "436",
+    "attributes": {
+        "name": "Establishment of Palpalan Viewing Deck",
+        "code": "DF20-8000-B7-h",
+        "location": null,
+        "cost": 11580920.58,
+        "contractor": {
+            "data": {
+                "id": "30",
+                "attributes": {
+                    "name": "M&L Construction",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "2",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 7000000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2021-12-27",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "437",
+    "attributes": {
+        "name": "Materials Laborary",
+        "code": "RF20 - 1000 - 1 - 13 - c",
+        "location": null,
+        "cost": 0,
+        "contractor": {
+            "data": null
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 100000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "438",
+    "attributes": {
+        "name": "Tiguma Boundary",
+        "code": "RF20 - 1000 - 2A - 1j -1",
+        "location": null,
+        "cost": 0,
+        "contractor": {
+            "data": {
+                "id": "10",
+                "attributes": {
+                    "name": "RSQ Construction",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 500000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2021-07-20",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "439",
+    "attributes": {
+        "name": " Buenavista Boundary",
+        "code": "RF20 - 1000 - 2A - 1j -2",
+        "location": null,
+        "cost": 824153.77,
+        "contractor": {
+            "data": {
+                "id": "19",
+                "attributes": {
+                    "name": "Jenrich Construction",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 500000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2021-07-20",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "440",
+    "attributes": {
+        "name": "Macasing Crossing",
+        "code": "RF20 - 1000 - 2A - 1j -3",
+        "location": null,
+        "cost": 0,
+        "contractor": {
+            "data": {
+                "id": "10",
+                "attributes": {
+                    "name": "RSQ Construction",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 700000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2021-07-20",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "441",
+    "attributes": {
+        "name": "Governance and Local Democracy Initiatives- Danlugan",
+        "code": "RF20 - 1000 - 2A - 1j -4",
+        "location": null,
+        "cost": 848172.43,
+        "contractor": {
+            "data": {
+                "id": "19",
+                "attributes": {
+                    "name": "Jenrich Construction",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 100,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 700000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2021-07-20",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "442",
+    "attributes": {
+        "name": "Construction of Police Outpost (PHASE 1),Boulevard",
+        "code": "RF20-1000-2A-1j-5",
+        "location": "[\"16\"]",
+        "cost": 1921892.32,
+        "contractor": {
+            "data": {
+                "id": "29",
+                "attributes": {
+                    "name": "Genetian Builders",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": 90,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": "[]",
+        "prop_fund": "1",
+        "prop_type": "26",
+        "prop_category": "1",
+        "prop_sector": "[]",
+        "prop_assign": "2",
+        "accom_total": 100,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": "2022-01-04",
+        "target": "2022-04-04",
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 2000000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": "Date Completed: 12/9/2022",
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2021-09-29",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": "\" KAG. ORDENIZA-BOGO 09487176107\"",
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "443",
+    "attributes": {
+        "name": "Governance and Local Democracy Initiatives -Bogo",
+        "code": "RF20 - 1000 - 2A - 1j -6",
+        "location": null,
+        "cost": 0,
+        "contractor": {
+            "data": null
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 700000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "444",
+    "attributes": {
+        "name": "Construction of Police Outpost, Poloyagan",
+        "code": "RF20-1000-2A-1j-7 (700K) / 1SAIP21-3000R-C-1c1-e (joint fund)(150K)",
+        "location": "[\"49\"]",
+        "cost": 818044.19,
+        "contractor": {
+            "data": {
+                "id": "6",
+                "attributes": {
+                    "name": "DM Ventures",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": 90,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": "[]",
+        "prop_fund": "1",
+        "prop_type": "26",
+        "prop_category": "1",
+        "prop_sector": "[]",
+        "prop_assign": "2",
+        "accom_total": 100,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": "2023-04-24",
+        "target": "2023-07-23",
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 700000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": "* 100% physically completed based on approved technical plans & specifications\n*with time extension as per Suspension Order \n* Adjusted Target Completion Date: Jan. 29, 2024\n* Actual Completion Date: Jan.26, 2024\"\n",
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2023-02-27",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": "CAPT. DACAL",
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "445",
+    "attributes": {
+        "name": "Const/Conc/Impvt of Roads (Various Barangays)",
+        "code": "RF20 - 8000 - 3A - 1",
+        "location": null,
+        "cost": 0,
+        "contractor": {
+            "data": null
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 0,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "446",
+    "attributes": {
+        "name": "Rehab/Repair/Maint of Barangay Roads",
+        "code": "RF20 - 8000 - 3A - 2",
+        "location": null,
+        "cost": 0,
+        "contractor": {
+            "data": null
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 0,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "447",
+    "attributes": {
+        "name": "Renovation of Justice hall",
+        "code": "RF20 - 8000 - 3B - 1",
+        "location": null,
+        "cost": 0,
+        "contractor": {
+            "data": null
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 1500000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "448",
+    "attributes": {
+        "name": "Construction of SP Building",
+        "code": "RF20 - 8000 - 3B - 2",
+        "location": null,
+        "cost": 9476154.87,
+        "contractor": {
+            "data": {
+                "id": "5",
+                "attributes": {
+                    "name": "MOLROW CONSTRUCTION",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 100,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 10000000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2021-04-26",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "449",
+    "attributes": {
+        "name": "Construction of Museum Building",
+        "code": "RF20 - 8000 - 3B - 3",
+        "location": null,
+        "cost": 0,
+        "contractor": {
+            "data": null
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 1500000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "450",
+    "attributes": {
+        "name": "Renov of City Fitness & Gym Equipments",
+        "code": "RF20 - 8000 - 3B - 4",
+        "location": null,
+        "cost": 0,
+        "contractor": {
+            "data": null
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 1000000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "451",
+    "attributes": {
+        "name": "Rehabilitation of Library Building",
+        "code": "RF20 - 8000 - 3B - 5",
+        "location": null,
+        "cost": 0,
+        "contractor": {
+            "data": null
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 1000000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "452",
+    "attributes": {
+        "name": "Improvement of the Office of the City Mayor Building",
+        "code": "RF20 - 8000 - 3B - 6",
+        "location": null,
+        "cost": 0,
+        "contractor": {
+            "data": null
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 700000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "453",
+    "attributes": {
+        "name": "Improvement of Pagadian City IBT",
+        "code": "RF20 - 8000 - 3B - 7",
+        "location": null,
+        "cost": 1919628.1,
+        "contractor": {
+            "data": {
+                "id": "29",
+                "attributes": {
+                    "name": "Genetian Builders",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 2000000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2021-12-06",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "454",
+    "attributes": {
+        "name": "Const of Division Wall at City Legal Office (Executive Building)",
+        "code": "RF20 - 8000 - 3B - 8",
+        "location": null,
+        "cost": 0,
+        "contractor": {
+            "data": null
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 112000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "455",
+    "attributes": {
+        "name": "Impvt/Roofing of City PNP Police Station Building Roofing",
+        "code": "RF20 - 8000 - 3B - 9",
+        "location": null,
+        "cost": 717335.4,
+        "contractor": {
+            "data": {
+                "id": "33",
+                "attributes": {
+                    "name": "GCMG Construction",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 400000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2021-09-07",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "456",
+    "attributes": {
+        "name": "Inpvt/Roofing of City Commercial Center (C3)",
+        "code": "RF20 - 8000 - 3B - 10",
+        "location": null,
+        "cost": 0,
+        "contractor": {
+            "data": null
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 1000000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "457",
+    "attributes": {
+        "name": "Repair of City Hall Building (all offices)",
+        "code": "RF20 - 8000 - 3B - 11",
+        "location": null,
+        "cost": 953470.09,
+        "contractor": {
+            "data": {
+                "id": "8",
+                "attributes": {
+                    "name": "JAMT Construction",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 1000000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2021-07-06",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "458",
+    "attributes": {
+        "name": "Improvement of City DILG/COA Building (Lobby etc)",
+        "code": "RF20 - 8000 - 3B - 12",
+        "location": null,
+        "cost": 1443422.38,
+        "contractor": {
+            "data": {
+                "id": "8",
+                "attributes": {
+                    "name": "JAMT Construction",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 1500000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2021-12-06",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "459",
+    "attributes": {
+        "name": "Improvement/Renovation of Executive Function Hall Building",
+        "code": "RF20 - 8000 - 3B - 13",
+        "location": null,
+        "cost": 0,
+        "contractor": {
+            "data": null
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 500000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "460",
+    "attributes": {
+        "name": "Repair of City Hall Building (All Offices) Impvt of the Office of the City Mayor Bldg (Phase II)",
+        "code": "RF20 - 8000 - 3B - 22",
+        "location": null,
+        "cost": 0,
+        "contractor": {
+            "data": null
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "1",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 954982,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": null,
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "461",
+    "attributes": {
+        "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along Bonifacio St. (Jct. Sagun St - Sanson St) Western Side",
+        "code": "DRRMF20 - 1000 - 2 - b1",
+        "location": null,
+        "cost": 621448.08,
+        "contractor": {
+            "data": {
+                "id": "1",
+                "attributes": {
+                    "name": "CTG Construction",
+                    "street_purok": "Purok 1"
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "3",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 650000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2020-05-18",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "462",
+    "attributes": {
+        "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along Sanson St. (Jct FS Pajares Ave. - Datoc St) Northern Side",
+        "code": "DRRMF20 - 1000 - 2 - b2",
+        "location": null,
+        "cost": 1720244.7,
+        "contractor": {
+            "data": {
+                "id": "1",
+                "attributes": {
+                    "name": "CTG Construction",
+                    "street_purok": "Purok 1"
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "3",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 1800000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2020-04-20",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "463",
+    "attributes": {
+        "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along Sanson St. (Jct Datoc St - Duterte St) Northern Side",
+        "code": "DRRMF20 - 1000 - 2 - b3",
+        "location": null,
+        "cost": 1153972.27,
+        "contractor": {
+            "data": null
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "3",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 1200000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2020-03-30",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "464",
+    "attributes": {
+        "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall  Along Sanson St. (Jct Duterte St - RT Lim St) Northern Side",
+        "code": "DRRMF20 - 1000 - 2 - b4",
+        "location": null,
+        "cost": 1881183.31,
+        "contractor": {
+            "data": {
+                "id": "13",
+                "attributes": {
+                    "name": "Glenson Construction",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "3",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 1960000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2020-04-20",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "465",
+    "attributes": {
+        "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along Sanson St. (Jct FS Pajares St - Alano St) Northern Side",
+        "code": "DRRMF20 - 1000 - 2 - b5",
+        "location": null,
+        "cost": 2100000,
+        "contractor": {
+            "data": {
+                "id": "42",
+                "attributes": {
+                    "name": "GCMG (Garcia) Construction",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "3",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 2250000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2020-03-23",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "466",
+    "attributes": {
+        "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along Sanson St. (Jct Alano St - Roxas St) Northern Side",
+        "code": "DRRMF20 - 1000 - 2 - b6",
+        "location": null,
+        "cost": 2258788.25,
+        "contractor": {
+            "data": {
+                "id": "43",
+                "attributes": {
+                    "name": "Genetian (Alex Co)",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "3",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 2340000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2023-03-23",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "467",
+    "attributes": {
+        "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along Sanson St. (Jct Roxas St. - Sabellano St) Northern Side",
+        "code": "DRRMF20 - 1000 - 2 - b7",
+        "location": null,
+        "cost": 1100000,
+        "contractor": {
+            "data": {
+                "id": "44",
+                "attributes": {
+                    "name": "GCMG (Gumilao)",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "3",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 1200000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2020-03-30",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "468",
+    "attributes": {
+        "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along FS Pajares Ave (Jct. Sabate St - Mercedes St) Western Side",
+        "code": "DRRMF20 - 1000 - 2 - b8",
+        "location": null,
+        "cost": 1151379.31,
+        "contractor": {
+            "data": {
+                "id": "19",
+                "attributes": {
+                    "name": "Jenrich Construction",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "3",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 1200000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2020-05-25",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "469",
+    "attributes": {
+        "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along FS Pajares Ave (Jct. Mercedes St - Salazar St) Western Side",
+        "code": "DRRMF20 - 1000 - 2 - b9",
+        "location": null,
+        "cost": 1921785.93,
+        "contractor": {
+            "data": {
+                "id": "5",
+                "attributes": {
+                    "name": "MOLROW CONSTRUCTION",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "3",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 2000000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2020-05-27",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "470",
+    "attributes": {
+        "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along FS Pajares Ave (Jct. Sanson St - Cabrera St) Western Side",
+        "code": "DRRMF20 - 1000 - 2 - b10",
+        "location": null,
+        "cost": 1108704.73,
+        "contractor": {
+            "data": {
+                "id": "36",
+                "attributes": {
+                    "name": "CDTech Builders",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "3",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 1500000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2020-07-20",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "471",
+    "attributes": {
+        "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along FS Pajares Ave (Jct. Rizal Ave. - R. Magsaysay St) Western Side",
+        "code": "DRRMF20 - 1000 - 2 - b11",
+        "location": null,
+        "cost": 1330893.38,
+        "contractor": {
+            "data": {
+                "id": "1",
+                "attributes": {
+                    "name": "CTG Construction",
+                    "street_purok": "Purok 1"
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "3",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 1380000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2020-05-26",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "472",
+    "attributes": {
+        "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along FS Pajares Ave (Jct. Sanson St. - Rizal Ave) Eastern Side",
+        "code": "DRRMF20 - 1000 - 2 - b12",
+        "location": "[]",
+        "cost": 2319214.72,
+        "contractor": {
+            "data": {
+                "id": "24",
+                "attributes": {
+                    "name": "MG Construction",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": "[]",
+        "prop_fund": "3",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": "[]",
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 2330000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2020-06-03",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "473",
+    "attributes": {
+        "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along FS Pajares Ave (Jct. Jamisola St. - Dablo St) Eastern Side",
+        "code": "DRRMF20 - 1000 - 2 - b13",
+        "location": null,
+        "cost": 2890426,
+        "contractor": {
+            "data": {
+                "id": "10",
+                "attributes": {
+                    "name": "RSQ Construction",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "3",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 3000000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2020-06-23",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "474",
+    "attributes": {
+        "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along FS Pajares Ave (Jct. Dablo St. - Boulevard) Eastern Side",
+        "code": "DRRMF20 - 1000 - 2 - b14",
+        "location": null,
+        "cost": 1570902.7,
+        "contractor": {
+            "data": {
+                "id": "37",
+                "attributes": {
+                    "name": "ILLANA Bay Construction",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "3",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 1630000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2020-05-27",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+    "id": "475",
+    "attributes": {
+        "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along FS Pajares Ave (Jct. Dablo St. - Boulevard) Western Side",
+        "code": "DRRMF20 - 1000 - 2 - b15",
+        "location": null,
+        "cost": 1576399.07,
+        "contractor": {
+            "data": {
+                "id": "3",
+                "attributes": {
+                    "name": "GAF TRADING & CONST",
+                    "street_purok": null
+                }
+            }
+        },
+        "duration": null,
+        "adjusted": null,
+        "total": null,
+        "weight": null,
+        "prop_sdg": null,
+        "prop_fund": "3",
+        "prop_type": null,
+        "prop_category": null,
+        "prop_sector": null,
+        "prop_assign": null,
+        "accom_total": 0,
+        "accom_value": null,
+        "accom_date": null,
+        "accom_elapse": null,
+        "accom_slippage": null,
+        "accom_period": null,
+        "accom_todate": null,
+        "accom_qty": null,
+        "accom_amt": null,
+        "date": null,
+        "status": "CREATED",
+        "start": null,
+        "target": null,
+        "office": "Engineer's Office",
+        "assigned": null,
+        "appropriation": 1630000,
+        "abc": 0,
+        "status_id": {
+            "data": null
+        },
+        "remarks": null,
+        "entry_type": "IMPLEMENTED",
+        "bid_date": "2020-07-15",
+        "year": 2020,
+        "abc_published": null,
+        "prop_takers": null,
+        "prop_infra": null,
+        "time_extension": null
+    }
+}), db_connection).await
+        ];
+
+        projects::Entity::insert_many(make_add).exec(db_connection).await.unwrap();
+
+        Ok(())
+    }
+}
