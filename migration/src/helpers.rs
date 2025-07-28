@@ -163,7 +163,12 @@ pub async fn convert_projects_into_active_model_v2<'c>(
         },
         project_sof_id: {
             let prop_fund = attributes["prop_fund"].as_str().and_then(|v| v.parse::<i32>().ok());
-            Set(prop_fund)
+
+            if prop_fund.is_some_and(|v| v.gt(&10)) {
+                Set(None)
+            } else {
+                Set(prop_fund)
+            }
         },
         project_incharge_id: {
             let prop_assign = attributes["prop_assign"].as_str().and_then(|v| v.parse::<i32>().ok());
