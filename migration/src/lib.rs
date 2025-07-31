@@ -49,6 +49,12 @@ mod m20250728_111330_seed_100_projects_data;
 mod m20250728_113346_seed_100_projects_data;
 mod m20250728_121453_seed_100_projects_data;
 mod m20250728_134210_seed_100_projects_data;
+mod m20250731_081912_seed_100_projects_data;
+mod m20250731_085352_seed_100_projects_data;
+mod m20250731_175020_seed_100_projects_data;
+mod m20250731_180424_seed_100_projects_data;
+mod m20250731_182748_seed_100_projects_data;
+mod m20250731_184429_seed_100_projects_data;
 
 #[async_trait::async_trait]
 impl MigratorTrait for Migrator {
@@ -97,6 +103,12 @@ impl MigratorTrait for Migrator {
             Box::new(m20250728_113346_seed_100_projects_data::Migration),
             Box::new(m20250728_121453_seed_100_projects_data::Migration),
             Box::new(m20250728_134210_seed_100_projects_data::Migration),
+            Box::new(m20250731_081912_seed_100_projects_data::Migration),
+            Box::new(m20250731_085352_seed_100_projects_data::Migration),
+            Box::new(m20250731_175020_seed_100_projects_data::Migration),
+            Box::new(m20250731_180424_seed_100_projects_data::Migration),
+            Box::new(m20250731_182748_seed_100_projects_data::Migration),
+            Box::new(m20250731_184429_seed_100_projects_data::Migration),
         ]
     }
 }

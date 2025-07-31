@@ -1,0 +1,3844 @@
+use entity::projects;
+use sea_orm::EntityTrait;
+use sea_orm_migration::prelude::*;
+use serde_json::json;
+
+use crate::helpers::convert_projects_into_active_model_v2;
+
+#[derive(DeriveMigrationName)]
+pub struct Migration;
+
+#[async_trait::async_trait]
+impl MigrationTrait for Migration {
+    async fn up(&self, manager: &SchemaManager) -> Result<(), DbErr> {
+        // Replace the sample below with your own migration scripts
+        let db_connection = manager.get_connection();
+
+        let make_add = [
+            convert_projects_into_active_model_v2(&json!({
+          "id": "1197",
+          "attributes": {
+            "name": "Rehab of River Control at Purok Kawayan, Barangay Balangasan\n",
+            "code": "1SAIP23 - 8000 - C1",
+            "location": "[\"1\"]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": "8",
+            "prop_category": "3",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 500000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1198",
+          "attributes": {
+            "name": "Slope Protection at Barangay Hall Site, Barangay Dumagoc\n",
+            "code": "1SAIP23 - 8000 - C2",
+            "location": "[]",
+            "cost": 971356.68,
+            "contractor": {
+              "data": {
+                "id": "54",
+                "attributes": {
+                  "name": " MDS CONSTRUCTION & ENTERPRISES",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": "8",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1000000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1199",
+          "attributes": {
+            "name": "Construction of Spillway at Purok Caimito, Barangay Lison Valley\n",
+            "code": "1SAIP23 - 8000 - C3",
+            "location": "[\"40\"]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": "22",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 3100000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+        convert_projects_into_active_model_v2(&json!({
+          "id": "1200",
+          "attributes": {
+            "name": "Repair of Spillwat at Purok Tres, Barangay Lourdes\n",
+            "code": "1SAIP23 - 8000 - C4",
+            "location": "[\"41\"]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": "22",
+            "prop_category": "3",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 800000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1201",
+          "attributes": {
+            "name": "Rehab of Shore Protection at Zone 3 (w/ RCCP Installation) Barangay Muricay\n",
+            "code": "1SAIP23 - 8000 - C5",
+            "location": "[\"46\"]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": "[]",
+            "prop_assign": null,
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 700000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1202",
+          "attributes": {
+            "name": "Expansion of Box Culvert and Road Reblocking at Zone 5, Barangay Tiguma\n",
+            "code": "1SAIP23 - 8000 - C6",
+            "location": "[\"18\"]",
+            "cost": 977297.79,
+            "contractor": {
+              "data": {
+                "id": "8",
+                "attributes": {
+                  "name": "JAMT Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": "23",
+            "prop_category": "4",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1000000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1203",
+          "attributes": {
+            "name": "Construction of River Control, Barangay Tulawas\n",
+            "code": "1SAIP23 - 8000 - C7",
+            "location": "[\"52\"]",
+            "cost": 483454,
+            "contractor": {
+              "data": {
+                "id": "19",
+                "attributes": {
+                  "name": "Jenrich Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 70,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": "8",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2023-08-18",
+            "target": "2023-10-27",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 500000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "100% physically completed based on approved technical plans & specifications\n",
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "CAPT. BABANTA",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1204",
+          "attributes": {
+            "name": "Construction of Drainage from Purok Kawayan & Purok Romblon Barangay Balangasan\n",
+            "code": "1SAIP23-8000-D1",
+            "location": "[\"1\"]",
+            "cost": 967384.59,
+            "contractor": {
+              "data": {
+                "id": "12",
+                "attributes": {
+                  "name": "LC Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 0,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": "7",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1000000,
+            "abc": 967384.59,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "Not yet started,\nWITH SITE PROBLEM",
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1205",
+          "attributes": {
+            "name": " Construction of Sidewalk Underground Drainage Along Cabrera Street (Jct Aquino St - Salera St) Barangay Gatas",
+            "code": "1SAIL23-8000-D2",
+            "location": "[\"7\"]",
+            "cost": 1955300.01,
+            "contractor": {
+              "data": {
+                "id": "55",
+                "attributes": {
+                  "name": " SEVERS CONSTRUCTION & SUPPLIES & REALTY DEVELOPMENT",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 120,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": "7",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2024-03-20",
+            "target": "2024-07-18",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 2000000,
+            "abc": 1957096.79,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "\"* 100% physically completed as per approved technical plans & specifications\n* with time extension as per approved suspension order\n* Adjusted Target Date of Completion: August 19, 2024\n\"\n\n",
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "CAPT. MAGO",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1206",
+          "attributes": {
+            "name": "Construction of Sidewalk Along Urro Street (Jct Aquino St - Datoc St) Southern Side, Barangay Gatas\n",
+            "code": "1SAIP23 - 8000 - D3",
+            "location": "[\"7\"]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": "7",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 500000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1207",
+          "attributes": {
+            "name": " Construction of Sidewalk Underground Drainage After San Pedro Bridge, (Eastern Side) Barangay Kawit",
+            "code": "1SAIL23-8000-D4",
+            "location": "[\"8\"]",
+            "cost": 2973601.29,
+            "contractor": {
+              "data": {
+                "id": "5",
+                "attributes": {
+                  "name": "MOLROW CONSTRUCTION",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 130,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": "7",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2024-01-29",
+            "target": "2024-06-07",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 3000000,
+            "abc": 2924852.88,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "\"* 100% physically completed as per approved technical plans & specifications\n* with time extension as per approved suspension order\n* Adjusted Target Date of Completion: August 19, 2024\n\"\n\n",
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "CAPT. DIMASAR",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1208",
+          "attributes": {
+            "name": "Construction of Underground Drainage w/Sidewalk Along FS Pajares Ave. Fronting Barangay Hall (Jct Sabate Leading to Rotunda), Barangay San Jose\n",
+            "code": "1SAIP23 - 8000 - D5",
+            "location": "[\"12\"]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": "7",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 70,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1000000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1209",
+          "attributes": {
+            "name": "Construction of Sidewalk w/ Underground Drainage Along Alano St (Jct R. Magsaysay - Dablo St) Northern Side, Barangay Santiago\n",
+            "code": "1SAIP23-8000-D6",
+            "location": "[\"16\"]",
+            "cost": 1928535.75,
+            "contractor": {
+              "data": {
+                "id": "30",
+                "attributes": {
+                  "name": "M&L Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": "7",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 81,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 2000000,
+            "abc": 1928535.75,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "NON-MOVING  due to road right of way problem( at TAMARAW Building)\n",
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+        convert_projects_into_active_model_v2(&json!({
+          "id": "1210",
+          "attributes": {
+            "name": "Improvement of Drainage System at Prk Aguinaldo, Sto. Nino\n",
+            "code": "1SAIP23 - 8000 - D7",
+            "location": "[]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": "[]",
+            "prop_assign": null,
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 500000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1211",
+          "attributes": {
+            "name": "Improvement of Drainage System at DA Road, Prk Magsaysay, Sto. Nino\n",
+            "code": "1SAIP23 - 8000 - D8",
+            "location": "[]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": "[]",
+            "prop_assign": null,
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1000000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1212",
+          "attributes": {
+            "name": "Construction of Sidewalk w/ Underground Drainage at Tawagan Sur (Along National Highway) Bothsides, Tawagan Sur\n",
+            "code": "1SAIP23 - 8000 - D9",
+            "location": "[]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": "[]",
+            "prop_assign": null,
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 3000000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1213",
+          "attributes": {
+            "name": "Rehab of Water System and Construction of Water Tank, Barangay Balintawak\n",
+            "code": "1SAIP23 - 8000 - E1",
+            "location": "[\"2\"]",
+            "cost": 1453991.39,
+            "contractor": {
+              "data": {
+                "id": "1",
+                "attributes": {
+                  "name": "CTG Construction",
+                  "street_purok": "Purok 1"
+                }
+              }
+            },
+            "duration": 90,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": "9",
+            "prop_category": "3",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2023-07-24",
+            "target": "2023-10-22",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1500000,
+            "abc": 1454910.8,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "*100% physically completed based on approved technical plans & specifications\n* DATE COMPLETED: 10/12/2023",
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "KAG CALMA",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1214",
+          "attributes": {
+            "name": "Construction of Water Tank w/ Pipe Distribution, Barangay Lapedian\n",
+            "code": "1SAIP23 - 8000 - E2",
+            "location": "[\"38\"]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": "9",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 800000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1215",
+          "attributes": {
+            "name": "Construction of Reservoir and Replacement of One Unit (2,000 lit) Stainless Tank, Barangay Poloyagan",
+            "code": "1SAIP23-8000-E3",
+            "location": "[\"49\"]",
+            "cost": 1076988.81,
+            "contractor": {
+              "data": {
+                "id": "1",
+                "attributes": {
+                  "name": "CTG Construction",
+                  "street_purok": "Purok 1"
+                }
+              }
+            },
+            "duration": 90,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": "9",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2023-10-09",
+            "target": "2024-01-07",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1800000,
+            "abc": 1077688.72,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "\"100% physically completed based on approved technical plans & specifications\nDate Completed: dec. 20, 2023\"\n",
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1216",
+          "attributes": {
+            "name": "Construction of Pathway and Open Drainage Leading to Elementary School Site, Barangay Dumagoc\n",
+            "code": "1SAIP23 - 8000 - F1",
+            "location": "[\"6\"]",
+            "cost": 483456.79,
+            "contractor": {
+              "data": {
+                "id": "30",
+                "attributes": {
+                  "name": "M&L Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": "1",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 500000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1217",
+          "attributes": {
+            "name": "Construction of Dumagoc Port, Barangay Dumagoc\n",
+            "code": "1SAIP23 - 8000 - F2",
+            "location": "[]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": "[]",
+            "prop_assign": null,
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1000000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1218",
+          "attributes": {
+            "name": "Construction of Solar Dryer at Prk Sili, Barangay Kahayagan\n",
+            "code": "1SAIP23-8000-F3",
+            "location": "[\"34\"]",
+            "cost": 290457.29,
+            "contractor": {
+              "data": {
+                "id": "12",
+                "attributes": {
+                  "name": "LC Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 45,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": "6",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2023-09-11",
+            "target": "2023-10-26",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 300000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "\"* 100% physically completed base on approved technical plans & specifications\n* w/ time extension as per approved Suspension Order No. 1\n* Adjusted Targe Date of Completion: Dec. 10, 2023\"\n* Actual Date Complete: 12/8/2023",
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "PARAGUYA REMIL",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1219",
+          "attributes": {
+            "name": "Rehab of Irrigation Canal (Riprap & Grouted Riprap) Materials Only, Barangay La Suerte\n",
+            "code": "1SAIP23 - 8000 - F4",
+            "location": "[]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": "[]",
+            "prop_assign": null,
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 200000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+        convert_projects_into_active_model_v2(&json!({
+          "id": "1220",
+          "attributes": {
+            "name": "Concreting of Pathway (1.0m Width), Barangay Pedulunan\n",
+            "code": "1SAIP23 - 8000 - F5",
+            "location": "[]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": "[]",
+            "prop_assign": null,
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 200000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1221",
+          "attributes": {
+            "name": "Construction of Pathway at Purok Lupoy to Purok Lapu-Lapu, White Beach\n",
+            "code": "1SAIP23 - 8000 - F6",
+            "location": "[]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "5",
+            "prop_type": null,
+            "prop_category": null,
+            "prop_sector": "[]",
+            "prop_assign": null,
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 800000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "IMPLEMENTED",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1222",
+          "attributes": {
+            "name": "Completion of Police Outpost at Boulevard",
+            "code": "RF22-1000-1-2A-1j",
+            "location": "[]",
+            "cost": 289999.97,
+            "contractor": {
+              "data": {
+                "id": "1",
+                "attributes": {
+                  "name": "CTG Construction",
+                  "street_purok": "Purok 1"
+                }
+              }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "1",
+            "prop_type": "14",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 300000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "",
+            "entry_type": "IMPLEMENTED",
+            "bid_date": "2023-01-23",
+            "year": 2022,
+            "abc_published": null,
+            "prop_takers": null,
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1223",
+          "attributes": {
+            "name": "Improvement of Multi-purpose Hall, Brgy. Tiguma",
+            "code": "R-71-S-2020",
+            "location": "[\"18\"]",
+            "cost": null,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "18",
+            "prop_type": "5",
+            "prop_category": "4",
+            "prop_sector": "[]",
+            "prop_assign": "3",
+            "accom_total": null,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 100000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2020,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1224",
+          "attributes": {
+            "name": "Improvement of Water System at Brgy. Lison Valley",
+            "code": "RS#001-/202316",
+            "location": "[\"40\"]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "18",
+            "prop_type": "9",
+            "prop_category": "4",
+            "prop_sector": "[]",
+            "prop_assign": "3",
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 831740,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1226",
+          "attributes": {
+            "name": "Construction of Senior Citizens Bldg. (Completion)",
+            "code": "SCWP23 - 3000 - A4",
+            "location": "[]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": null,
+            "prop_type": "",
+            "prop_category": "",
+            "prop_sector": "[]",
+            "prop_assign": "",
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 0,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1227",
+          "attributes": {
+            "name": "Conc of Road Towards Prk Daisy to Cadena de Amor Leading to Kagawasan (1/2 Lane), Barangay Alegria",
+            "code": "1SAIL23 - 8000 - A1",
+            "location": "[]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": null,
+            "prop_type": "",
+            "prop_category": null,
+            "prop_sector": "[]",
+            "prop_assign": null,
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 0,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1229",
+          "attributes": {
+            "name": "Concreting of Road at Purok 3, Barangay Manga",
+            "code": "1SAIL23-8000-A51",
+            "location": "[\"45\"]",
+            "cost": 483669.4,
+            "contractor": {
+              "data": {
+                "id": "19",
+                "attributes": {
+                  "name": "Jenrich Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 19584,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "19",
+            "prop_type": "1",
+            "prop_category": "2",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "Invalid date",
+            "target": "2023-08-14",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 500000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "\"* 100% physically completed base on approved technical plans & specifications\n* w/ time extension as per approved Suspension Order No. 1\n* Adjusted Targe Date of Completion: Dec. 23, 2023\"\n* Actual Completion date: 12/23/2023",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "CAPT. BUSTAMANTE",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+        convert_projects_into_active_model_v2(&json!({
+          "id": "1230",
+          "attributes": {
+            "name": "Conc of Road Towards Prk Daisy to Cadena de Amor Leading to Kagawasan (1/2 Lane), Barangay Alegria",
+            "code": "Barangay Fund",
+            "location": "[\"19\"]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "18",
+            "prop_type": "1",
+            "prop_category": "2",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 90,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 300000,
+            "abc": null,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1231",
+          "attributes": {
+            "name": "Road Concreting of Alley at Purok Lower LOmboy, Brgy. Tuburan",
+            "code": "Barangay Fund",
+            "location": "[]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "18",
+            "prop_type": "1",
+            "prop_category": "2",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 0,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1232",
+          "attributes": {
+            "name": "Road Concreting of Alley @ Purok Nangka at Barangay Tuburan",
+            "code": "Barangay Fund",
+            "location": "[\"19\"]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "18",
+            "prop_type": "1",
+            "prop_category": "2",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 0,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1233",
+          "attributes": {
+            "name": "Construction of Open Drainage @ Purok Marang, Brgy. Tuburan",
+            "code": "Barangay Fund",
+            "location": "[\"19\"]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "18",
+            "prop_type": "7",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 44,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 0,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1236",
+          "attributes": {
+            "name": "Construction of Sidewalk and Underground Drainage Along Sagun St. Near Lawiswis Drive (Both sides)",
+            "code": "2SAIP23-8000-C1A3",
+            "location": "[\"11\"]",
+            "cost": 3391769.49,
+            "contractor": {
+              "data": {
+                "id": "1",
+                "attributes": {
+                  "name": "CTG Construction",
+                  "street_purok": "Purok 1"
+                }
+              }
+            },
+            "duration": 140,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "6",
+            "prop_type": "7",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2023-11-06",
+            "target": "2024-03-25",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 3500000,
+            "abc": 3391769.49,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "\"*100% physically completed based on approved technical plans & specifications with time extension as per approved suspension order\n* Adjusted Targe Date of Completion:  May 24, 2024\n* Actual Completion Date: May 24, 2024\"\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "STAR ARAO",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1237",
+          "attributes": {
+            "name": "Repair of Ceiling of 9-Classrooms of PCPS & Electrical Installation, Barangay San Jose",
+            "code": "SEF",
+            "location": "[\"12\"]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "11",
+            "prop_type": "24",
+            "prop_category": "3",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 95,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 2500000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": null,
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1239",
+          "attributes": {
+            "name": "Completion of Regional Center Welcome Arch",
+            "code": "DF22-8000-B5-b",
+            "location": "[\"2\"]",
+            "cost": 622296.17,
+            "contractor": {
+              "data": {
+                "id": "1",
+                "attributes": {
+                  "name": "CTG Construction",
+                  "street_purok": "Purok 1"
+                }
+              }
+            },
+            "duration": 75,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "2",
+            "prop_type": "26",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2023-04-04",
+            "target": "2023-06-18",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 650000,
+            "abc": 622595.34,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "\"100% physically completed based on approved plans & specification\n* w/ time extension as per approved suspension order\n* Adjusted target date of completion: August 19,2024\"\n* Actual Date Completed: 9/19/2024\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2022,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+        convert_projects_into_active_model_v2(&json!({
+          "id": "1243",
+          "attributes": {
+            "name": " Construction of Sidewalk & Underground Drainage Along Sagun St. (Jct Datoc St - Sagun Bridge) Northern Side",
+            "code": "DRRMF21-1000-2-a12",
+            "location": "[]",
+            "cost": 1920555.84,
+            "contractor": {
+              "data": {
+                "id": "26",
+                "attributes": {
+                  "name": "ZMS Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 90,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "3",
+            "prop_type": "7",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2021-09-10",
+            "target": "2021-12-09",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 2000000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "100% physically completed based on approved technical plans & specifications\n\nActual Completion Date: 4/22/2022",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2021,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1246",
+          "attributes": {
+            "name": "Construction of DOJ-PPA Regional Office IX Building, Regional Center Site, Balintawak",
+            "code": "NATIONAL FUND",
+            "location": "[\"2\"]",
+            "cost": 29374326.34,
+            "contractor": {
+              "data": {
+                "id": "10",
+                "attributes": {
+                  "name": "RSQ Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 270,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "21",
+            "prop_type": "26",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2022-03-24",
+            "target": "2023-12-18",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 30000000,
+            "abc": 28383990.63,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "\"* 100% physically completed based on approved technical plans & specifications\n* w/ time extension due to VO No. 1 \n*  adjusted Target date of Completion: Dec. 24, 2023\"\n* DATE COMPLETED: 12/23/2023\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2021,
+            "abc_published": null,
+            "prop_takers": "ENGR. RELAMPAGOS",
+            "prop_infra": null,
+            "time_extension": 364
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1247",
+          "attributes": {
+            "name": "Repair of Classrooms at Danlugan E/S, Alegria E/S, Alegria E/S, Tulangan E/S, Kahayagan E/S, Pagadian City NHS, Dominador Sr. E/S, Pagadian City (SEF)",
+            "code": "SEF",
+            "location": "[\"20\",\"27\",\"34\",\"51\"]",
+            "cost": 649203.11,
+            "contractor": {
+              "data": {
+                "id": "12",
+                "attributes": {
+                  "name": "LC Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 180,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "23",
+            "prop_type": "26",
+            "prop_category": "3",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2023-09-25",
+            "target": "2024-03-23",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 650000,
+            "abc": 635154.3,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "*100%  physically completed as per approved technical plans and specifications\n* Actual Completion Date: 1/30/2024",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "PARAGUYA REMIL",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1248",
+          "attributes": {
+            "name": "Improvement of ECO - Tourism Park, Barangay Manga",
+            "code": "2022-LGSF",
+            "location": "[\"45\"]",
+            "cost": 4798758.42,
+            "contractor": {
+              "data": {
+                "id": "1",
+                "attributes": {
+                  "name": "CTG Construction",
+                  "street_purok": "Purok 1"
+                }
+              }
+            },
+            "duration": 90,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "9",
+            "prop_type": "26",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2023-06-27",
+            "target": "2023-11-09",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 5000000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "\"* 100% physically completed based on approved technical plans & specifications\n\n* w/ time extension as per approved SO No.1\n\n* Adjusted Targe Date of Completion: Dec. 27, 2023\"\n\n* Actual Date Completed: 12/11/2023\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2022,
+            "abc_published": null,
+            "prop_takers": "LANCE CO",
+            "prop_infra": null,
+            "time_extension": 45
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1249",
+          "attributes": {
+            "name": "Repair/Renovation of Bogo Barangay Hall, Barangay Bogo",
+            "code": "1SAIL23-8000-B3",
+            "location": "[\"22\"]",
+            "cost": 799617.43,
+            "contractor": {
+              "data": {
+                "id": "19",
+                "attributes": {
+                  "name": "Jenrich Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 100,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "19",
+            "prop_type": "26",
+            "prop_category": "3",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2023-09-25",
+            "target": "2024-01-03",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 800000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "100% physically completed based on approved technical plans & specifications\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "\"ANGGA DABLO 09176257115\"",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+        convert_projects_into_active_model_v2(&json!({
+          "id": "1250",
+          "attributes": {
+            "name": " Concreting of Road at Prk Talong to Prk Balatong Uno (Phase III), Barangay Kahayagan",
+            "code": "1SAIL23-8000-A27",
+            "location": "[\"34\"]",
+            "cost": 967543.6,
+            "contractor": {
+              "data": {
+                "id": "1",
+                "attributes": {
+                  "name": "CTG Construction",
+                  "street_purok": "Purok 1"
+                }
+              }
+            },
+            "duration": 45,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "19",
+            "prop_type": "1",
+            "prop_category": "2",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2023-09-04",
+            "target": "2023-10-19",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1000000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "* 100% physically completed base on approved technical plans & specifications\n\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "ARIEL LIM",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1251",
+          "attributes": {
+            "name": "Repair/Rehab. of 3-Classroom School Building ( Buenavista ES), Brgy. Buenavista",
+            "code": "SEF",
+            "location": "[\"4\"]",
+            "cost": 1162555.1,
+            "contractor": {
+              "data": {
+                "id": "19",
+                "attributes": {
+                  "name": "Jenrich Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 45,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "23",
+            "prop_type": "24",
+            "prop_category": "4",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2023-10-30",
+            "target": "2023-12-14",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1200000,
+            "abc": 1163145.4,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "100% physically completed based on approved technical plans & specifications\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1252",
+          "attributes": {
+            "name": "\"Construction of Concrete Fence & Gates of Balintawak E/S and Fence & Gates, Balintawak E/S, Barangay Balintawak  \"\"SEF (SEF2019 :1-07-04-020) SEF ( SEF2018: 1-07-04-020)\"\"\"",
+            "code": "\"SEF (SEF2019 :1-07-04-020) SEF ( SEF2018: 1-07-04-020)\"",
+            "location": "[\"2\"]",
+            "cost": 1370427.76,
+            "contractor": {
+              "data": {
+                "id": "1",
+                "attributes": {
+                  "name": "CTG Construction",
+                  "street_purok": "Purok 1"
+                }
+              }
+            },
+            "duration": 100,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "23",
+            "prop_type": "27",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2023-12-04",
+            "target": "2024-03-13",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1400000,
+            "abc": 1371429.11,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "\"* 100% physically completed based on approved technical plans & specifications\n* Completion Date: 1/29/2024\"\n\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1254",
+          "attributes": {
+            "name": "Construction of Gymnasium at Nazareth Area, Barangay Buenavista",
+            "code": "1SAIL23-8000-B5",
+            "location": "[\"4\"]",
+            "cost": 1743655.8,
+            "contractor": {
+              "data": {
+                "id": "19",
+                "attributes": {
+                  "name": "Jenrich Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 120,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "19",
+            "prop_type": "18",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2023-09-25",
+            "target": "2024-01-23",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1800000,
+            "abc": 1743655.8,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "\"* 100% physically completed based on approved plans & specifications\n* with time extension as per approved   SUSPENSION ORDER  due to variation order\n* Adjusted Target date of Completion: March 15, 2024\n* Actual Completion Date:March 15, 2024\"\n\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "RIC ALAJENO",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1255",
+          "attributes": {
+            "name": "Construction  of Drainage Including Widening of Road at JCT Dao and Diversion Road, Dao",
+            "code": "DF22-8000-B2-k",
+            "location": "[\"5\"]",
+            "cost": 4835540.11,
+            "contractor": {
+              "data": {
+                "id": "39",
+                "attributes": {
+                  "name": "Diaka Kunstrukt",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 180,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "2",
+            "prop_type": "7",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 72,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2023-03-10",
+            "target": "2023-09-06",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 5000000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "\"On-going implementation of the project\n* w/ time extension as per approved Suspension Order No. 1\n* Adjusted Targe Date of Completion: FEB. 10, 2024\"\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2022,
+            "abc_published": null,
+            "prop_takers": "TOTO LU",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1256",
+          "attributes": {
+            "name": "Construction of Covered Court at Dao ES",
+            "code": "SEF-2023 1-07-04-010",
+            "location": "[\"5\"]",
+            "cost": 0,
+            "contractor": {
+              "data": {
+                "id": "36",
+                "attributes": {
+                  "name": "CDTech Builders",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 140,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "23",
+            "prop_type": "16",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 70,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2023-01-03",
+            "target": "2023-05-23",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 4600000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "On-going implementation of the project\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "GLAVYS GAVENIA",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1257",
+          "attributes": {
+            "name": "Const. of Sidewalk and Underground Drainage along B.F Arao Ave. ( near IBT Section)",
+            "code": "2SAIP23-8000-C1A7",
+            "location": "[]",
+            "cost": 2923737.5,
+            "contractor": {
+              "data": {
+                "id": "19",
+                "attributes": {
+                  "name": "Jenrich Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 140,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "6",
+            "prop_type": "7",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 69,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2023-12-10",
+            "target": "2024-04-28",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 3000000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "On-going implementation of the project with \n69% PHYSICAL ACCOMPLISHMENT AS OF mARCH 8, 2024",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "\" CECIL TURA 09398245675\"",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1258",
+          "attributes": {
+            "name": "City Counterpart for D.A (City Slaughterhouse & Trading Center) per res. 2017-0266",
+            "code": "SIPO2-K17-DF-C3",
+            "location": "[\"10\"]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "26",
+            "prop_type": "26",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 65,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 9208738,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "On-going",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "VIC LINGATING",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1259",
+          "attributes": {
+            "name": "Rehab and Restoration of Existing Barangay Road with Construction of Open Drainage and Slope Protection at Barangay Baloyboan",
+            "code": "1SAIL22-8000-A1a",
+            "location": "[\"21\"]",
+            "cost": 2199990.25,
+            "contractor": {
+              "data": {
+                "id": "1",
+                "attributes": {
+                  "name": "CTG Construction",
+                  "street_purok": "Purok 1"
+                }
+              }
+            },
+            "duration": 60,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "22",
+            "prop_type": "30",
+            "prop_category": "3",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2023-03-12",
+            "target": "2023-05-11",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 2300000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "\"* 100% physically completed based on approved technical plans & specifications\n* w/ time extension due to VO No. 1\n* Adjusted Target Date of Completion: Sept. 25, 2023\"\n* Actual Date Completed: 9/25/2023",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2022,
+            "abc_published": null,
+            "prop_takers": "CTG-HERME GUINEA",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+        convert_projects_into_active_model_v2(&json!({
+          "id": "1260",
+          "attributes": {
+            "name": "REPAIR OF CLASSROOM AT ZAMBOANGA DEL SUR SCHOOL OF ARTS AND TRADES - SEF",
+            "code": "SEF",
+            "location": "[]",
+            "cost": 203077.87,
+            "contractor": {
+              "data": {
+                "id": "19",
+                "attributes": {
+                  "name": "Jenrich Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 45,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "23",
+            "prop_type": "24",
+            "prop_category": "3",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2021-09-20",
+            "target": "2021-11-04",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 210000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "* 100%  physically completed based on approved technical plans & specifications\n* w/ adjusted target date of completion: April 4, 2022\"\n* Actual Completion Date: 3/16/2022\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2021,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1261",
+          "attributes": {
+            "name": "CONSTRUCTION & IMPROVEMENT OF KAWIT ELEMENTARY SCHOOL COVERED COURT",
+            "code": "SEF",
+            "location": "[\"8\"]",
+            "cost": 332135.02,
+            "contractor": {
+              "data": {
+                "id": "5",
+                "attributes": {
+                  "name": "MOLROW CONSTRUCTION",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 60,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "23",
+            "prop_type": "16",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2022-03-04",
+            "target": "2022-05-03",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 348000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "100%  physically completed based on approved technical plans & specifications\n\nActual Completion Date: 4/20/2022\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2022,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1263",
+          "attributes": {
+            "name": "Concreting of Road and Drainage System leading to PACIGEA Sites and services",
+            "code": "DF24-8000-A3-d",
+            "location": "[\"4\"]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "2",
+            "prop_type": "1",
+            "prop_category": "2",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1500000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": " 100% physically completed base on approved technical plans & specifications\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2024,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1264",
+          "attributes": {
+            "name": "Const. of Retaining Wall Reinforcement Side Portion of 2-Storey 6-Classroom Building, Barangay Tulawas",
+            "code": "SEF",
+            "location": "[\"52\"]",
+            "cost": 682785.57,
+            "contractor": {
+              "data": {
+                "id": "1",
+                "attributes": {
+                  "name": "CTG Construction",
+                  "street_purok": "Purok 1"
+                }
+              }
+            },
+            "duration": 75,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "23",
+            "prop_type": "",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2024-02-08",
+            "target": "2024-04-23",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 700000,
+            "abc": 683262.79,
+            "status_id": {
+              "data": null
+            },
+            "remarks": " 100% physically completed base on approved technical plans & specifications\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2024,
+            "abc_published": null,
+            "prop_takers": "HERMINIA GUINEA",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1265",
+          "attributes": {
+            "name": "Improvement of Pagadian city Fish Port",
+            "code": "RF19-8000-3A-6",
+            "location": "[\"13\"]",
+            "cost": 1624997.79,
+            "contractor": {
+              "data": {
+                "id": "13",
+                "attributes": {
+                  "name": "Glenson Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 120,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "1",
+            "prop_type": "3",
+            "prop_category": "4",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 88,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2024-01-08",
+            "target": "2024-05-07",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1660000,
+            "abc": 1626795.46,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "88% physical accomplishment as of Aug. 2, 2024",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2019,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1266",
+          "attributes": {
+            "name": "Widening and Improvement of Road at Pagadian Beach Resort , Poloyagan",
+            "code": "DF22-8000-B1f",
+            "location": "[\"49\"]",
+            "cost": 2859017.19,
+            "contractor": {
+              "data": {
+                "id": "17",
+                "attributes": {
+                  "name": "Victer Construction & Devt, OPC",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 120,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "2",
+            "prop_type": "32",
+            "prop_category": "4",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2023-08-21",
+            "target": "2023-12-19",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 3000000,
+            "abc": 2859017.19,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "\"100% physically completed based on approved technical plans & specifications\n*  w/ time extension as per approved Suspension Order \n*Adjusted Target date of Completion: March 22, 2024\n* Actual Date Completion: March 22, 2024\"\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2022,
+            "abc_published": null,
+            "prop_takers": "VIC2X CANETE",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1267",
+          "attributes": {
+            "name": "Construction of Rotunda Glass Gym Phase 2",
+            "code": "2SAIP23-8000-C1B4",
+            "location": "[\"5\"]",
+            "cost": 7655027.17,
+            "contractor": {
+              "data": {
+                "id": "53",
+                "attributes": {
+                  "name": "BADSBRO",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 90,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "6",
+            "prop_type": "26",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 12,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 8000000,
+            "abc": 7655027.17,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "waiting for the completion of structural works (glass works )\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "TOTO LU",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1268",
+          "attributes": {
+            "name": "Construction of Agora Perimeter Building along Dablo St. (Phase II)",
+            "code": "DF24-8000-A1-f",
+            "location": "[\"14\"]",
+            "cost": 9763286.63,
+            "contractor": {
+              "data": {
+                "id": "31",
+                "attributes": {
+                  "name": "OG Santos Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 250,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "2",
+            "prop_type": "26",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 15,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2024-07-05",
+            "target": "2025-03-12",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 10000000,
+            "abc": 9782862.67,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "15% accomplishment as per report of project in-charge as of August 2, 2024",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2024,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1269",
+          "attributes": {
+            "name": "Construction of Road at Barangay Danlugan Connecting New Road to Barangay Kahayagan",
+            "code": "DF24-8000-A3-e",
+            "location": "[\"34\"]",
+            "cost": 388848.2,
+            "contractor": {
+              "data": {
+                "id": "8",
+                "attributes": {
+                  "name": "JAMT Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 90,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "2",
+            "prop_type": "1",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2024-04-18",
+            "target": "2024-07-17",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 400000,
+            "abc": 389348.2,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "\"100% physically completed based on approved technical plans & specifications\nDate Completed: 5/28/2024\"\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2024,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+        convert_projects_into_active_model_v2(&json!({
+          "id": "1270",
+          "attributes": {
+            "name": "Construction of Stalls at Rotunda",
+            "code": "2SAIP23-8000-C1B1",
+            "location": "[\"5\"]",
+            "cost": 1953120.93,
+            "contractor": {
+              "data": {
+                "id": "48",
+                "attributes": {
+                  "name": "AFS Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 150,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "6",
+            "prop_type": "26",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 95,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2024-02-12",
+            "target": "2024-07-11",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 2000000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "On-going implementation of the project\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1271",
+          "attributes": {
+            "name": "Concreting of Roads at White Beach(Phase IV)",
+            "code": "DF24-8000-A3-b",
+            "location": "[\"54\"]",
+            "cost": 974944.39,
+            "contractor": {
+              "data": {
+                "id": "1",
+                "attributes": {
+                  "name": "CTG Construction",
+                  "street_purok": "Purok 1"
+                }
+              }
+            },
+            "duration": 120,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "2",
+            "prop_type": "1",
+            "prop_category": "2",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 20,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1000000,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "On-going implementation of the project",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2024,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1272",
+          "attributes": {
+            "name": "New Construction of 2-CL at White Beach E/S (Phase 1) - SEF",
+            "code": "SEF-2021",
+            "location": "[]",
+            "cost": 0,
+            "contractor": {
+              "data": null
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "11",
+            "prop_type": "24",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 35,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1530190,
+            "abc": 0,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "On-going  implementation of the project\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2021,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1273",
+          "attributes": {
+            "name": "Construction of Bureau of Local Government and Finance Building (BLGF) Regional Center, Balintawak",
+            "code": "NATIONAL FUND",
+            "location": "[\"2\"]",
+            "cost": 26138203,
+            "contractor": {
+              "data": {
+                "id": "13",
+                "attributes": {
+                  "name": "Glenson Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 240,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "21",
+            "prop_type": "26",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2022-03-21",
+            "target": "2022-11-16",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 27000000,
+            "abc": 26168203.33,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "\"* 100% physically completed based on approved technical plans & specifications\n* w/ time extension as per approved Suspension Order No. 1 and Variation Order No. 1\n* Adjusted Target Completion Date: June 20, 2023\"\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2021,
+            "abc_published": null,
+            "prop_takers": "EDWIN DY & PATRICK WEE",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1274",
+          "attributes": {
+            "name": "Slope protection at BFP Office, Regional Center, Balintawak",
+            "code": "DF24-8000-A5-b",
+            "location": "[\"2\"]",
+            "cost": 775026.18,
+            "contractor": {
+              "data": {
+                "id": "36",
+                "attributes": {
+                  "name": "CDTech Builders",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 90,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "2",
+            "prop_type": "8",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2024-04-05",
+            "target": "2024-07-04",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 800000,
+            "abc": 776924.41,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "*100% physically completed based on approved technical plan & specifications\nDATE OMPLETED: 7/4/2024",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2024,
+            "abc_published": null,
+            "prop_takers": "CAPT. ESMAEL",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1275",
+          "attributes": {
+            "name": "Construction of Administration Building at Bagong Silang Dumpsite (Phase II)",
+            "code": "DF24-8000-A1-e",
+            "location": "[\"1\"]",
+            "cost": 1462754.4,
+            "contractor": {
+              "data": {
+                "id": "5",
+                "attributes": {
+                  "name": "MOLROW CONSTRUCTION",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 150,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "2",
+            "prop_type": "26",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2024-04-08",
+            "target": "2024-09-05",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 1500000,
+            "abc": 1463454.02,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "\"* 100% completed base on approved plans & specification \n* Actual Completion Date: June 28, 2024\"\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2024,
+            "abc_published": null,
+            "prop_takers": "SADAM DIMASAR",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1276",
+          "attributes": {
+            "name": "Slope Protection at Parole/DOJ Office, Regional Center, Balintawak",
+            "code": "DF24-8000-A5-a",
+            "location": "[\"2\"]",
+            "cost": 683791.88,
+            "contractor": {
+              "data": {
+                "id": "19",
+                "attributes": {
+                  "name": "Jenrich Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 120,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "2",
+            "prop_type": "8",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 96,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2024-07-29",
+            "target": "2024-11-26",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 700000,
+            "abc": 684691.95,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "On-going implementation of the project\n* 96% accomplishment as of Dec. 6, 2024\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2024,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1277",
+          "attributes": {
+            "name": "Embankment at Kawit Elementary School",
+            "code": "SEF-2023,1-07-04-010",
+            "location": "[\"8\"]",
+            "cost": 2916491.41,
+            "contractor": {
+              "data": {
+                "id": "1",
+                "attributes": {
+                  "name": "CTG Construction",
+                  "street_purok": "Purok 1"
+                }
+              }
+            },
+            "duration": 60,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "23",
+            "prop_type": "24",
+            "prop_category": "4",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2024-02-26",
+            "target": "2024-04-26",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 3000000,
+            "abc": 2918509.5,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "\"* 100% physically completed based on approved plans & specifications\n* Actual Completion Date:March 27,2024\"\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1278",
+          "attributes": {
+            "name": "Construction of Water Park Building/Interior Design/Landscaping (Completion)",
+            "code": "DF24-8000-A1-h",
+            "location": "[\"13\"]",
+            "cost": 9710339.12,
+            "contractor": {
+              "data": {
+                "id": "56",
+                "attributes": {
+                  "name": " SALUGVALLEY ENTERPRISES & DEVELOPMENT CORP.(SVDC)",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": null,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "2",
+            "prop_type": null,
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 0,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": null,
+            "target": null,
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 10000000,
+            "abc": 9759130.98,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "on-going",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2024,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await,
+convert_projects_into_active_model_v2(&json!({
+          "id": "1279",
+          "attributes": {
+            "name": "Const./Improvement of School Building at Balintawak ES, Brgy. Balintawak",
+            "code": "SEF-2023 1-07-04-020",
+            "location": "[\"2\"]",
+            "cost": 2445964.23,
+            "contractor": {
+              "data": {
+                "id": "30",
+                "attributes": {
+                  "name": "M&L Construction",
+                  "street_purok": null
+                }
+              }
+            },
+            "duration": 90,
+            "adjusted": null,
+            "total": null,
+            "weight": null,
+            "prop_sdg": "[]",
+            "prop_fund": "23",
+            "prop_type": "24",
+            "prop_category": "1",
+            "prop_sector": "[]",
+            "prop_assign": "2",
+            "accom_total": 100,
+            "accom_value": null,
+            "accom_date": null,
+            "accom_elapse": null,
+            "accom_slippage": null,
+            "accom_period": null,
+            "accom_todate": null,
+            "accom_qty": null,
+            "accom_amt": null,
+            "date": null,
+            "status": "CREATED",
+            "start": "2024-03-18",
+            "target": "2024-06-16",
+            "office": "Engineer's Office",
+            "assigned": null,
+            "appropriation": 2500000,
+            "abc": 2447662.74,
+            "status_id": {
+              "data": null
+            },
+            "remarks": "\"100% Physically completed based in approved plans & specifications with time extension as per approved suspension order\n* Adjusted Target Date of Completion: 6/21/2024\n* Actual Completion Date: 6/21/2024\"\n",
+            "entry_type": "PROJECT",
+            "bid_date": null,
+            "year": 2023,
+            "abc_published": null,
+            "prop_takers": "",
+            "prop_infra": null,
+            "time_extension": null
+          }
+        }), db_connection).await
+        ];
+
+        projects::Entity::insert_many(make_add).exec(db_connection).await.unwrap();
+
+        Ok(())
+    }
+}
