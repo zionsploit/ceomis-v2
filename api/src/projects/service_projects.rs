@@ -233,7 +233,7 @@ pub async fn get_projects_stats_overview(
     }
 
     let get_all_projects_count = projects::Entity::find()
-        .filter(projects::Column::IsDisposed.eq(false))
+        .filter(projects::Column::IsDisposed.is_null())
         .select_only()
         .expr_as(Expr::count(Expr::col(projects::Column::Id)), "total_projects")
         .expr_as(Func::sum(
@@ -262,7 +262,9 @@ pub async fn get_projects_stats_overview(
         ), "total_completed")
         .into_model::<ResponseProjectsOverview>().one(&db.db_connection).await.unwrap();
     
-    redis.stored_value(&serde_json::to_string(&get_all_projects_count).unwrap(), None).await.unwrap();
+    if get_all_projects_count.as_ref().is_some_and(|v: &ResponseProjectsOverview| v.total_projects.is_some_and(|tp| tp > 0)) {
+        redis.stored_value(&serde_json::to_string(&get_all_projects_count).unwrap(), None).await.unwrap();
+    }
 
     (StatusCode::OK, Json(get_all_projects_count))
 
