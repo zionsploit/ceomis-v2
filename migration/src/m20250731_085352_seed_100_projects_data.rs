@@ -18,6 +18,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
           "id": "787",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Water Tank including Pipe Installation, Barangay Poloyagan",
             "code": "DF23-8000-B4-b",
             "location": null,
@@ -68,6 +69,7 @@ impl MigrationTrait for Migration {
 convert_projects_into_active_model_v2(&json!({
           "id": "788",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Water Tank with Pipe Installation at Rotunda, Brgy. Dao",
             "code": "DF23-8000-B4-c",
             "location": null,
@@ -118,6 +120,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "789",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Maintenance of City/Barangay Roads & Bridges -Barangay",
             "code": "DF23-8000-B5-a",
             "location": null,
@@ -168,6 +171,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "790",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Maintenance of City/Barangay Roads & Bridges - City Roads/Alleys",
             "code": "DF23-8000-B5-b",
             "location": null,
@@ -218,6 +222,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "791",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Lalas Structures (Phase II)",
             "code": "DF23-8000-B6-a",
             "location": null,
@@ -268,6 +273,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "792",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Installation of Electrical System including Purchase of Solar Lights at the Regional Center, Brgy. Balintawak",
             "code": "DF23-8000-B6-b",
             "location": null,
@@ -318,6 +324,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "793",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Perimeter Fence at Police Outpost, Brgy. Danlugan",
             "code": "DF23-8000-B6-c",
             "location": null,
@@ -368,6 +375,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "795",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Sidewalk with Underground Drainage along Sabado St. (Jct Hofilena St. - Urro St.) Western Side, San Francisco",
             "code": "2SAIP23-8000DF-C1A1",
             "location": "[\"11\"]",
@@ -418,6 +426,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "796",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Sidewalk with Underground Drainage along Sabado St. (Jct. Sagun St. - Hofileña St.) Bothsides, Brgy. San Pedro",
             "code": "2SAIP23-8000--C1A2",
             "location": null,
@@ -468,6 +477,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "797",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "River Control at Purok Manga Creek, Brgy. Tuburan",
             "code": "2SAIP23-8000--C1A8",
             "location": null,
@@ -518,6 +528,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "800",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Sidewalk and Underground Drainage Along St. (Jct. Saguns St.-National Highway) Westernside",
             "code": "DRRMF23-1000-2-a3",
             "location": [],
@@ -568,6 +579,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "801",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Along Aquino St. (Jct. Sagun St.-National Highway) Easternside",
             "code": "DRRMF23-1000-2-a4",
             "location": null,
@@ -618,6 +630,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "802",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Along Duterte St. (Jct. Jamisola-Dablo St.) Westernside, Sta. Lucia",
             "code": "DRRMF23-1000-2-a5",
             "location": null,
@@ -668,6 +681,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "803",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Along Sagun St. (Jct. F.S. Pajares-Datoc St.) Southernside",
             "code": "DRRMF23-1000-2-a6",
             "location": null,
@@ -718,6 +732,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "804",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Along Urro St. (Jct. Alano-Sabellano St.) Southerside",
             "code": "DRRMF23-1000-2-a7",
             "location": null,
@@ -768,6 +783,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "805",
           "attributes": {
+             "project_status": "Completed",
             "name": "Construction of Sidewalk and Underground Drainage Along Datoc St. (Rizal Ave - Jamisola St.) Bothsides",
             "code": "DRRMF23-1000-2a8",
             "location": ["14"],
@@ -824,6 +840,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "807",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Along Ariosa St. (Jct. Rizal Ave.- R. Magsaysay) Bothsides-Except C3 Side",
             "code": "DRRMF23-1000-2-a10",
             "location": null,
@@ -874,6 +891,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "808",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Sidewalk and Underground Drainage Along Salazar St. (Jct. Datoc St.-Duterte St.) Southernside",
             "code": "DRRMF23-1000-2-a11",
             "location": null,
@@ -924,6 +942,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "809",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Sidewalk and Underground Drainage Along R. Magsaysay (Jct. Datoc St.-Zulueta St.) Northernside",
             "code": "DRRMF23-1000-2-a12",
             "location": null,
@@ -974,6 +993,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "810",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Sidewalk and Underground Drainage Along Datoc St. (Jct. R. Magsaysay-Dablo St.) Westernside",
             "code": "DRRMF23-1000-2-a13",
             "location": null,
@@ -1024,6 +1044,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "811",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Sidewalk and Underground Drainage Along Jamisola St. (Jct. FS Pajares-Aquino St.) Southernside",
             "code": "DRRMF23-1000-2-a14",
             "location": null,
@@ -1074,6 +1095,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "812",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Sidewalk and Underground Drainage Along Duterte St. (Jct. Rizal Ave.-Jamisola St.) Westernside",
             "code": "DRRMF23-1000-2-a15",
             "location": null,
@@ -1124,6 +1146,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "813",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Sidewalk and Underground Drainage from San Pedro Bridge leading to Kawit Bridge (Leftside-Phase II)",
             "code": "DRRMF23-1000-2-a16",
             "location": null,
@@ -1174,6 +1197,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "814",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Orientation on GAD legal basis and Gender Mainstreaming Seminar/Workshop for GFPS and city employees including other sectors and groups",
             "code": "GAD23-1000-A1-a",
             "location": null,
@@ -1224,6 +1248,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "815",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "GAD Annual Planning & Assessment, Monitoring & Evaluation of GAD Plans Program Implementation",
             "code": "GAD23-1000-A1-b",
             "location": null,
@@ -1274,6 +1299,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "816",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Participation in GAD related activities by PCW, CSC and other government agencies.",
             "code": "GAD23-1000-A1-d",
             "location": null,
@@ -1324,6 +1350,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "817",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Attendance/Participation of all Employees on Year-End Evaluation, Review and Assessment",
             "code": "GAD23-1000-A1-e",
             "location": null,
@@ -1374,6 +1401,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "818",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Attendance/Participation of all Government Officials/Department Heads to ELA, Implementation Review, Assessment and Evaluation of PPAs",
             "code": "GAD23-1000-A1-f",
             "location": null,
@@ -1424,6 +1452,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "819",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Educational Capability Enhancement Program Trainings/Seminars/Tours)",
             "code": "GAD23-1000-A1-g",
             "location": null,
@@ -1474,6 +1503,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "820",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Youth Welfare & Development Activities",
             "code": "GAD23-3000-A1-a",
             "location": null,
@@ -1524,6 +1554,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "821",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Sports Development",
             "code": "GAD23-3000-A2",
             "location": null,
@@ -1574,6 +1605,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "822",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Hospital Care Services to Patients in the Marginalized Sector including COVID-19 Patients",
             "code": "GAD23-3000-B2",
             "location": null,
@@ -1624,6 +1656,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "823",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Purchase of Drugs and Medicines for Vulnerable Group at the City Pharmacy",
             "code": "GAD23-3000-B5",
             "location": null,
@@ -1674,6 +1707,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "824",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Personal Protective Equipment (Mask, Shields, Goggles, Gowns, Overalls) for Patients and Medical Personnel",
             "code": "GAD23-3000-B7",
             "location": null,
@@ -1724,6 +1758,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "825",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Antigen Rapid Testing Kits for Probable Covid-19 Patients and Medical Personnel",
             "code": "GAD23-3000-B8",
             "location": null,
@@ -1774,6 +1809,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "826",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Purchase of Disinfectants, sprayers, and other disinfecting supplies",
             "code": "GAD23-3000-B9",
             "location": null,
@@ -1824,6 +1860,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "827",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Public Employment Service Program (PESP)",
             "code": "GAD23-3000-C1",
             "location": null,
@@ -1874,6 +1911,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "828",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Establishment of Barangay Employment Services in 54 barangays",
             "code": "GAD23-3000-C2",
             "location": null,
@@ -1924,6 +1962,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "829",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Financial Assistance to Various Accredited Org'n.",
             "code": "GAD23-3000-F3",
             "location": null,
@@ -1974,6 +2013,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "830",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Emergency Relief Assistance (Provision of services intevention to displaced individuals)",
             "code": "GAD23-3000-F4",
             "location": null,
@@ -2024,6 +2064,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "831",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Skills Training & Dev't. for Farmers, Fisherfolks Assoc., Rural Improvement Club (RIC) & 4-H Club, CAFC, etc.",
             "code": "GAD23-8000-A2",
             "location": null,
@@ -2074,6 +2115,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "832",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Human Resource Development Program",
             "code": "GAD23-1000-A1-h",
             "location": null,
@@ -2124,6 +2166,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "833",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Promotion & Strengthening of Local Cooperatives",
             "code": "GAD23-3000-G1",
             "location": null,
@@ -2174,6 +2217,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "834",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "GAD Focal Point System (GFPS) meetings",
             "code": "GAD23-1000-A1-c",
             "location": null,
@@ -2224,6 +2268,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "835",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Health Services cum BHW Assistance/Activities",
             "code": "GAD23-3000-B1",
             "location": null,
@@ -2274,6 +2319,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "836",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "HIV-AIDS Awareness Program",
             "code": "GAD23-3000-B3",
             "location": null,
@@ -2324,6 +2370,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "837",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Maternal Health Care Program",
             "code": "GAD23-3000-B4",
             "location": null,
@@ -2374,6 +2421,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "838",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Integrated Management of Childhood Illness (IMCI)",
             "code": "GAD23-3000-B10-a1",
             "location": null,
@@ -2424,6 +2472,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "839",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Nutrition",
             "code": "GAD23-3000-B10-a2",
             "location": null,
@@ -2474,6 +2523,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "840",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Safe Motherhood",
             "code": "GAD23-3000-B10-a3",
             "location": null,
@@ -2524,6 +2574,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "841",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Monitoring and Reporting of Health Indications",
             "code": "GAD23-3000-B10-a4",
             "location": null,
@@ -2574,6 +2625,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "842",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Food and Water-Borne Diseases",
             "code": "GAD23-3000-B10-b1",
             "location": null,
@@ -2624,6 +2676,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "843",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Leprosy Control",
             "code": "GAD23-3000-B10-b2",
             "location": null,
@@ -2674,6 +2727,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "844",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Integrated Helminth Control",
             "code": "GAD23-3000-B10-b3",
             "location": null,
@@ -2724,6 +2778,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "845",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "National Aedes-borne viral diseases prevention control",
             "code": "GAD23-3000-B10-b4",
             "location": null,
@@ -2774,6 +2829,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "846",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Filiariasis Elimination",
             "code": "GAD23-3000-B10-b5",
             "location": null,
@@ -2824,6 +2880,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "847",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Stis and Hepatitis",
             "code": "GAD23-3000-B10-b6",
             "location": null,
@@ -2874,6 +2931,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "848",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Preventive and Control of Non-Communicable Diseases Program (Procurement, Storage and Distribution of Medicines) - Cardiovascular",
             "code": "GAD23-3000-B10-c1",
             "location": null,
@@ -2924,6 +2982,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "849",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Preventive and Control of Non-Communicable Diseases Program (Procurement, Storage and Distribution of Medicines) - Diabetes",
             "code": "GAD23-3000-B10-c2",
             "location": null,
@@ -2974,6 +3033,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "850",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Establishement of Epidemology and Surveillance Unit",
             "code": "GAD23-3000-B10-d",
             "location": null,
@@ -3024,6 +3084,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "851",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Educational Assistance Services to Poor but Deserving Students-Tertiary",
             "code": "GAD23-3000-A1-b",
             "location": null,
@@ -3074,6 +3135,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "852",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Leadership Trng. and Social Responsibility",
             "code": "GAD23-3000-A1-c",
             "location": null,
@@ -3124,6 +3186,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "853",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Socio-cultural, Spiritual and Physical Dev't.",
             "code": "GAD23-3000-A1-d",
             "location": null,
@@ -3174,6 +3237,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "854",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Self-Employment Assistance Program (SEAP)",
             "code": "GAD23-3000-C3",
             "location": null,
@@ -3224,6 +3288,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "855",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Family Welfare & Development",
             "code": "GAD23-3000-E1",
             "location": null,
@@ -3274,6 +3339,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "856",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Women Welfare Program (Month Celebration & other Activities",
             "code": "GAD23-3000-E2",
             "location": null,
@@ -3324,6 +3390,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "857",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Development for KALIPI-Women Organization (Activities, Trainings, ena etc.)",
             "code": "GAD23-3000-E3",
             "location": null,
@@ -3374,6 +3441,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "858",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Provision of Hot Meals",
             "code": "GAD23-3000-F-a1",
             "location": null,
@@ -3424,6 +3492,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "859",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Financial Assistance to Women/Men in Especially Difficult Circumstance",
             "code": "GAD23-3000-F-b1",
             "location": null,
@@ -3474,6 +3543,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "860",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Provision of Cash Assistance to individual in Crisis Management of Crisis Intervention Monitoring System (CriMS)",
             "code": "GAD23-3000-F-b2a",
             "location": null,
@@ -3524,6 +3594,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "861",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Provision of Non Cash Assistance to Individuals in Crisis of Intervention Monitoring Systems (CriMS)",
             "code": "GAD23-3000-F-b2b",
             "location": null,
@@ -3574,6 +3645,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "862",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Provision of Psychosocial support/Referral Services/Non-medical Financial Assistance in Malasakit Centers",
             "code": "GAD23-3000-F-b2c",
             "location": null,
@@ -3624,6 +3696,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "863",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Seedlings, Nurseries, Techno-demo farms, purchases of farm implements",
             "code": "GAD23-8000-A1",
             "location": null,
@@ -3674,6 +3747,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "864",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Development of Housing Project including Lot Acquisition",
             "code": "GAD23-3000-D1a",
             "location": null,
@@ -3724,6 +3798,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "865",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Waste Management Advocacy/Sustainable Ecological Waste (SEW) Project",
             "code": "GAD23-3000-D2a",
             "location": null,
@@ -3774,6 +3849,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "866",
           "attributes": {
+             "project_status": "On-Going",
             "name": "Expansion and Improvement of Danlugan Infirmary Complex ",
             "code": "GAD23-3000-B6 / GAD22-3000-B6-- JOINT FUND",
             "location": "[\"27\"]",
@@ -3830,6 +3906,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "867",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Health Facilities Enhancement Program (RHUs, CHO/Infirmary Buildings)",
             "code": "GAD23-3000-B10-e",
             "location": null,
@@ -3880,6 +3957,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "868",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "City Pharmacy (Medicines, etc.)",
             "code": "LCPC23-3000-A3",
             "location": null,
@@ -3930,6 +4008,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "869",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Children Center Operation-Lenienza",
             "code": "LCPC23-3000-B5",
             "location": null,
@@ -3980,6 +4059,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "870",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "BNS Program",
             "code": "LCPC23-3000-C1",
             "location": null,
@@ -4030,6 +4110,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "871",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Training/Educ. Tour/Seminar/Convention (Skills training for BNS and CNC Members)",
             "code": "LCPC23-3000-C2",
             "location": null,
@@ -4080,6 +4161,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "872",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Search for Most Improved Barangay.",
             "code": "LCPC23-3000-C3",
             "location": null,
@@ -4130,6 +4212,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "873",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "City Counterpart for Children's Program",
             "code": "LCPC23-3000-B6",
             "location": null,
@@ -4180,6 +4263,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "874",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "City Council for the Protection of Children (Activities,meetings,etc.)",
             "code": "LCPC23-3000-B7",
             "location": null,
@@ -4230,6 +4314,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "875",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Mass Wedding Program",
             "code": "LCPC23-3000-E6",
             "location": null,
@@ -4280,6 +4365,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "876",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Health Care and Sanitation Program (HCSP)",
             "code": "LCPC23-3000-A1",
             "location": null,
@@ -4330,6 +4416,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "877",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Medical/Dental Outreach Program",
             "code": "LCPC23-3000-A2",
             "location": null,
@@ -4380,6 +4467,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "878",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Information, Education, Communication on Population Management Program",
             "code": "LCPC23-3000-E1",
             "location": null,
@@ -4430,6 +4518,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "879",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Reproductive Health/Responsible Parenthood & Family Services",
             "code": "LCPC23-3000-E2",
             "location": null,
@@ -4480,6 +4569,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "880",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "BSPO Capacitation, inlcuding Financial Assistance",
             "code": "LCPC23-3000-E3",
             "location": null,
@@ -4530,6 +4620,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "881",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Population Awareness and Family Life Orientation",
             "code": "LCPC23-3000-E4",
             "location": null,
@@ -4580,6 +4671,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "882",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Pre-Marriage Counselling Activity",
             "code": "LCPC23-3000-E5",
             "location": null,
@@ -4630,6 +4722,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "883",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Day Care Support Services",
             "code": "LCPC23-3000-B1",
             "location": null,
@@ -4680,6 +4773,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "884",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Day Care Workers Capability Building on ECCD",
             "code": "LCPC23-3000-B2",
             "location": null,
@@ -4730,6 +4824,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "885",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Child Development Activities (Children's Month celebration,etc)",
             "code": "LCPC23-3000-B3",
             "location": null,
@@ -4780,6 +4875,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "886",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Lingap Center Operation",
             "code": "LCPC23-3000-B4",
             "location": null,
@@ -4830,6 +4926,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "887",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Assistance to Accredited Children Organization (Hangop/Sabakan/others)",
             "code": "LCPC23-3000-B8",
             "location": null,
@@ -4880,6 +4977,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "888",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Orientation Seminar on Laws for CNSP",
             "code": "LCPC23-3000-B9",
             "location": null,
@@ -4930,6 +5028,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "889",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Milk Supplementation",
             "code": "LCPC23-3000-D1",
             "location": null,
@@ -4980,6 +5079,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "890",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Establishment of a Referral System for Undernourished",
             "code": "LCPC23-3000-D2",
             "location": null,

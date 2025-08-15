@@ -18,6 +18,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
               "id": "172",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Construction of Baywalk Commercial Stalls",
                 "code": "2SAIP22 - 8000R - C1c2",
                 "location": null,
@@ -68,6 +69,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "173",
               "attributes": {
+                "project_status": "On-Going",
                 "name": "Development of Pagadian City Water Park Continuation -2SAIP22-8000R-C1c3 (10M) and  Development of Water Park at  Boulevard , Barangay  Santiago-3SAIP20-8000-B2b(1.5m)",
                 "code": "\"2SAIP22-8000R-C1c3 (joint fund w/   3SAIP20-8000-B2b)\"",
                 "location": "[\"13\"]",
@@ -124,6 +126,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "174",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Rehab of Road (Access Road) Leading to Lison Valley Tribal Village",
                 "code": "4SAIP22-8000R-B1-1a2",
                 "location": "[]",
@@ -174,6 +177,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "175",
               "attributes": {
+                "project_status": "Completed",
                 "name": " Construction of City Government Warehouse Building Phase 1 (RF21-8000-3B-5 , p1,029,500.00) and Construction of Structures  at Bagong Silang Dumpsite (4SAIP22-8000R-B1-1b2, P320T)",
                 "code": "4SAIP22-8000R-B1-1b2/ joint fund w/RF21-8000-3B-5/",
                 "location": "[\"1\"]",
@@ -230,6 +234,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "176",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Construction of Senior Citizen Building (Completion)",
                 "code": "SCPWD22 - 3000 -A3",
                 "location": null,
@@ -280,6 +285,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "177",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Construction of Proposed PWD Office Building (Completion)",
                 "code": "SCPWD22 - 3000 - B5",
                 "location": "[]",
@@ -330,6 +336,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "178",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Materials Laboratory\n",
                 "code": "RF21 - 1000 - 1 -13 -c",
                 "location": null,
@@ -380,6 +387,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "179",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Construction of Police Outpost\n",
                 "code": "RF21 - 1000 - 2A - 1J",
                 "location": "[]",
@@ -430,6 +438,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
               "id": "180",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Rehab/Repair/Maint of Barangay Roads\n",
                 "code": "RF21 - 8000 - 3A - 2",
                 "location": null,
@@ -480,6 +489,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "181",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Concreting of Datagan - Kindes Cave - Quarry Site Brgy Road One Side\n",
                 "code": "RF21 - 8000 - 3A - 3",
                 "location": "[\"28\"]",
@@ -536,6 +546,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "182",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Improvement of Motorpool Building\n",
                 "code": "RF21 - 8000 - 3B - 1",
                 "location": "[]",
@@ -592,6 +603,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "183",
               "attributes": {
+                "project_status": "Completed",
                 "name": " Const/Impvt of Heavy Equipment Garage at Old Solid Waste, Bagong Silang",
                 "code": "RF21-8000-3B-2",
                 "location": "[\"1\"]",
@@ -648,6 +660,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "184",
               "attributes": {
+                "project_status": "Completed",
                 "name": " Improvement of City Hall Complex/Building/Drainage System",
                 "code": "RF21 - 8000 - 3B - 3",
                 "location": "[]",
@@ -704,6 +717,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "185",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Construction of New City Hall Building at Formerly Philpost & DENR Location",
                 "code": "RF21 - 8000 - 3B - 4",
                 "location": "[]",
@@ -754,6 +768,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "186",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Construction of City Government Warehouse Building Phase 1 (RF21-8000-3B-5 , p1,029,500.00) and Construction of Structures  at Bagong Silang Dumpsite (RF21-8000-3B-5, P320T)",
                 "code": "\"RF21-8000-3B-5/ 4SAIP22-8000R-B-1b11\"",
                 "location": "[\"1\"]",
@@ -810,6 +825,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "187",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Construction of Sidewalk/Drainage Along North Diversion Road",
                 "code": "RF21 - 8000 - 3C - 1",
                 "location": "[]",
@@ -866,6 +882,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "188",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Construction of Sidewalk/Drainage Along National Highway from Balangasan to Balintawak\n",
                 "code": "RF21 - 8000 - 3C - 2",
                 "location": "[]",
@@ -922,6 +939,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "189",
               "attributes": {
+                 "project_status": "Completed",
                 "name": "Construction of Sidewalk/Drainage Along National Highway from Tiguma - Tawagan Sur\n",
                 "code": "RF21 - 8000 - 3C - 3",
                 "location": "[]",
@@ -978,6 +996,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
               "id": "190",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Along Sabado St. (Jct. Duterte St - Sagun St.) Eastern Side\n",
                 "code": "RF21- 8000 - 3c - 4a",
                 "location": "[]",
@@ -1034,6 +1053,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "191",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Along Sabado St. (Jct. Duterte St - Sagun St.)Western Side\n",
                 "code": "RF21- 8000 - 3c - 4b",
                 "location": "[]",
@@ -1084,6 +1104,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "192",
               "attributes": {
+                "project_status": "On-Going",
                 "name": "Along Dablo St. (FS Pajares St - Macaumbang St) Northern Side\n",
                 "code": "RF21- 8000 - 3c - 4c",
                 "location": "[]",
@@ -1140,6 +1161,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "193",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Along Dablo St (Macaumbang St - Sabellano St) Northern Side\n",
                 "code": "RF21- 8000 - 3c - 4d",
                 "location": "[]",
@@ -1196,6 +1218,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "194",
               "attributes": {
+                "project_status": "Completed",
                 "name": "CONSTRUCTION OF SIDEWALK WITH UNDERGROUND DRAINAGE  Along Duterte St. (Urro St -  Sanson St) Western Side",
                 "code": "RF21-8000-3c-4e",
                 "location": "[\"7\"]",
@@ -1252,6 +1275,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "195",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Construction of Breakwater at Boulevard\n",
                 "code": "RF21 - 8000 - 3C - 5",
                 "location": "[]",
@@ -1302,6 +1326,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "196",
               "attributes": {
+                "project_status": "On-Going",
                 "name": "Alignment of Boulevard/Embankment/Concreting (Continuation of Boulevard Beside Fishport)",
                 "code": "RF21-8000-3C-6",
                 "location": "[\"13\"]",
@@ -1358,6 +1383,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "197",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Along Sagun St. (Jct Datoc St - Sagun Bridge) Northern Side\n",
                 "code": "DRRMF21 - 1000 - 2 -a1 ",
                 "location": "[]",
@@ -1414,6 +1440,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "198",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Along Sagun St (Jct Aquino St - Datoc St) Northern Side\n",
                 "code": "DRRMF21 - 1000 - 2 -a2 ",
                 "location": "[]",
@@ -1470,6 +1497,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "199",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Along Sagun St. (Jct Alano St - Roxas St) Northern Side\n",
                 "code": "DRRMF21 - 1000 - 2 -a3 ",
                 "location": "[]",
@@ -1526,6 +1554,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
               "id": "200",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Along Sagun St. (Jct Roxas St - Bana St) Northern Side\n",
                 "code": "DRRMF21 - 1000 - 2 -a4 ",
                 "location": "[]",
@@ -1582,6 +1611,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "201",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Along Sagun St (Jct FS Pajares Ave - Alano St) Southern side\n",
                 "code": "DRRMF21 - 1000 - 2 -a5",
                 "location": "[]",
@@ -1638,6 +1668,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "202",
               "attributes": {
+                 "project_status": "Completed",
                 "name": " Along Sagun St. (Jct Alano - Roxas St) Southern Side",
                 "code": "DRRMF21 - 1000 - 2 -a6",
                 "location": "[]",
@@ -1694,6 +1725,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "203",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Construction of Sidewalk/Drainage Along Ariosa St (jct Roxas St - Bana St) Southern Side",
                 "code": "DRRMF21-1000-2-b7",
                 "location": "[]",
@@ -1750,6 +1782,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "204",
               "attributes": {
+                "project_status": "Completed",
                 "name": "CONSTRUCTION OFSIDEWALK AND UNDERGROUND DRAINAGE ALONG RT LIM STREET (JCT URRO ST - SAGUN ST)ESTERN SIDE -",
                 "code": "DRRMF21-1000-2-a8",
                 "location": "[]",
@@ -1806,6 +1839,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "205",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Along Datoc St. (Jct Salazar St - Urro St) Western Side\n",
                 "code": "DRRMF21 - 1000 - 2 -a9",
                 "location": "[]",
@@ -1862,6 +1896,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "206",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Along Aquino St. (Jct Urro St - Sagun St) Western Side\n",
                 "code": "DRRMF21 - 1000 - 2 -a10",
                 "location": "[]",
@@ -1918,6 +1953,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "207",
               "attributes": {
+                "project_status": "On-Going",
                 "name": "Along FS Pajares Ave. (Jct Broca St - Urro St) Western Side\n",
                 "code": "DRRMF21 - 1000 - 2 -a11",
                 "location": "[]",
@@ -1974,6 +2010,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "208",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Along Mercedes St (Jct Aquino St - Fs Pajares Ave) Northern Side\n",
                 "code": "DRRMF21 - 1000 - 2 -a13",
                 "location": "[]",
@@ -2024,6 +2061,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "209",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Along Urro St (Jct Alano St - Roxas St) Northern Side\n",
                 "code": "DRRMF21 - 1000 - 2 -a14",
                 "location": "[]",
@@ -2080,6 +2118,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
             "id": "210",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Along Duterte St. (Jct Sagun St - Sanson St) Eastern Side\n",
                 "code": "DRRMF21 - 1000 - 2 -a15",
                 "location": "[]",
@@ -2136,6 +2175,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
             "id": "211",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Along FS Pajares Ave\' (Jct Sagun St - Sanson St) Eastern Side\n",
                 "code": "DRRMF21 - 1000 - 2 -a16",
                 "location": "[]",
@@ -2192,6 +2232,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
             "id": "212",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Along Alano St (Jct Sagun St - Sanson St) Western Side\n",
                 "code": "DRRMF21 - 1000 - 2 -a17",
                 "location": "[]",
@@ -2248,6 +2289,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
             "id": "213",
             "attributes": {
+              "project_status": "On-Going",
                 "name": "Along FS Pajares Ave( Jamisola St - Pulmones St) Western Side\n",
                 "code": "DRRMF21 - 1000 - 2 -a18",
                 "location": "[]",
@@ -2304,6 +2346,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
             "id": "214",
             "attributes": {
+              "project_status": "Not Yet Started",
                 "name": "Along Duterte St (Jct Jamisola St - Dablo St) Western Side\n",
                 "code": "DRRMF21 - 1000 - 2 -a19",
                 "location": "[]",
@@ -2360,6 +2403,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
             "id": "215",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Along Purok Lawis (Jct Pulmones - Dablo St)\n",
                 "code": "DRRMF21 - 1000 - 2 -a20",
                 "location": "[]",
@@ -2416,6 +2460,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
             "id": "216",
             "attributes": {
+              "project_status": "On-Going",
                 "name": "Along Jamisola St (Jct Duterte St - Manaya St) Southen Side\n",
                 "code": "DRRMF21 - 1000 - 2 -a21",
                 "location": "[]",
@@ -2472,6 +2517,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
             "id": "217",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Along Jamisola St (Jct Zulueta St - Manaya St) Northern Side\n",
                 "code": "DRRMF21 - 1000 - 2 -a22",
                 "location": "[]",
@@ -2528,6 +2574,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
             "id": "218",
             "attributes": {
+              "project_status": "Not Yet Started",
                 "name": "Along Alano St (Jct Pulmones St - Dablo St) Eastern Side\n",
                 "code": "DRRMF21 - 1000 - 2 -a23",
                 "location": "[]",
@@ -2584,6 +2631,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
             "id": "219",
             "attributes": {
+              "project_status": "Not Yet Started",
                 "name": "Along FS Pajares Ave (Jct Jamisola St - Pulmones St) Western Side\n",
                 "code": "DRRMF21 - 1000 - 2 -a24",
                 "location": "[]",
@@ -2634,6 +2682,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
             "id": "220",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Along D. Macaumbang St (Jct R Magsaysay Ave - Dablo St) Eastern Side\n",
                 "code": "DRRMF21 - 1000 - 2 -a25",
                 "location": "[]",
@@ -2690,6 +2739,7 @@ impl MigrationTrait for Migration {
 convert_projects_into_active_model_v2(&json!({
             "id": "221",
             "attributes": {
+              "project_status": "Preparation",
                 "name": "Concreting of Tiguma - White Beach Barangay Road",
                 "code": "DF21-8000-B1a",
                 "location": "[]",
@@ -2740,6 +2790,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "222",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Rehabilitation/Concreting of Road Leading to Manga Falls",
                 "code": "DF21-8000-B1b",
                 "location": "[\"45\"]",
@@ -2796,6 +2847,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "223",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Along New Tudela St. (Jct R. Magsaysay Ave - Dablo St) Eastern Side\n",
                 "code": "DF21-8000-B2-a",
                 "location": "[]",
@@ -2852,6 +2904,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "224",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Along Claro Recto St (Jct. R. Magsaysay Ave - Dablo St) Eastern Side\n",
                 "code": "DF21-8000-B2-b",
                 "location": "[]",
@@ -2908,6 +2961,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "225",
             "attributes": {
+              "project_status": "On-Going",
                 "name": "Construction of Sidewalk and Underground Drainage   Along Sabado St (Jct Hofilena St - sagun St) Eastern & Western Side AND  Const. of Sidewalk w/ Underground Drainage along Sabado St. (Jct. Sagun St.-Hofilena St.) Bothsides, Brgy. San Francisco  (DF21-80",
                 "code": "DF21-8000-B2-c",
                 "location": "[]",
@@ -2964,6 +3018,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "226",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Along Duterte St (Jct Urro St. - Sanson St) Eastern Side\n",
                 "code": "DF21-8000-B2-d",
                 "location": "[]",
@@ -3020,6 +3075,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "227",
             "attributes": {
+              "project_status": "On-Going",
                 "name": "Along Cabrera St (Jct. Alano St - Sabado St) Northern Side\n",
                 "code": "DF21-8000-B2-e",
                 "location": "[]",
@@ -3076,6 +3132,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "228",
             "attributes": {
+              "project_status": "Preparation",
                 "name": "Renovation of Fish Section Building (agora Market)\n",
                 "code": "DF21 - 8000 - B3 - a",
                 "location": "[]",
@@ -3126,6 +3183,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "229",
             "attributes": {
+              "project_status": "Preparation",
                 "name": "Construction of HALAL Section Building ( Agora Market)\n",
                 "code": "DF21 - 8000 - B3 - b",
                 "location": "[]",
@@ -3176,6 +3234,7 @@ convert_projects_into_active_model_v2(&json!({
             convert_projects_into_active_model_v2(&json!({
     "id": "230",
     "attributes": {
+      "project_status": "Completed",
         "name": "Completion of Agora Perimeter Building (Back Portion of Agora Market)",
         "code": "DF21-8000-B3-c",
         "location": "[\"14\"]",
@@ -3232,6 +3291,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "231",
     "attributes": {
+      "project_status": "Completed",
         "name": "Continuation of Construction of Covered Court (TilesInstallation on Stage)\n",
         "code": "DF21 - 8000 - B4 - a",
         "location": "[]",
@@ -3288,6 +3348,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "232",
     "attributes": {
+      "project_status": "Preparation",
         "name": " Improvement of Boulevard at San Pedro Including Beautification and Landscaping\n",
         "code": "DF21-8000-B4-b",
         "location": "[]",
@@ -3338,6 +3399,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "233",
     "attributes": {
+      "project_status": "Preparation",
         "name": "Improvement of Hot Spring at Barangay Lourdes\n",
         "code": "DF21-8000-B7-a",
         "location": "[]",
@@ -3388,6 +3450,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "234",
     "attributes": {
+      "project_status": "Not Yet Started",
         "name": "Improvement of Kendis Cave and Const/Dev't of Kindes Cave",
         "code": "DF21-8000-B7-b and DF20-8000-B7g",
         "location": "[\"28\"]",
@@ -3444,6 +3507,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "235",
     "attributes": {
+      "project_status": "On-Going",
         "name": "Development of Pagadian City Water Park Phase III-Retaining Wall",
         "code": "DF21-8000-B7-c",
         "location": "[\"13\"]",
@@ -3500,6 +3564,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "236",
     "attributes": {
+       "project_status": "Preparation",
         "name": " Construction of Yatch Docking Area at Pagadian Baywalk\n",
         "code": "DF21-8000-B7-d",
         "location": "[]",
@@ -3550,6 +3615,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "237",
     "attributes": {
+       "project_status": "Preparation",
         "name": "Additional Deevelopment of Pagadian Rotunda\n",
         "code": "DF21-8000-B7-e",
         "location": "[]",
@@ -3600,6 +3666,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "238",
     "attributes": {
+      "project_status": "Completed",
         "name": " Improvement of Palpalan View Deck\n",
         "code": "DF21-8000-B7-g",
         "location": "[]",
@@ -3656,6 +3723,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "239",
     "attributes": {
+      "project_status": "Completed",
         "name": "Construction of Pagadian International College( PCIC) Building Phase 1",
         "code": "GAD21-3000-A1-d",
         "location": "[\"12\"]",
@@ -3712,6 +3780,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "240",
     "attributes": {
+      "project_status": "Completed",
         "name": "Expansion/Improvement of Danlugan Infirmary Complex",
         "code": "GAD21-3000-B6",
         "location": "[\"27\"]",
@@ -3768,6 +3837,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "241",
     "attributes": {
+      "project_status": "Preparation",
         "name": "Construction of New Senior Citizen Building\n",
         "code": "SCPWD21 - 3000 - A3",
         "location": "[]",
@@ -3818,6 +3888,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "242",
     "attributes": {
+      "project_status": "Preparation",
         "name": "Construction of Proposed PWDBuilding\n",
         "code": "SCPWD21 - 3000 - B4",
         "location": "[]",
@@ -3868,6 +3939,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "243",
     "attributes": {
+      "project_status": "Preparation",
         "name": "Repair/Rehabilitation of Road at Brgy Bulatok",
         "code": "1SAIP21 - 8000R - c - 1a1",
         "location": "[]",
@@ -3918,6 +3990,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "244",
     "attributes": {
+      "project_status": "Not Yet Started",
         "name": "Road Opening at Brgy Kawit\n",
         "code": "1SAIP21-8000R-c-1a2",
         "location": "[]",
@@ -3974,6 +4047,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "245",
     "attributes": {
+      "project_status": "Completed",
         "name": "Road Opening/Clearing at Barangay Sta. Lucia",
         "code": "1SAIP21-8000RB-c-1a3",
         "location": "[]",
@@ -4030,6 +4104,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "246",
     "attributes": {
+      "project_status": "Completed",
         "name": "Road Concreting at Barangay Balintawak (RMG)",
         "code": "1SAIP21-8000RB-c-1a4",
         "location": "[]",
@@ -4086,6 +4161,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "247",
     "attributes": {
+      "project_status": "Completed",
         "name": "Concreting/Improvement of Road at Lacturan, Barangay San Pedro\n",
         "code": "1SAIP21-8000RB-c-1a5",
         "location": "[]",
@@ -4142,6 +4218,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "248",
     "attributes": {
+      "project_status": "Completed",
         "name": "mprovement of Road Leading to Nazareth Road at JCT Natrional Highway Crossing (Additional )",
         "code": "1SAIP21-8000RB-C-1a6 (JOINT RF22-8000-3A-5)",
         "location": "[\"4\"]",
@@ -4198,6 +4275,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "249",
     "attributes": {
+      "project_status": "Completed",
         "name": "Unfinished Portion (Gaps) Between Constructued Sidewalks and Existing Road Pavement at Barangays San Francisco, San Jose, Gatas, Balangasan, Sta Lucia, Santiago, Sta. Maria\n",
         "code": "1SAIP21-8000RB-c-1a7",
         "location": "[]",
@@ -4254,6 +4332,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "250",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Repair/Rehabilitation of River Control at Gatas Bridge, Urro St\n",
                 "code": "1SAIP21-8000R-C-1b1",
                 "location": "[]",
@@ -4310,6 +4389,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "251",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Completion of the Construction of Underground Drainage and Sidewalk Along Jamisola St St.\n",
                 "code": "1SAIP21-8000R-C-1b2",
                 "location": "[]",
@@ -4366,6 +4446,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "252",
             "attributes": {
+              "project_status": "Bidded",
                 "name": " Construction of Drainage Across National Highway & FS Pajares Ave",
                 "code": "1SAIP21 - 8000R - C - 1b3",
                 "location": null,
@@ -4422,6 +4503,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "253",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Construction of Hanging Bridge at Barangay Balangasan\n",
                 "code": "1SAIP21 - 8000R - C - 1b4",
                 "location": null,
@@ -4478,6 +4560,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "254",
             "attributes": {
+               "project_status": "Bidded",
                 "name": " Completion of the Construction of Police Outpost (Phase 2)\nTiguma Boundary\n",
                 "code": "1SAIP21 - 3000R - C - 1c1 - a",
                 "location": null,
@@ -4534,6 +4617,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "255",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Completion of the Construction of Police Outpost (Phase 2) Buenavista - Baloyboan\n\n",
                 "code": "1SAIP21 - 3000R - C - 1c1 - b",
                 "location": null,
@@ -4590,6 +4674,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "256",
             "attributes": {
+              "project_status": "Bidded",
                 "name": "Completion of the Construction of Police Outpost (Phase 2) Macasing Crossing\n\n",
                 "code": "1SAIP21 - 3000R - C - 1c1 - c",
                 "location": null,
@@ -4646,6 +4731,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "257",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Completion of the Construction of Police Outpost (Phase 2) d. Danlugan\n\n",
                 "code": "1SAIP21 - 3000R - C - 1c1 - d",
                 "location": null,
@@ -4702,6 +4788,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "258",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Completion of the Construction of Police Outpost (Phase 2),  e. Poloyagan",
                 "code": "1SAIP21-3000R-C-1c1-e ( 150K) /RF20-1000-2A-1j-7 (joint fund)(700K)",
                 "location": "[\"49\"]",
@@ -4758,6 +4845,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "259",
             "attributes": {
+              "project_status": "On-Going",
                 "name": " Repair/Rehabilitation of City PNP Building\n",
                 "code": "1SAIP21 - 3000R - C - 1c2",
                 "location": null,
@@ -4814,6 +4902,7 @@ convert_projects_into_active_model_v2(&json!({
             convert_projects_into_active_model_v2(&json!({
             "id": "260",
             "attributes": {
+              "project_status": "Completed",
                 "name": " Construction of School Stage at Tiguma E/S\n",
                 "code": "1SAIP21 - 3000R - C - 1c3",
                 "location": null,
@@ -4870,6 +4959,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "261",
             "attributes": {
+              "project_status": "On-Going",
                 "name": "Construction of PHILPOST Building\n",
                 "code": "1SAIP21 - 3000R - C - 1c5",
                 "location": "[]",
@@ -4926,6 +5016,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "262",
             "attributes": {
+               "project_status": "Not Yet Started",
                 "name": " Construction of PENRO Building at Barangay Dao\n",
                 "code": "1SAIP21 - 3000R - C - 1c6",
                 "location": null,
@@ -4976,6 +5067,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "263",
             "attributes": {
+              "project_status": "On-Going",
                 "name": "Construction of SP Building Phase II\n",
                 "code": "1SAIP21 - 8000R - C - 1c7",
                 "location": "[\"12\"]",
@@ -5032,6 +5124,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "264",
             "attributes": {
+              "project_status": "On-Going",
                 "name": "Construction of CSWDO Building (Phase I)\n",
                 "code": "1SAIP21 - 8000R - C - 1c8",
                 "location": "[\"12\"]",
@@ -5088,6 +5181,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "265",
             "attributes": {
+              "project_status": "Not Yet Started",
                 "name": "Improvement of C3 Building (Portion Only) for DFA Office\n",
                 "code": "1SAIP21 - 8000R - C - 1c9",
                 "location": null,
@@ -5138,6 +5232,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "266",
             "attributes": {
+              "project_status": "Not Yet Started",
                 "name": "Improvement of C3 Building (Portion Only) for PSA Office\n",
                 "code": "1SAIP21 - 8000R - C - 1c10",
                 "location": null,
@@ -5188,6 +5283,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "267",
             "attributes": {
+              "project_status": "On-Going",
                 "name": "Improvement/Additional Works at Covered Court at City Plaza",
                 "code": "1SAIP21 - 8000R - C - 1c11",
                 "location": "[]",
@@ -5244,6 +5340,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "268",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Add'l Painting Works at the Constructed Evacuation Center at Brgy Dao\n",
                 "code": "1SAIP21 - 8000R - C - 1c12",
                 "location": null,
@@ -5300,6 +5397,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "269",
             "attributes": {
+               "project_status": "Completed",
                 "name": "Completion of Const of Perimeter Fence at Livestock Bagsakan, Brgy San Pedro\n",
                 "code": "1SAIP21 - 8000R - C - 1c13",
                 "location": null,
@@ -5356,6 +5454,7 @@ convert_projects_into_active_model_v2(&json!({
             convert_projects_into_active_model_v2(&json!({
             "id": "270",
             "attributes": {
+               "project_status": "Not Yet Started",
                 "name": "Development of Farm Center and Piggery Farm\n",
                 "code": "1SAIP21 - 8000R - C - 1c14",
                 "location": null,
@@ -5406,6 +5505,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "271",
             "attributes": {
+              "project_status": "Not Yet Started",
                 "name": "Purchase of Lot for Regional Center at Barangay Balintawak\n",
                 "code": "1SAIP21 - 8000R - C - 1d1",
                 "location": null,

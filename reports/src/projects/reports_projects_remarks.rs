@@ -25,8 +25,8 @@ pub async fn reports_projects_remarks_by_id(
     Json(request): Json<RequestGenerateProjectsProfile>
 ) -> impl IntoResponse {
 
-    let s3 = db.s3_connection.clone();
-    let bucket = s3.get_object().bucket("projects-images");
+    // let s3 = db.s3_connection.clone();
+    // let bucket = s3.get_object().bucket("projects-images");
     
     let sse = Arc::new(db.sse_connection.clone());    
 
@@ -91,16 +91,16 @@ pub async fn reports_projects_remarks_by_id(
             clone_sse.send_progress_update(clone_event.as_str(), 100, format!("{} of {} images", n + 1, get_project_remarks_img_total).as_str());
         });
 
-        let get_objects = bucket.clone()
-            .key(project_remark_img.images_key.clone())
-            .send().await.unwrap();
-        let object_bytes = get_objects.body
-            .collect().await.unwrap().clone().into_bytes();
-        let data_img = convert_img_into_jpeg(object_bytes);
+        // let get_objects = bucket.clone()
+        //     .key(project_remark_img.images_key.clone())
+        //     .send().await.unwrap();
+        // let object_bytes = get_objects.body
+        //     .collect().await.unwrap().clone().into_bytes();
+        // let data_img = convert_img_into_jpeg(object_bytes);
 
-        let clone_project_remark_img = project_remark_img.clone().to_owned();
+        // let clone_project_remark_img = project_remark_img.clone().to_owned();
 
-        remarks_img_data.insert(n, ProjectRemarksImg { img_bytes: data_img, remarks_img_data: clone_project_remark_img.to_owned().to_owned() });
+        // remarks_img_data.insert(n, ProjectRemarksImg { img_bytes: data_img, remarks_img_data: clone_project_remark_img.to_owned().to_owned() });
 
     }
 

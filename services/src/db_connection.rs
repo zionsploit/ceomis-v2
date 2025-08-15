@@ -1,4 +1,4 @@
-use aws_sdk_s3::Client;
+use minio::s3::Client;
 use redis::aio::MultiplexedConnection;
 use sea_orm::{DatabaseConnection};
 use serde::{Deserialize, Serialize};
@@ -43,7 +43,8 @@ impl ReportBroadcaster {
 pub struct DB {
     pub db_connection: DatabaseConnection,
     pub redis_connection: MultiplexedConnection,
-    pub s3_connection: Client,
+    // pub s3_connection: Client,
+    pub minio_connection: Client,
     pub sse_connection: ReportBroadcaster
 }
 

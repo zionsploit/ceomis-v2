@@ -74,11 +74,7 @@ pub async fn convert_projects_into_active_model_v2<'c>(
         project_type_id: {
             let prop_type = attributes["prop_type"].as_str().and_then(|v| v.parse::<i32>().ok());
 
-            if prop_type.is_some_and(|v| v.gt(&10)) {
-                Set(None)
-            } else {
-                Set(prop_type)
-            }
+            Set(prop_type)
         },
         project_category_id: {
             let prop_category = attributes["prop_category"].as_str().and_then(|v| v.parse::<i32>().ok());
@@ -87,11 +83,7 @@ pub async fn convert_projects_into_active_model_v2<'c>(
         project_sof_id: {
             let prop_fund = attributes["prop_fund"].as_str().and_then(|v| v.parse::<i32>().ok());
 
-            if prop_fund.is_some_and(|v| v.gt(&10)) {
-                Set(None)
-            } else {
-                Set(prop_fund)
-            }
+            Set(prop_fund)
         },
         project_incharge_id: {
             let prop_assign = attributes["prop_assign"].as_str().and_then(|v| v.parse::<i32>().ok());

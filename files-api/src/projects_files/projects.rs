@@ -71,50 +71,50 @@ pub async fn add_projects_remarks(
         return (StatusCode::UNPROCESSABLE_ENTITY, format!("Remarks date entity Not found"));
     }
 
-    let response_remarks_id  = {
-        let make_add_remarks = projects_monitoring_remarks::ActiveModel {
-            remarks: Set(get_remarks_text.unwrap().to_string()),
-            remarks_date: Set(get_remarks_date.unwrap().to_string()),
-            project_id: Set(get_remarks_project_id.clone().unwrap().parse().unwrap()),
-            ..Default::default()
-        };
+    // let response_remarks_id  = {
+    //     let make_add_remarks = projects_monitoring_remarks::ActiveModel {
+    //         remarks: Set(get_remarks_text.unwrap().to_string()),
+    //         remarks_date: Set(get_remarks_date.unwrap().to_string()),
+    //         project_id: Set(get_remarks_project_id.clone().unwrap().parse().unwrap()),
+    //         ..Default::default()
+    //     };
 
-        let response_add_remarks = make_add_remarks.save(&db.db_connection).await.unwrap();
+    //     let response_add_remarks = make_add_remarks.save(&db.db_connection).await.unwrap();
         
-        String::from(format!("{}", response_add_remarks.id.into_value().unwrap())).parse().unwrap()
-    };
+    //     String::from(format!("{}", response_add_remarks.id.into_value().unwrap())).parse().unwrap()
+    // };
 
 
     for images in images_hash {
         let (_name, data) = images;
 
-        let s3 = db.s3_connection.clone();
+        // let s3 = db.s3_connection.clone();
 
         let object_key = data.key;
 
-        let s3_results = s3.put_object()
-            .bucket("projects-images")
-            .body(data.data)
-            .key(&object_key)
-            .content_type(data.content_type)
-            .send()
-            .await;
+        // let s3_results = s3.put_object()
+        //     .bucket("projects-images")
+        //     .body(data.data)
+        //     .key(&object_key)
+        //     .content_type(data.content_type)
+        //     .send()
+        //     .await;
 
-        match s3_results {
-            Ok(_) => {
-                let make_add_remarks_img = projects_monitoring_img::ActiveModel {
-                    images_key: Set(object_key),
-                    images_original_name: Set(data.original_name),
-                    remarks_id: Set(response_remarks_id),
-                    ..Default::default()
-                };
+        // match s3_results {
+        //     Ok(_) => {
+        //         let make_add_remarks_img = projects_monitoring_img::ActiveModel {
+        //             images_key: Set(object_key),
+        //             images_original_name: Set(data.original_name),
+        //             remarks_id: Set(response_remarks_id),
+        //             ..Default::default()
+        //         };
 
-                if let Err(err) = make_add_remarks_img.save(&db.db_connection).await {
-                    error!("{}", err.sql_err().unwrap())
-                }
-            },
-            Err(err) => error!("{:?}", err)
-        }
+        //         if let Err(err) = make_add_remarks_img.save(&db.db_connection).await {
+        //             error!("{}", err.sql_err().unwrap())
+        //         }
+        //     },
+        //     Err(err) => error!("{:?}", err)
+        // }
     }
 
     Redis::new(format!("get_projects_by_id_{}", get_remarks_project_id.unwrap()), db.redis_connection.clone())

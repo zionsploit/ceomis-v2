@@ -18,6 +18,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
                 "id": "476",
                 "attributes": {
+                  "project_status": "Completed",
                     "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along Datoc St. (Jct Sagun St. - Sanson St.) Western Side",
                     "code": "DRRMF20 - 1000 - 2 - b16",
                     "location": null,
@@ -74,6 +75,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
                 "id": "477",
                 "attributes": {
+                  "project_status": "Completed",
                     "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along Urro St. (Jct Zulueta St - RT Lim St) Northern Side",
                     "code": "DRRMF20 - 1000 - 2 - b17",
                     "location": null,
@@ -130,6 +132,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
                 "id": "478",
                 "attributes": {
+                   "project_status": "Completed",
                     "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along Urro St. (Jct Zulueta St - RT Lim St) Southern Side",
                     "code": "DRRMF20 - 1000 - 2 - b18",
                     "location": null,
@@ -186,6 +189,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
                 "id": "479",
                 "attributes": {
+                  "project_status": "Completed",
                     "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along Urro St. (Jct Datoc St - Bridge) Southern Side",
                     "code": "DRRMF20 - 1000 - 2 - b19",
                     "location": null,
@@ -242,6 +246,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
     "id": "480",
     "attributes": {
+      "project_status": "Bidded",
         "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along Urro St. (Jct Sabellano St - Creek) Southern Side",
         "code": "DRRMF20 - 1000 - 2 - b20",
         "location": null,
@@ -298,6 +303,7 @@ impl MigrationTrait for Migration {
 convert_projects_into_active_model_v2(&json!({
     "id": "481",
     "attributes": {
+      "project_status": "Completed",
         "name": "Along Urro St. (Jct Roxas - Sabellano St) Northern Side",
         "code": "DRRMF20 - 1000 - 2 - b21",
         "location": null,
@@ -354,6 +360,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "482",
     "attributes": {
+      "project_status": "Completed",
         "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along Jamisola St. (Jct Bonifacio St - Alano St) Southern Side",
         "code": "DRRMF20 - 1000 - 2 - b22",
         "location": "[]",
@@ -410,6 +417,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "483",
     "attributes": {
+      "project_status": "Completed",
         "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along Jamisola St. (Jct FS PAJARES. - Alano St) Northern Side",
         "code": "DRRMF20 - 1000 - 2 - b23",
         "location": null,
@@ -466,6 +474,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "484",
     "attributes": {
+      "project_status": "Completed",
         "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along R. Magsaysay St (Jct FS Pajares St - Alano St) Northern Side",
         "code": "DRRMF20 - 1000 - 2 - b24",
         "location": null,
@@ -522,6 +531,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "485",
     "attributes": {
+      "project_status": "Completed",
         "name": "Construction/Rehabilitation of Roads/Drainages, River Control, Sea Wall Along R. Magsaysay St (Jct FS Pajares St - Alano St) Southern Side",
         "code": "DRRMF20 - 1000 - 2 - b25",
         "location": "[]",
@@ -578,6 +588,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "486",
     "attributes": {
+      "project_status": "Completed",
         "name": "Along R. Magsaysay St (Jct FS Alano St - Fernan St) Southern Side",
         "code": "DRRMF20 - 1000 - 2 - b26",
         "location": null,
@@ -634,6 +645,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "487",
     "attributes": {
+      "project_status": "Not Yet Started",
         "name": "Construction of New Senior Citizen Bldg",
         "code": "SCPWD20 - 3000 - A3",
         "location": null,
@@ -684,6 +696,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "488",
     "attributes": {
+      "project_status": "Not Yet Started",
         "name": "Construction of Proposed PWD Office Building",
         "code": "SCPWD20 - 3000 - B3",
         "location": null,
@@ -734,6 +747,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "489",
     "attributes": {
+      "project_status": "Completed",
         "name": "Const. of Perimeter Fence at Sta. Lucia Elem School",
         "code": "SEF",
         "location": null,
@@ -790,6 +804,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "490",
     "attributes": {
+       "project_status": "Completed",
         "name": "Const/Impvt of Bulatok E/S (Perimeter Fence)",
         "code": "SEF",
         "location": null,
@@ -846,6 +861,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "491",
     "attributes": {
+      "project_status": "Completed",
         "name": "Const of City Central Recovery Facility at Composting Area (Phase II)",
         "code": "TRUST FUND",
         "location": null,
@@ -902,6 +918,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "492",
     "attributes": {
+      "project_status": "Completed",
         "name": "Rehabilitation of Banana Tissue Culture Laboratory, Hardening House and Preparation Room - Department of Agriculture Trust FUnd",
         "code": "TRUST FUND",
         "location": null,
@@ -958,6 +975,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "493",
     "attributes": {
+       "project_status": "Not Yet Started",
         "name": "Lot Acquisition/Purchase for Evacuation Center Brgy. Bulatok",
         "code": "1SAIP20 - DR3000 - A2",
         "location": null,
@@ -1008,6 +1026,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "494",
     "attributes": {
+      "project_status": "Not Yet Started",
         "name": "Construction of Residual Contaiment Area including Improvement at Composting Area",
         "code": "1SAIP20 - DR3000 - A1",
         "location": null,
@@ -1058,6 +1077,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "495",
     "attributes": {
+      "project_status": "On-Going",
         "name": "Construction of Tricycle Terminal Rest Room/Fruitstand at Brgy Buenavista Phase II",
         "code": "1SAIP20 - DR3000 -B1",
         "location": null,
@@ -1114,6 +1134,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "496",
     "attributes": {
+      "project_status": "Completed",
         "name": "Construction of Additional Liquid Nitrogen 2 (LN2) Building At Barangay Danlugan Phase II",
         "code": "1SAIP20 - DR3000 -B2",
         "location": null,
@@ -1170,6 +1191,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "497",
     "attributes": {
+       "project_status": "Completed",
         "name": "Construction of Water Tank Including Pipes and Accessories at City Plaza",
         "code": "1SAIP20 - DR3000 -B3",
         "location": null,
@@ -1226,6 +1248,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "498",
     "attributes": {
+      "project_status": "Not Yet Started",
         "name": "Construction of Restrooms at Plaza Luz Phase II",
         "code": "1SAIP20 - DR3000 -B4",
         "location": null,
@@ -1276,6 +1299,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "499",
     "attributes": {
+      "project_status": "Completed",
         "name": "Construction of Restrooms at Rotunda",
         "code": "\"Joint fund w/: 1SAIP20-DR3000-B5/ 3SAIP21-8000R-C-1c11\"",
         "location": "[\"5\"]",
@@ -1332,6 +1356,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "500",
     "attributes": {
+      "project_status": "Completed",
         "name": "Construction of Seawall at Barangay Dumagoc",
         "code": "1SAIP20 - DR3000 -B6",
         "location": null,
@@ -1389,6 +1414,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "501",
     "attributes": {
+      "project_status": "Completed",
         "name": "Concreting of Pagadian City Boulevard (PPA Entrance)",
         "code": "1SAIP20 - DR3000 -B7",
         "location": null,
@@ -1446,6 +1472,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "502",
     "attributes": {
+      "project_status": "Completed",
         "name": "Construction of Lechon House (Common Utility), Phase II",
         "code": "1SAIP20 - DR3000 -B8",
         "location": "[]",
@@ -1503,6 +1530,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "503",
     "attributes": {
+      "project_status": "Completed",
         "name": "Construction of Rest Rooms at Plaza Luz (w/ GAD19 - 8000 - B1)",
         "code": "1SAIP20 - RF8000 - B2",
         "location": null,
@@ -1560,6 +1588,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "504",
     "attributes": {
+      "project_status": "Completed",
         "name": "Concreting/Improvement of Road Leading to Muslim Village, Brgy. Kawit",
         "code": "2SAIP20 - 8000 - C1a1",
         "location": null,
@@ -1617,6 +1646,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "505",
     "attributes": {
+      "project_status": "Completed",
         "name": "Concreting/Improvement of Road to Kawit Elementary School, Bgry Kawit",
         "code": "2SAIP20 - 8000 - C1a2",
         "location": null,
@@ -1674,6 +1704,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "506",
     "attributes": {
+      "project_status": "Not Yet Started",
         "name": "Concreting/Improvement of Boulevard Road (Unfinished Portion) Leading to Fishport",
         "code": "2SAIP20 - 8000 - C1a3",
         "location": null,
@@ -1725,6 +1756,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "507",
     "attributes": {
+       "project_status": "Completed",
         "name": "Concreting/Improvement of Road at Sunrise Village, Tiguma",
         "code": "2SAIP20 - 8000 - C1a4",
         "location": null,
@@ -1782,6 +1814,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "508",
     "attributes": {
+      "project_status": "Completed",
         "name": "Concreting/Improvement of Barangay Bulatok Road",
         "code": "2SAIP20 - 8000 - C1a5",
         "location": null,
@@ -1839,6 +1872,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
     "id": "509",
     "attributes": {
+       "project_status": "Completed",
         "name": "Concreting/Improvement of La Suerte Road (Near Barangay Hall Site)",
         "code": "2SAIP20 - 8000 - C1a6",
         "location": null,
@@ -1895,6 +1929,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "510",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Concreting/Improvement of Lourdes Road (Portion after the Bridge)",
                 "code": "2SAIP20 - 8000 - C1a7",
                 "location": null,
@@ -1951,6 +1986,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
             "id": "511",
             "attributes": {
+              "project_status": "Not Yet Started",
                 "name": "Concreting/Improvement of Road Near Dampalan Spillway (at Difficult Portion)",
                 "code": "2SAIP20 - 8000 - C1a8",
                 "location": null,
@@ -2007,6 +2043,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
             "id": "512",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Rehab/Concreting of Road at Lower Sibatang Near Lingue NHS",
                 "code": "2SAIP20 - 8000 - C1a9",
                 "location": null,
@@ -2063,6 +2100,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
             "id": "513",
             "attributes": {
+               "project_status": "Not Yet Started",
                 "name": "Concreting/Improvement of Access Road to Relocation Center and Housing Site at IBT Site",
                 "code": "2SAIP20 - 8000 - C1a10",
                 "location": null,
@@ -2113,6 +2151,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
             "id": "514",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Concreting/Improvement of Road (Continuation) Leading to Brgy Muricay (New Route)",
                 "code": "2SAIP20 - 8000 - C1a11",
                 "location": null,
@@ -2169,6 +2208,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
             "id": "515",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Concreting/Improvement of Road with Box Culvert at Lala - Lumad Brgy Road",
                 "code": "2SAIP20 - 8000 - C1a12",
                 "location": null,
@@ -2225,6 +2265,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
             "id": "516",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Construction of Sidewalk with Drainage From St. Nino to Banale Rd",
                 "code": "2SAIP20 - 8000 - C1b1",
                 "location": null,
@@ -2281,6 +2322,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
             "id": "517",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Construction of Sidewalk with Drainage Along RT Lim St (Jct. Urro St to National Highway)",
                 "code": "2SAIP20 - 8000 - C1b2",
                 "location": null,
@@ -2337,6 +2379,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
             "id": "518",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Construction of Sidewalk and Drainage Along Aquino St (Jct Salazar St - Sabate St)",
                 "code": "2SAIP20 - 8000 - C1b3",
                 "location": "[]",
@@ -2393,6 +2436,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
             "id": "519",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Construction of Sidewalk and Drainage Along Sabate St. (Jct FS Pajares Ave -Roxas St)",
                 "code": "2SAIP20 - 8000 - C1b4",
                 "location": null,
@@ -2449,6 +2493,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
             "id": "520",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Construction of Sidewalk and Drainage Along Datoc St. (Jct Sagun St - Urro St)",
                 "code": "2SAIP20 - 8000 - C1b5",
                 "location": null,
@@ -2505,6 +2550,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "521",
             "attributes": {
+              "project_status": "Bidded",
                 "name": "Construction of Sidewalk with Drainage Along National Highway ( Balangasan Bridge - Balintawak Boundary)",
                 "code": "2SAIP20 - 8000 - C1b6",
                 "location": null,
@@ -2561,6 +2607,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "522",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Construction of Sidewalk with Drainage Along National Highway ( Tiguma - Tawagan Boundary)",
                 "code": "2SAIP20 - 8000 - C1b7",
                 "location": null,
@@ -2617,6 +2664,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "523",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Construction of Sidewalk with Drainage Along FS Pajares Ave (Sabate - Mercedes St) Fronting Former DILG",
                 "code": "2SAIP20 - 8000 - C1b8",
                 "location": null,
@@ -2673,6 +2721,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "524",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Construction of Drainage Canal at Bgry Balangasan (Sect Prk Kawayan, Prk Romblon, Prk Riverside and Prk Tabing Ilog)",
                 "code": "2SAIP20 - 8000 - C1b9",
                 "location": null,
@@ -2729,6 +2778,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "525",
             "attributes": {
+              "project_status": "Bidded",
                 "name": "Reinstallation of Demolished Covered Court to Fishport Compound",
                 "code": "2SAIP20 - 8000 - C1c1",
                 "location": null,
@@ -2785,6 +2835,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "526",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Construction of Additional Livestock Area at Fishport Entrance",
                 "code": "2SAIP20 - 8000 - C1c2",
                 "location": null,
@@ -2841,6 +2892,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "527",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Construction of Perimeter Fence and Rehab of Livestock Building At Fishport",
                 "code": "2SAIP20 - 8000 - C1c3",
                 "location": null,
@@ -2897,6 +2949,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "528",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Construction of Concrete Pavement on the Entire Area at City Slaughter House",
                 "code": "2SAIP20 - 8000 - C1c4",
                 "location": null,
@@ -2953,6 +3006,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "529",
             "attributes": {
+               "project_status": "Completed",
                 "name": "Construction of Additional Water Tank at City Slaughter House",
                 "code": "2SAIP20 - 8000 - C1c5",
                 "location": null,
@@ -3009,6 +3063,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
             "id": "530",
             "attributes": {
+              "project_status": "Not Yet Started",
                 "name": "Conc/Impvt of Boating Area at Boulevard for Tourism Destination",
                 "code": "2SAIP20 - 8000 - C1c6",
                 "location": null,
@@ -3059,6 +3114,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "531",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Renovation of Justice Hall (Repainting & Tile Replacement)",
                 "code": "2SAIP20 - 8000 - C1c7",
                 "location": null,
@@ -3115,6 +3171,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "532",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Const/Rehab of Water System at Barangay Napolan",
                 "code": "2SAIP20 - 8000 - C1c8",
                 "location": "[]",
@@ -3171,6 +3228,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "533",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Opening/Concreting of Road Leading to Manga Falls",
                 "code": "3SAIP20 - 8000 - B1a",
                 "location": null,
@@ -3227,6 +3285,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "534",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Construction of Drainage Along Duterte St (Jct Jamisola St - Rizal Ave.) Western side",
                 "code": "3SAIP20 - 8000 - B1b",
                 "location": null,
@@ -3283,6 +3342,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "535",
             "attributes": {
+               "project_status": "Completed",
                 "name": "Concreting of Deborok Barangay Road to Ditoray Barangay Road",
                 "code": "3SAIP20 - 8000 - B1c",
                 "location": null,
@@ -3339,6 +3399,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "536",
             "attributes": {
+              "project_status": "Completed",
                 "name": "Concreting of Road from Barangay Tiguma Road Going to Barangay White Beach ( Continuation)",
                 "code": "3SAIP20 - 8000 - B1d",
                 "location": null,
@@ -3395,6 +3456,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "537",
             "attributes": {
+              "project_status": "Not Yet Started",
                 "name": "Development of Manga Falls",
                 "code": "3SAIP20 - 8000 - B2a",
                 "location": null,
@@ -3445,6 +3507,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "538",
             "attributes": {
+              "project_status": "On-Going",
                 "name": "Development of Water Park at Boulevadr, Brgy Santiago",
                 "code": "3SAIP20-8000-B2b",
                 "location": "[\"16\"]",
@@ -3495,6 +3558,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "539",
             "attributes": {
+              "project_status": "Not Yet Started",
                 "name": "Widening of Lourdes Barangay Road to Lison Valley",
                 "code": "4SAIP20 - 8000R - B1a1",
                 "location": null,
@@ -3551,6 +3615,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
   "id": "540",
   "attributes": {
+    "project_status": "Completed",
     "name": "Road Opening/Concreting of Datagan Barangay Road - Kendis Cave to Quarry Site Road",
     "code": "4SAIP20 - 8000R - B1a2",
     "location": null,
@@ -3607,6 +3672,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "541",
   "attributes": {
+     "project_status": "Completed",
     "name": "Construction of Integrated Bus Terminal (IBT) Annex Phase II, Sta. Lucia",
     "code": "4SAIP20 - 8000R - B1b1",
     "location": null,
@@ -3663,6 +3729,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "542",
   "attributes": {
+    "project_status": "Completed",
     "name": "Construction of Integrated Bus Terminal (IBT) Annex Phase III, Sta. Lucia",
     "code": "4SAIP20 - 8000R - B1b2",
     "location": null,
@@ -3719,6 +3786,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "543",
   "attributes": {
+    "project_status": "Completed",
     "name": "Installation of Electrical Connection at IBT Annex, Brgy Sta. Lucia",
     "code": "4SAIP20 - 8000R - B1b3",
     "location": null,
@@ -3769,6 +3837,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "544",
   "attributes": {
+    "project_status": "Completed",
     "name": "Landscaping of Plaza Luz & City Hall Grounds",
     "code": "4SAIP20 - 8000R - B1c1",
     "location": null,
@@ -3825,6 +3894,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "545",
   "attributes": {
+    "project_status": "Completed",
     "name": "Construction of Perimeter Fence and Gates at Plaza Luz",
     "code": "4SAIP20 - 8000R - B1c2",
     "location": null,
@@ -3881,6 +3951,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "546",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Jamisola St. Jct. Aquino St to Duterte St",
     "code": "5SAIP20 - 8000R - A1a",
     "location": "[]",
@@ -3931,6 +4002,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "547",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Rotunda Parking Lot",
     "code": "5SAIP20 - 8000R - A1b",
     "location": null,
@@ -3987,6 +4059,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "548",
   "attributes": {
+    "project_status": "Completed",
     "name": "Construction of Rotunda Kitchen",
     "code": "5SAIP20-8000R-A1c/joint fund w/3SAIP21-8000R-C-1c10",
     "location": "[]",
@@ -4043,6 +4116,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "549",
   "attributes": {
+    "project_status": "Completed",
     "name": "Construction of Rotunda Stage",
     "code": "5SAIP20 - 8000R - A1d",
     "location": null,
@@ -4099,6 +4173,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "550",
   "attributes": {
+    "project_status": "Completed",
     "name": "Improvement of Plaza Luz",
     "code": "5SAIP20 - 8000R - A1e",
     "location": null,
@@ -4155,6 +4230,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "551",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Motorpool Flooring",
     "code": "5SAIP20 - 8000R - A1f",
     "location": null,
@@ -4211,6 +4287,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "552",
   "attributes": {
+    "project_status": "Not Yet Started",
     "name": "Renovation/Improvement of San Francisco Brgy Hall",
     "code": "6SAIP20 - 8000R - A1",
     "location": null,
@@ -4261,6 +4338,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "553",
   "attributes": {
+    "project_status": "Completed",
     "name": "Construction of SP Building Phase II",
     "code": "6SAIP20 - 8000R - A2",
     "location": null,
@@ -4317,6 +4395,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "554",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting/Improvement of Kagawasan - Alegria Barangay Road",
     "code": "7SAIP20 - 8000R - B1 - a",
     "location": null,
@@ -4373,6 +4452,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "555",
   "attributes": {
+    "project_status": "Completed",
     "name": "Finishing Works at Darussalam Wall",
     "code": "7SAIP20 - 8000R - B1 - b",
     "location": null,
@@ -4429,6 +4509,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "556",
   "attributes": {
+     "project_status": "Completed",
     "name": "Widening of Kagawasan - Danlugan to proper (Continuation)",
     "code": "7SAIP20 - 8000R - B1 - c",
     "location": null,
@@ -4485,6 +4566,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "557",
   "attributes": {
+    "project_status": "Completed",
     "name": "Improvement of Covered Court At City Plaza",
     "code": "7SAIP20 - 8000R - B1 - d",
     "location": null,
@@ -4541,6 +4623,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "558",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Road at Kadena de Amor Leading to Kagawasan Road",
     "code": "2SAIL20-R8000-1A1",
     "location": null,
@@ -4597,6 +4680,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "559",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Road at Zone 2 Malipayon From Brgy Hall to North Diversion Road",
     "code": "2SAIL20-R8000-1A2",
     "location": null,
@@ -4653,6 +4737,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "560",
   "attributes": {
+    "project_status": "Completed",
     "name": "Rehab of Road From Purok Rosas to Prk Bombil, Brgy. Bulawan",
     "code": "2SAIL20-R8000-1A3",
     "location": null,
@@ -4709,6 +4794,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "561",
   "attributes": {
+     "project_status": "Completed",
     "name": "Widening of Road From Kagawasan to Danlugan Brgy Road",
     "code": "2SAIL20-R8000-1A4",
     "location": null,
@@ -4765,6 +4851,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "562",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting/Improvement of Road at Prk Subida to Brgy Banale",
     "code": "2SAIL20-R8000-1A5",
     "location": null,
@@ -4821,6 +4908,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "563",
   "attributes": {
+     "project_status": "Not Yet Started",
     "name": "Construction of Alley at Brgy Dumagoc",
     "code": "2SAIL20-R8000-1A6",
     "location": null,
@@ -4871,6 +4959,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "564",
   "attributes": {
+    "project_status": "Completed",
     "name": "Road Concreting Leading to E/S Road Gubac",
     "code": "2SAIL20-R8000-1A7",
     "location": null,
@@ -4927,6 +5016,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "565",
   "attributes": {
+    "project_status": "Completed",
     "name": "Conc/Impvt of Road From Brgy Hall to Lumatao at Brgy. Gubang",
     "code": "2SAIL20-R8000-1A8",
     "location": "[]",
@@ -4983,6 +5073,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "566",
   "attributes": {
+    "project_status": "Completed",
     "name": "Conc/Impvt of Road at Lower Kahayagan",
     "code": "2SAIL20-R8000-1A9",
     "location": null,
@@ -5039,6 +5130,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "567",
   "attributes": {
+     "project_status": "Completed",
     "name": "Conc/Impvt of Road Beside ZSSSAT School, Kawit",
     "code": "2SAIL20-R8000-1A10",
     "location": null,
@@ -5095,6 +5187,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "568",
   "attributes": {
+    "project_status": "Completed",
     "name": "Conc/Impvt of Road at prk Sandayong. Brgy. Lapedian",
     "code": "2SAIL20-R8000-1A11",
     "location": null,
@@ -5151,6 +5244,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "569",
   "attributes": {
+    "project_status": "Completed",
     "name": "Gravelling of Road at prk Santol to Woodland La Suerte",
     "code": "2SAIL20-R8000-1A12",
     "location": null,
@@ -5207,6 +5301,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "570",
   "attributes": {
+    "project_status": "Completed",
     "name": "Conc. Of Road at Prk Nagka to Brgy Bulatok, Brgy. Lenienza",
     "code": "2SAIL20-R8000-1A13",
     "location": null,
@@ -5263,6 +5358,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "571",
   "attributes": {
+    "project_status": "Completed",
     "name": "Conc of Road at Purok Mangga, Lenienza",
     "code": "2SAIL20-R8000-1A14",
     "location": null,
@@ -5319,6 +5415,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "572",
   "attributes": {
+    "project_status": "Completed",
     "name": "Opening of Road from Waling-Waling to Brgy Pedolunan",
     "code": "2SAIL20-R8000-1A15",
     "location": null,
@@ -5375,6 +5472,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "573",
   "attributes": {
+    "project_status": "Completed",
     "name": "Gravelling/Impvt of Road from Prk talong, brgy Lumad",
     "code": "2SAIL20-R8000-1A16",
     "location": null,
@@ -5431,6 +5529,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "574",
   "attributes": {
+    "project_status": "Completed",
     "name": "GRAVELLING OF ROAD AT PUROK KAMONGGAY, BRGY LUMAD (FORMERLY CONC/IMPVT OF ROAD AT PRK KAMATIS, BRGY LUMAD)",
     "code": "2SAIL20-R8000-1A17",
     "location": "[\"43\"]",
@@ -5487,6 +5586,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "575",
   "attributes": {
+    "project_status": "Completed",
     "name": "Conc/Impvt of Road Fisherville/Hiniusa/Prk Alindahaw, Lumbia",
     "code": "2SAIL20-R8000-1A18",
     "location": null,

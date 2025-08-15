@@ -18,6 +18,7 @@ impl MigrationTrait for Migration {
         convert_projects_into_active_model_v2(&json!({
             "id": "272",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": " Construction of Hanging Bridge at Barangay Balangasan\n",
                 "code": "1SAIP21 - 8000R - C - 1b4",
                 "location": null,
@@ -68,6 +69,7 @@ impl MigrationTrait for Migration {
 convert_projects_into_active_model_v2(&json!({
             "id": "273",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Completion of the Construction of Police Outpost (Phase 2) Tawagan Boundary\n\n",
                 "code": "1SAIP21 - 3000R - C - 1c1 - a",
                 "location": null,
@@ -145,6 +147,7 @@ convert_projects_into_active_model_v2(&json!({
                 "accom_value": null,
                 "accom_date": null,
                 "accom_elapse": null,
+                 "project_status": "Completed",
                 "accom_slippage": null,
                 "accom_period": null,
                 "accom_todate": null,
@@ -174,6 +177,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "275",
             "attributes": {
+                "project_status": "Bidded",
                 "name": "Completion of the Construction of Police Outpost (Phase 2) Macasing Crossing\n\n",
                 "code": "1SAIP21 - 3000R - C - 1c1 - c",
                 "location": null,
@@ -230,6 +234,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "276",
             "attributes": {
+                "project_status": "Completed",
                 "name": "Completion of the Construction of Police Outpost (Phase 2) Danlugan\n",
                 "code": "1SAIP21 - 3000R - C - 1c1 - d",
                 "location": null,
@@ -286,6 +291,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "277",
             "attributes": {
+                 "project_status": "Bidded",
                 "name": " Completion of the Construction of Police Outpost (Phase 2) Poloyagan\n\n",
                 "code": "1SAIP21 - 3000R - C - 1c1 - e",
                 "location": null,
@@ -342,6 +348,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "278",
             "attributes": {
+                 "project_status": "On-Going",
                 "name": "Repair/Rehabilitation of City PNP Building\n",
                 "code": "1SAIP21 - 3000R - C - 1c2",
                 "location": null,
@@ -398,6 +405,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "279",
             "attributes": {
+                "project_status": "Completed",
                 "name": "Construction of School Stage at Tiguma E/S\n",
                 "code": "1SAIP21 - 3000R - C - 1c3",
                 "location": null,
@@ -454,6 +462,7 @@ convert_projects_into_active_model_v2(&json!({
             convert_projects_into_active_model_v2(&json!({
             "id": "280",
             "attributes": {
+                "project_status": "Completed",
                 "name": "Renovation of Justice Hall Building",
                 "code": "1SAIP21-3000R-C-1c4",
                 "location": "[\"7\"]",
@@ -510,6 +519,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "282",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": " Construction of PENRO Building at Barangay Dao\n",
                 "code": "1SAIP21 - 3000R - C - 1c6",
                 "location": null,
@@ -560,6 +570,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "285",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Improvement of C3 Building (Portion Only) for DFA Office",
                 "code": "1SAIP21 - 8000R - C - 1c9",
                 "location": null,
@@ -610,6 +621,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "286",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": " Improvement of C3 Building (Portion Only) for PSA Office\n",
                 "code": "1SAIP21 - 8000R - C - 1c10",
                 "location": null,
@@ -660,6 +672,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "288",
             "attributes": {
+                "project_status": "Completed",
                 "name": "Add'l Painting Works at the Constructed Evacuation Center at Brgy Dao\n",
                 "code": "1SAIP21 - 8000R - C - 1c12",
                 "location": null,
@@ -716,6 +729,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "289",
             "attributes": {
+                 "project_status": "Not Yet Started",
                 "name": "Completion of Const of Perimeter Fence at Livestock Bagsakan, Brgy San Pedro\n",
                 "code": "1SAIP21 - 8000R - C - 1c13",
                 "location": null,
@@ -766,6 +780,7 @@ convert_projects_into_active_model_v2(&json!({
             convert_projects_into_active_model_v2(&json!({
             "id": "290",
             "attributes": {
+                "project_status": "Completed",
                 "name": "Development of Farm Center and Piggery Farm\n",
                 "code": "1SAIP21 - 8000R - C - 1c14",
                 "location": null,
@@ -822,6 +837,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "291",
             "attributes": {
+                "project_status": "Completed",
                 "name": "Concreting/Impvt of Road at Purok Subida Alley, Brgy Dao\n",
                 "code": "2SAIP21 - 8000DF - C - 1a1",
                 "location": null,
@@ -878,6 +894,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "292",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Improvement of City Streets Shoulders/Island\n",
                 "code": "2SAIP21 - 8000DF - C - 1a2",
                 "location": null,
@@ -928,6 +945,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "293",
             "attributes": {
+                 "project_status": "Completed",
                 "name": "Road Widening at Brgy Kagawasan to Brgy Danlugan\n",
                 "code": "2SAIP21 - 8000DF - C - 1a3",
                 "location": null,
@@ -984,6 +1002,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "294",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": " Road Widening from Purok Tinangkong to Purok Sili 3 One Side Only\n",
                 "code": "2-SAIP21 - 8000R - A1A5",
                 "location": null,
@@ -1034,6 +1053,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "295",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Improvement/Opening of Road at Purok Bombil (Difficult Portion), Bulawan\n",
                 "code": "2-SAIP21 - 8000R - A1A10",
                 "location": null,
@@ -1084,6 +1104,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "296",
             "attributes": {
+                 "project_status": "Bidded",
                 "name": "Construction of Footbridge at Purok Kapalaran, Balangasan\n",
                 "code": "2-SAIP21 - 8000R - A1B1",
                 "location": null,
@@ -1140,6 +1161,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "297",
             "attributes": {
+                "project_status": "Completed",
                 "name": "Repair of Box Culvert at Prk Santan, Bulawan",
                 "code": "2-SAIP21 - 8000R - A1B6",
                 "location": null,
@@ -1196,6 +1218,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "298",
             "attributes": {
+                "project_status": "Completed",
                 "name": "Rehabilitation of Nazareth Market Building\n",
                 "code": "2-SAIP21 - 8000R - A1C7",
                 "location": null,
@@ -1252,6 +1275,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "299",
             "attributes": {
+                "project_status": "On-Going",
                 "name": "Const. of Sidewalk and Drainage Crossing Danlugan (both Sides Going Datagan)\n",
                 "code": "2SAIP21-8000DF-C-1b2 /joint fund w/ 2SAIP21-8000DR-C-1b1",
                 "location": "[]",
@@ -1308,6 +1332,7 @@ convert_projects_into_active_model_v2(&json!({
             convert_projects_into_active_model_v2(&json!({
             "id": "300",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Road Concreting at Prk Sili 2 From  Balintawak to Palpalan Brgy Road (1/1 lane only)\n",
                 "code": "2SAIP21 - 8000DR - C - 1b2",
                 "location": null,
@@ -1358,6 +1383,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "301",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": " Improvement of C3 Building (Portion Only) for DFA Office (Phase 2)\n",
                 "code": "2SAIP21 - 8000R - C - 1c1",
                 "location": null,
@@ -1408,6 +1434,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "302",
             "attributes": {
+                 "project_status": "Not Yet Started",
                 "name": "Improvement of C3 Building (Portion Only) for PSA Office (Phase 2)\n",
                 "code": "2SAIP21 - 8000R - C - 1c2",
                 "location": null,
@@ -1458,6 +1485,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "303",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": " Rehab/Improvement of Bagsakan Center, Sta. Lucia\n",
                 "code": "2SAIP21 - 8000R - C - 1c3",
                 "location": null,
@@ -1508,6 +1536,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "304",
             "attributes": {
+                 "project_status": "Completed",
                 "name": "Completion of IBT Annex Building (Phase I)\n",
                 "code": "2SAIP21 - 8000R - C - 1c4",
                 "location": null,
@@ -1564,6 +1593,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "305",
             "attributes": {
+                "project_status": "Completed",
                 "name": " Construction of Speedboat Docking Building at Boulevard (Phase 2)\n",
                 "code": "2SAIP21-8000R-C-1c5a (JOINT FUND-2SAIP21-8000R-C-1c5b)",
                 "location": "[\"13\"]",
@@ -1620,6 +1650,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "306",
             "attributes": {
+                 "project_status": "On-Going",
                 "name": "GSO/CRRO and CSWDO Buildings Facelifting and Renovation\n",
                 "code": "2SAIP21 - 8000R - C - 1c6",
                 "location": "[\"7\"]",
@@ -1676,6 +1707,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "307",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Repainting of Covered Court\n",
                 "code": "2SAIP21 - 8000R - C - 1c7",
                 "location": null,
@@ -1726,6 +1758,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "308",
             "attributes": {
+                "project_status": "On-Going",
                 "name": "Const. of Sidewalk and Drainage Crossing Danlugan (both Sides Going Datagan)",
                 "code": "2SAIP21-8000DR-C-1b1 and joint fund w/2SAIP21-8000DF-C-1b2",
                 "location": "[\"27\"]",
@@ -1782,6 +1815,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "309",
             "attributes": {
+                "project_status": "On-Going",
                 "name": "Improvement of Lalas Island Mini Port and Cottages\n",
                 "code": "2SAIP21 - 8000DF - C - 1d1a  & 2SAIP21 - 8000DF - C - 1d1b",
                 "location": null,
@@ -1838,6 +1872,7 @@ convert_projects_into_active_model_v2(&json!({
             convert_projects_into_active_model_v2(&json!({
             "id": "310",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Repair/Maintenance of Water System at agora\n",
                 "code": "2SAIP21 - 8000DF - C - 1d2",
                 "location": null,
@@ -1888,6 +1923,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "311",
             "attributes": {
+                 "project_status": "Not Yet Started",
                 "name": "DFA Office at C3\n",
                 "code": "3SAIP21 - 8000R - A1- a1",
                 "location": null,
@@ -1938,6 +1974,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "312",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Integrated Bus Terminal\n",
                 "code": "3SAIP21 - 8000R - A1- a2",
                 "location": null,
@@ -1988,6 +2025,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "313",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Agora Public Market\n",
                 "code": "3SAIP21 - 8000R - A1- a4",
                 "location": null,
@@ -2038,6 +2076,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "314",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "C3 Building\n",
                 "code": "3SAIP21 - 8000R - A1- a5",
                 "location": null,
@@ -2088,6 +2127,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "315",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Various Offices\n",
                 "code": "3SAIP21 - 8000R - A1- a6",
                 "location": null,
@@ -2138,6 +2178,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "316",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Rotunda Fruit Stand\n",
                 "code": "3SAIP21 - 8000R - A1- a7",
                 "location": null,
@@ -2188,6 +2229,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "317",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Danlugan Cemetery\n",
                 "code": "3SAIP21 - 8000R - A1- a8",
                 "location": null,
@@ -2238,6 +2280,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "318",
             "attributes": {
+                 "project_status": "Not Yet Started",
                 "name": "Demolished Houses\n",
                 "code": "3SAIP21 - 8000R - A1- a9",
                 "location": null,
@@ -2288,6 +2331,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "319",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": " Fishport Electrical\n",
                 "code": "3SAIP21    - 8000R - A1- a10",
                 "location": null,
@@ -2338,6 +2382,7 @@ convert_projects_into_active_model_v2(&json!({
             convert_projects_into_active_model_v2(&json!({
             "id": "320",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Infirmary (Electrical)\n",
                 "code": "3SAIP21 - 8000R - A1- a11",
                 "location": null,
@@ -2388,6 +2433,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "321",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Lechon House\n",
                 "code": "3SAIP21 - 8000R - A1- a12",
                 "location": null,
@@ -2438,6 +2484,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "322",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Aircon Compressor for Function Hall\n",
                 "code": "3SAIP21 - 8000R - A1- a14",
                 "location": null,
@@ -2488,6 +2535,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "323",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Riser Pipes for Deep Well\n",
                 "code": "3SAIP21 - 8000R - A1- a15",
                 "location": null,
@@ -2538,6 +2586,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "324",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Screen Casing (8' x 3M), UPVC Blank Casing for Deep Well\n",
                 "code": "3SAIP21 - 8000R - A1- a16",
                 "location": null,
@@ -2588,6 +2637,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "325",
             "attributes": {
+                 "project_status": "Not Yet Started",
                 "name": "Insp. Fee/Troubleshooting Fee for Elevator/Escalator\n",
                 "code": "3SAIP21 - 8000R - A1- a17",
                 "location": null,
@@ -2638,6 +2688,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "326",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Complete Cleaning of Cooling Tower, Chiller, & Air Units\n",
                 "code": "3SAIP21 - 8000R - A1- a18",
                 "location": null,
@@ -2688,6 +2739,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "327",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Covi-19 (EOC) Riso Ink, Toner, Etc For Vaccination Forms\n",
                 "code": "3SAIP21 - 8000R - A1- a19",
                 "location": null,
@@ -2738,6 +2790,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "328",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": " Improvement of Lalas Island Mini Port and Cottages\n",
                 "code": "2SAIP21 - 8000DF - C - 1d1b",
                 "location": null,
@@ -2788,6 +2841,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "329",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Repair/Maintenance of Water System at agora\n",
                 "code": "2SAIP21 - 8000DF - C - 1d2",
                 "location": null,
@@ -2838,6 +2892,7 @@ convert_projects_into_active_model_v2(&json!({
             convert_projects_into_active_model_v2(&json!({
             "id": "330",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Purchase of Streetlights\n",
                 "code": "3SAIP21 - 8000R - A1- b1",
                 "location": null,
@@ -2888,6 +2943,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "331",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Electrical Supplies for Streetlights\n",
                 "code": "3SAIP21 - 8000R - A1- b2",
                 "location": null,
@@ -2938,6 +2994,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "332",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Electrical Supplies and Installation\n",
                 "code": "3SAIP21 - 8000R - A1- b4",
                 "location": null,
@@ -2988,6 +3045,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "333",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Supplies for Tourism Boat Fabrication (Steel shafting, propeller etc)\n",
                 "code": "3SAIP21 - 8000R - A1- b4",
                 "location": null,
@@ -3038,6 +3096,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "334",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Maintenance of Dancing Fountain (Lights and Others)\n",
                 "code": "3SAIP21 - 8000R - A1- b5",
                 "location": null,
@@ -3088,6 +3147,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "335",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": " Improvement of Street Lights (Purchase of 2300 solar Lights)\n",
                 "code": "3SAIP21 - 8000R - A1- b6",
                 "location": null,
@@ -3138,6 +3198,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "336",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": " Concreting of Roads Within the Regional Center Site - Northern Area\n\n",
                 "code": "3SAIP21 - 8000R - C - 1a1a",
                 "location": null,
@@ -3188,6 +3249,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "337",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Concreting of Roads Within the Regional Center Site - Southern Area\n\n",
                 "code": "3SAIP21 - 8000R - C - 1a1b",
                 "location": null,
@@ -3238,6 +3300,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "338",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Concreting of Roads Within the Regional Center Site -\nEastern Area\n",
                 "code": "3SAIP21 - 8000R - C - 1a1c",
                 "location": null,
@@ -3288,6 +3351,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "339",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Concreting of Roads Within the Regional Center Site -Western Area\n\n",
                 "code": "3SAIP21 - 8000R - C - 1a1d",
                 "location": null,
@@ -3338,6 +3402,7 @@ convert_projects_into_active_model_v2(&json!({
             convert_projects_into_active_model_v2(&json!({
             "id": "340",
             "attributes": {
+                "project_status": "Completed",
                 "name": "Road Improvement at Prk Sili frm Balintawak to Palpalan, Brgy Road (1/2 Lane Only)\n",
                 "code": "3SAIP21 - 8000R - C - 1a2",
                 "location": null,
@@ -3394,6 +3459,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "341",
             "attributes": {
+                 "project_status": "Completed",
                 "name": "Road Improvement/Widening Including Reblocking of Danluga Barangay Road Leading to Cemetery\n",
                 "code": "3SAIP21 - 8000R - C - 1a3",
                 "location": null,
@@ -3450,6 +3516,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "342",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Construction of Baywalk Docking Area\n",
                 "code": "3SAIP21 - 8000R - C - 1b2",
                 "location": null,
@@ -3500,6 +3567,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "343",
             "attributes": {
+                "project_status": "Completed",
                 "name": "Construction of Seawall Bgry Dumagoc Phase II\n",
                 "code": "3SAIP21 - 8000R - C - 1b1",
                 "location": null,
@@ -3556,6 +3624,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "344",
             "attributes": {
+                "project_status": "On-Going",
                 "name": " Construction of Senior Citizens Building\n",
                 "code": "3SAIP21 - 8000R - C - 1c1",
                 "location": "[]",
@@ -3612,6 +3681,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "345",
             "attributes": {
+                "project_status": "On-Going",
                 "name": "Construction of Persons With Disability Building\n",
                 "code": "3SAIP21 - 8000R - C - 1c2",
                 "location": "[]",
@@ -3668,6 +3738,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "346",
             "attributes": {
+                "project_status": "On-Going",
                 "name": "Construction of Liga City Building (Phse 1)\n",
                 "code": "3SAIP21 - 8000R - C - 1c3",
                 "location": "[\"12\"]",
@@ -3724,6 +3795,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "347",
             "attributes": {
+                "project_status": "On-Going",
                 "name": " Construction of the Office of The Building Official (OBO) Phase 1",
                 "code": "3SAIP21 - 8000R - C - 1c4",
                 "location": "[\"12\"]",
@@ -3780,6 +3852,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "348",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Construction of CSWDO Building Phase 2\n",
                 "code": "3SAIP21 - 8000R - C - 1c5",
                 "location": null,
@@ -3830,6 +3903,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
             "id": "349",
             "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Construction of Sangguniang Panglungsod (Phase 3)\n",
                 "code": "3SAIP21 - 8000R - C - 1c6",
                 "location": null,
@@ -3880,6 +3954,7 @@ convert_projects_into_active_model_v2(&json!({
             convert_projects_into_active_model_v2(&json!({
                 "id": "350",
                 "attributes": {
+                    "project_status": "Completed",
                     "name": " Construction of the Extension of Executive Building\n",
                     "code": "3SAIP21 - 8000R - C - 1c7",
                     "location": null,
@@ -3936,6 +4011,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "351",
                 "attributes": {
+                    "project_status": "Completed",
                     "name": "Completion of the Improvement of Covered Court (Fence and Structures)\n",
                     "code": "3SAIP21 - 8000R - C - 1c8",
                     "location": null,
@@ -3992,6 +4068,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "352",
                 "attributes": {
+                    "project_status": "Completed",
                     "name": " Completion of the Improvement of Meat Section at Agora Market",
                     "code": "3SAIP21-8000R-C-1c9",
                     "location": "[\"14\"]",
@@ -4048,6 +4125,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "353",
                 "attributes": {
+                    "project_status": "Completed",
                     "name": "Construction of Kitchen (2 Wings) at Rotunda Phase II\n",
                     "code": "3SAIP21 - 8000R - C - 1c10",
                     "location": null,
@@ -4104,6 +4182,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "354",
                 "attributes": {
+                    "project_status": "Completed",
                     "name": "11. Construction of Comfort Rooms with Water Tank at Rotunda",
                     "code": "3SAIP21-8000R-C-1c11",
                     "location": "[\"5\"]",
@@ -4160,6 +4239,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "355",
                 "attributes": {
+                    "project_status": "Completed",
                     "name": "Completion of the Construction of Drug Rehabilitation Center at Brgy Palpalan",
                     "code": "3SAIP21-8000R-C-1c12",
                     "location": "[\"47\"]",
@@ -4216,6 +4296,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "356",
                 "attributes": {
+                    "project_status": "Completed",
                     "name": "Repair/Rehab of School Building for Pagadian City International College at Barangay San Jose\n",
                     "code": "3SAIP21 - 8000R - C - 1c13",
                     "location": null,
@@ -4272,6 +4353,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "357",
                 "attributes": {
+                    "project_status": "Not Yet Started",
                     "name": "Improvement of DFA Office at C# Building\n",
                     "code": "3SAIP21 - 8000R - C - 1c14",
                     "location": null,
@@ -4322,6 +4404,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "358",
                 "attributes": {
+                    "project_status": "On-Going",
                     "name": "Repair/Improvement of GSO, Civil Registrar, Agriculture, CSWDO and Tourism Building",
                     "code": "3SAIP21-8000R-C-1C15",
                     "location": "[\"7\"]",
@@ -4378,6 +4461,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "359",
                 "attributes": {
+                    "project_status": "Completed",
                     "name": "Construction of Perimeter Fence at New Acquired Lot (Near City Agriculture Farm), Barangay Danlugan\n",
                     "code": "3SAIP21 - 8000R - C - 1d1",
                     "location": null,
@@ -4434,6 +4518,7 @@ convert_projects_into_active_model_v2(&json!({
                 convert_projects_into_active_model_v2(&json!({
                 "id": "360",
                 "attributes": {
+                    "project_status": "Bidded",
                     "name": "Completion of Equipment Garage at Old Solid Waste Including Perimeter Fence, Bagong Silang Phase II\n",
                     "code": "3SAIP21 - 8000R - C - 1d2",
                     "location": null,
@@ -4490,6 +4575,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "361",
                 "attributes": {
+                    "project_status": "Not Yet Started",
                     "name": "Development of Amusement Park at Barangay Sta Lucia\n",
                     "code": "3SAIP21 - 8000R - C - 1d3",
                     "location": null,
@@ -4540,6 +4626,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "362",
                 "attributes": {
+                    "project_status": "On-Going",
                     "name": " Establishment and Development of Pagadian City Water Park Phase II",
                     "code": "3SAIP21-8000R-C-1d4",
                     "location": "[\"13\"]",
@@ -4596,6 +4683,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "363",
                 "attributes": {
+                    "project_status": "Not Yet Started",
                     "name": "Land Development at Regional Center Site\n",
                     "code": "3SAIP21 - 8000R - C - 1d5",
                     "location": null,
@@ -4646,6 +4734,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "364",
                 "attributes": {
+                    "project_status": "Not Yet Started",
                     "name": "Consultancy Services for Architectural, Structural Mechanical, Electrical, Plumbing, Fire Protection Design and Cost Estimates for the Proposed City Government Building Complex (SP, OBO, CSWDO, CEO, Senior Citizen/Persons wih Disability) at Brgy San Jose ",
                     "code": "3SAIP21 - 8000R - C - 1d6",
                     "location": null,
@@ -4696,6 +4785,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "365",
                 "attributes": {
+                    "project_status": "Completed",
                     "name": "Expansion/Rehab of Water Supply System (Expansion of Potable Water Supply Sysytem w/ Trapezoidal Intake Box, Sump Tank Chlorinator, Water Meter & Pipe Connections, Lison Valley\n",
                     "code": "LGSF-SDBP",
                     "location": null,
@@ -4752,6 +4842,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "366",
                 "attributes": {
+                    "project_status": "Completed",
                     "name": "Construction of Local Access Road (Conc. Of :ocal Access Road from Jct. Brgy Road Highway, 4M width x 0.20M Thickness, 1.5M each shouldering w/ 3 Box Culvert Type Local Bridge) Brgy Dampalan\n",
                     "code": "LGSF-SDBP",
                     "location": null,
@@ -4808,6 +4899,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "367",
                 "attributes": {
+                    "project_status": "Completed",
                     "name": "Construction of Local Access Road (Conc. Of :ocal Access Road from Jct. Brgy Road Highway, 4M width x 0.20M Thickness, 1.5M Each Shouldering Both Sides Barangay Dampalan\n",
                     "code": "LGSF-SDBP",
                     "location": null,
@@ -4864,6 +4956,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "368",
                 "attributes": {
+                     "project_status": "Completed",
                     "name": "Construction of Local Access Road (Conc. Of :ocal Access Road from Jct. Brgy Road Highway, 1KM x 4M width x 0.20M Thickness, 1.5M Each Shouldering Both Sides at Prk Avocado, Lison Valley\n",
                     "code": "LGSF-SDBP",
                     "location": null,
@@ -4920,6 +5013,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "369",
                 "attributes": {
+                    "project_status": "Completed",
                     "name": "Lison Valley Tribal Village, Lison Valley\n",
                     "code": "NHA/LGU",
                     "location": null,
@@ -4976,6 +5070,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "370",
                 "attributes": {
+                    "project_status": "Completed",
                     "name": "Construction of Community Based Treatment  and Rehabilitation  Center at Brgy Palpalan - LGU Pagadian\n",
                     "code": "TRUST FUND",
                     "location": null,
@@ -5032,6 +5127,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "371",
                 "attributes": {
+                    "project_status": "Completed",
                     "name": "Completion of Construction of IBT Annex Building I",
                     "code": "4SAIP21 - 8000G - C - 1b1",
                     "location": "[]",
@@ -5088,6 +5184,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "372",
                 "attributes": {
+                     "project_status": "On-Going",
                     "name": "Completion of Construction of IBT Annex Building II\n",
                     "code": "4SAIP21 - 8000G - C - 1b2",
                     "location": null,
@@ -5144,6 +5241,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "373",
                 "attributes": {
+                    "project_status": "Completed",
                     "name": "Improvement of DFA Office at C3 Building (Counters, Partitions/Cubicle, Etc)\n",
                     "code": "4SAIP21 - 8000G - C - 1b3",
                     "location": null,
@@ -5200,6 +5298,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "374",
                 "attributes": {
+                    "project_status": "Completed",
                     "name": "Completion of Renovation of PCIC School Building\n",
                     "code": "4SAIP21-8000G-C-1b4",
                     "location": "[\"12\"]",
@@ -5256,6 +5355,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
                 "id": "375",
                 "attributes": {
+                    "project_status": "Not Yet Started",
                     "name": "Construction of Clubhouse & Admin Building at Regional Center\n",
                     "code": "4SAIP21 - 8000G - C - 1b5",
                     "location": "[\"2\"]",

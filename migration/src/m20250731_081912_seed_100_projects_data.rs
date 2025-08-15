@@ -18,6 +18,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
               "id": "685",
               "attributes": {
+                "project_status": "Completed",
                 "name": " Concreting of Road at Prk Rubia, Sta Maria\n",
                 "code": "2SAILP21 - 8000R - A1A42",
                 "location": null,
@@ -74,6 +75,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "686",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Concreting of Road at Entrance Happy Church Connecting to Alano Street, Sta. Maria\n",
                 "code": "2SAILP21 - 8000R - A1A43",
                 "location": null,
@@ -130,6 +132,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "687",
               "attributes": {
+                "project_status": "Completed",
                 "name": " Concreting of Road at Purok Rubia - Bayview, Sta. Maria\n",
                 "code": "2SAILP21 - 8000R - A1A44",
                 "location": "[]",
@@ -186,6 +189,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "688",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Road Concreting from Dablo St to Boulevard Continuation (Provide 5.0M Gap from Boulevard) Santiago\n",
                 "code": "2SAILP21 - 8000R - A1A45",
                 "location": null,
@@ -236,6 +240,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "689",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Concreting of Road (1/2 Lane) at Prk Quezon to Prk Villarin, Sto. Nino\n",
                 "code": "2SAILP21-8000R-A1A46",
                 "location": "[\"17\"]",
@@ -292,6 +297,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
               "id": "690",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Concreting of Road at Purok Antorium (1/2 Lane), Tawagan Sur\n",
                 "code": "2SAILP21 - 8000R - A1A47",
                 "location": null,
@@ -342,6 +348,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "691",
               "attributes": {
+                "project_status": "On-Going",
                 "name": "Concreting of Road at Zone 14 Going to Brgy Lenienza, Tiguma\n",
                 "code": "2SAILP21 - 8000R - A1A48",
                 "location": null,
@@ -398,6 +405,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "692",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Concreting of Road at Prk Lanzones (200M & 150M), Tuburan\n",
                 "code": "2SAILP21 - 8000R - A1A49",
                 "location": null,
@@ -454,6 +462,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "693",
               "attributes": {
+                 "project_status": "Completed",
                 "name": "Rehab/Impvt of Road at Purok Mangga (Riprap & Grouted Riprap Leading To Creek), Tuburan\n",
                 "code": "2SAILP21 - 8000R - A1A50",
                 "location": null,
@@ -510,6 +519,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "694",
               "attributes": {
+                "project_status": "On-Going",
                 "name": "Repair/Rehab of Road at Prk 3 Leading to Macasing Bridge (Reblocking), Tulangan\n",
                 "code": "2SAILP21 - 8000R - A1A51",
                 "location": "[\"51\"]",
@@ -566,6 +576,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "695",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Concreting of Road Leading to E/S Gate, Tulawas\n",
                 "code": "2SAILP21 - 8000R - A1A52",
                 "location": null,
@@ -622,6 +633,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "696",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Reblocking of Barangay Road, Tulawas\n",
                 "code": "2SAILP21 - 8000R - A1A53",
                 "location": null,
@@ -678,6 +690,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "697",
               "attributes": {
+                "project_status": "Bidded",
                 "name": "Construction of Footbridge at Prk Kapalaran\n",
                 "code": "2SAILP21 - 8000R - A1B1",
                 "location": null,
@@ -734,6 +747,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "698",
               "attributes": {
+                "project_status": "Bidded",
                 "name": "River Control at Purok Bagong Buhay to Kapalaran, Balangasan\n",
                 "code": "2SAILP21 - 8000R - A1B2",
                 "location": null,
@@ -790,6 +804,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "699",
               "attributes": {
+                "project_status": "Completed",
                 "name": " Rehab of River Control at Purok Tabing Ilog to Purok Kawayan, Balangasan \n",
                 "code": " 2SAILP21 - 8000R - A1B3 ",
                 "location": null,
@@ -846,6 +861,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
           "id": "700",
           "attributes": {
+            "project_status": "Bidded",
             "name": "River Control at Purok Tugas to Boundary Barangay Dumagoc (Along Napolan River), Balangasan",
             "code": "2SAILP21 - 8000R - A1B4",
             "location": null,
@@ -896,6 +912,7 @@ impl MigrationTrait for Migration {
 convert_projects_into_active_model_v2(&json!({
           "id": "701",
           "attributes": {
+            "project_status": "Completed",
             "name": " Const of Box Culvert at Zone 12, Matinabangon, Bulatok",
             "code": "2SAILP21 - 8000R - A1B5",
             "location": null,
@@ -952,6 +969,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "702",
           "attributes": {
+             "project_status": "Completed",
             "name": "Repair of Box Culvert at Purok Santan, Bulawan",
             "code": "2SAILP21 - 8000R - A1B6",
             "location": null,
@@ -1008,6 +1026,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "703",
           "attributes": {
+            "project_status": "On-Going",
             "name": " Continuation of Drainage Construction to Slaughter House (Old), Dumagoc",
             "code": "2SAILP21 - 8000R - A1B7",
             "location": "[]",
@@ -1064,6 +1083,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "704",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Slope Protection at Prk Silao, Dumagoc",
             "code": "2SAILP21 - 8000R - A1B8",
             "location": null,
@@ -1120,6 +1140,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "705",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Repair of Bridge at Purok Caimito (Hanging Bdrige/Cable & Plank) Lison Valley",
             "code": "2SAILP21 - 8000R - A1B9",
             "location": null,
@@ -1170,6 +1191,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "706",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Hanging Bridge at Prk Nangka/Box Culvert, Lison Valley",
             "code": "2SAILP21 - 8000R - A1B10",
             "location": null,
@@ -1220,6 +1242,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "707",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Repair of Spillway at Prk 3 (Going to Hot Spring), Lourdes",
             "code": "2SAILP21 - 8000R - A1B11",
             "location": null,
@@ -1270,6 +1293,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "708",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Drainage Fronting Barangay Hall, Lower Sibatang",
             "code": "2SAILP21 - 8000R - A1B12",
             "location": null,
@@ -1326,6 +1350,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "709",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Construction of Drainage at Prk Hiniusa, and Continuation of Prk Papaya, Lumbia",
             "code": "2SAILP21 - 8000R - A1B13",
             "location": null,
@@ -1382,6 +1407,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "710",
           "attributes": {
+            "project_status": "Completed",
             "name": "Repair of Drainage at Prk. Tinangkong (Near Prince Cu) Palpalan",
             "code": "2SAILP21-8000R-A1B14",
             "location": "[\"47\"]",
@@ -1438,6 +1464,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "711",
           "attributes": {
+            "project_status": "Completed",
             "name": "Repair of River Control at Tulawas Bridge, Tulawas",
             "code": "2SAILP21 - 8000R - A1B15",
             "location": null,
@@ -1494,6 +1521,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "712",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Barangay Health Center, Alegria",
             "code": "2SAILP21 - 8000R - A1C1",
             "location": null,
@@ -1550,6 +1578,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "713",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Multi-Purpose Building Phase II - Baloyboan",
             "code": "2SAILP21 - 8000R - A1C2",
             "location": "[\"21\"]",
@@ -1606,6 +1635,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "714",
           "attributes": {
+            "project_status": "Completed",
             "name": "Completion of Barangay Stage, Bogo",
             "code": "2SAILP21 - 8000R - A1C3",
             "location": null,
@@ -1662,6 +1692,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "715",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Multi-Purpose Hall Phase II, Bomba",
             "code": "2SAILP21 - 8000R - A1C4",
             "location": null,
@@ -1718,6 +1749,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "716",
           "attributes": {
+             "project_status": "Completed",
             "name": "Construction of Covered Court (Roofing), Bomba",
             "code": "2SAILP21 - 8000R - A1C5",
             "location": null,
@@ -1774,6 +1806,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "717",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Multi-Purpose Building at Nazareth Brgy site, Buenavista",
             "code": "2SAILP21 - 8000R - A1C6",
             "location": null,
@@ -1830,6 +1863,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "718",
           "attributes": {
+            "project_status": "Completed",
             "name": "Rehabilitation of Nazareth Market Building, Buenavista",
             "code": "2SAILP21 - 8000R - A1C7",
             "location": null,
@@ -1886,6 +1920,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "719",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Covered Court, Bulawan",
             "code": "2SAILP21 - 8000R - A1C8",
             "location": null,
@@ -1942,6 +1977,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "720",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Multi-Purpose Hall, Dampalan",
             "code": "2SAILP21 - 8000R - A1C9",
             "location": null,
@@ -1998,6 +2034,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "721",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Gym, Dampalan",
             "code": "2SAILP21 - 8000R - A1C10",
             "location": null,
@@ -2054,6 +2091,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "722",
           "attributes": {
+            "project_status": "Completed",
             "name": "Completion of Stage and Bleacher, Ditoray",
             "code": "2SAILP21 - 8000R - A1C11",
             "location": "[]",
@@ -2110,6 +2148,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "723",
           "attributes": {
+            "project_status": "Completed",
             "name": "Rehabilitation of Health Center, Gubac",
             "code": "2SAILP21 - 8000R - A1C12",
             "location": null,
@@ -2166,6 +2205,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "724",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Renovation of Old Barangay Hall, Kahayagan",
             "code": "2SAILP21 - 8000R - A1C13",
             "location": null,
@@ -2216,6 +2256,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "725",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Two-Storey Multi-Purpose Building (Infront of Brgy Hall), Kalasan",
             "code": "2SAILP21 - 8000R - A1C14",
             "location": null,
@@ -2266,6 +2307,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "726",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Construction of Purok Shed at Purok Baterna, Manga & Tres, Lapedian",
             "code": "2SAILP21 - 8000R - A1C15",
             "location": null,
@@ -2322,6 +2364,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "727",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Renovation of Six (6) Sheds at 100T, Lumad",
             "code": "2SAILP21 - 8000R - A1C16",
             "location": null,
@@ -2372,6 +2415,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "728",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Renovation of Six (6) Purok Halls (150T each) at Puroks Rubia, Rose, Gemelina, Gabi, Pechay and Paminta, Macasing",
             "code": "2SAILP21 - 8000R - A1C17",
             "location": "[\"44\"]",
@@ -2428,6 +2472,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "729",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Multi-Purpose Building Phase III, Manga",
             "code": "2SAILP21 - 8000R - A1C18",
             "location": null,
@@ -2484,6 +2529,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "730",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Purok Sheds - Seven (7) Units, Muricay",
             "code": "2SAILP21 - 8000R - A1C19",
             "location": null,
@@ -2540,6 +2586,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "731",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Improvement of Multi-Purpose Hall, Palpalan",
             "code": "2SAILP21 - 8000R - A1C20",
             "location": null,
@@ -2596,6 +2643,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "732",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Mini-Gym at Palpalan Integrated School, Palpalan",
             "code": "2SAILP21 - 8000R - A1C21",
             "location": null,
@@ -2646,6 +2694,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "733",
           "attributes": {
+            "project_status": "Completed",
             "name": "Continuation of Barangay Hall Construction Phase II, San Jose",
             "code": "2SAILP21 - 8000R - A1C22",
             "location": null,
@@ -2702,6 +2751,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "734",
           "attributes": {
+            "project_status": "Bidded",
             "name": "Construction of Operation Center Building Phase I, Tulangan",
             "code": "2SAILP21 - 8000R - A1C23",
             "location": null,
@@ -2758,6 +2808,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "735",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Day Care Center, Upper Sibatang",
             "code": "2SAILP21 - 8000R - A1C24",
             "location": null,
@@ -2814,6 +2865,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "736",
           "attributes": {
+             "project_status": "Completed",
             "name": "Construction of Solar Drier Infront of Barangay Gym, Alegria",
             "code": "2SAILP21 - 8000R - A1D1",
             "location": null,
@@ -2870,6 +2922,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "737",
           "attributes": {
+            "project_status": "Completed",
             "name": "Ground Improvement/Concreting at Barangay Site, Baloyboan",
             "code": "2SAILP21 - 8000R - A1D2",
             "location": null,
@@ -2926,6 +2979,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "738",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Seaweed Solar Drier, Tawagan Sur",
             "code": "2SAILP21 - 8000R - A1D3",
             "location": null,
@@ -2976,6 +3030,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "739",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Electrification from Brgy Datagan to Kendis Cave, Datagan",
             "code": "2SAILP21 - 8000R - A1E1",
             "location": null,
@@ -3026,6 +3081,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "740",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Installation of Water Connection to Prk Mangga, Datagan",
             "code": "2SAILP21 - 8000R - A1E2",
             "location": null,
@@ -3082,6 +3138,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "741",
           "attributes": {
+            "project_status": "Completed",
             "name": "Installation of Water Connection to Prk Sitio Kaluway, Datagan",
             "code": "2SAILP21 - 8000R - A1E3",
             "location": null,
@@ -3138,6 +3195,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "742",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Barangay Hall Perimeter Fence, Dumagoc",
             "code": "2SAILP21 - 8000R - A1E4",
             "location": "[\"6\"]",
@@ -3194,6 +3252,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "743",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Perimeter Fence at Barangay Hall, Manga",
             "code": "2SAILP21 - 8000R - A1E5",
             "location": null,
@@ -3250,6 +3309,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "744",
           "attributes": {
+            "project_status": "Bidded",
             "name": "Const. of Pathway at Zone 1 & 2 (Near E/S), Muricay",
             "code": "2SAILP21 - 8000R - A1E6",
             "location": null,
@@ -3306,6 +3366,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "745",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Embankment of Lot Near CO Tek Chun School for Fire Station, Tiguma",
             "code": "2SAILP21 - 8000R - A1E7",
             "location": null,
@@ -3356,6 +3417,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "746",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Mini-Port at White Beach, White Beach",
             "code": "2SAILP21 - 8000R - A1E8",
             "location": null,
@@ -3406,6 +3468,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "747",
           "attributes": {
+            "project_status": "Completed",
             "name": "Road Construction of Purok Talong to Purok Nangka (1/2 Lane, 1,699 km), Barangay Banale",
             "code": "5SAIP21 - 8000R - C1a",
             "location": "[]",
@@ -3462,6 +3525,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "748",
           "attributes": {
+            "project_status": "Completed",
             "name": "Impvt/Rehab/Road Widening leading to Cemetery, Brgy Danlugan",
             "code": "5SAIP21 - 8000R - C1b",
             "location": null,
@@ -3518,6 +3582,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "749",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Sidewalk with Underground Drainage at Sto Nino - Banale, Barangay Sto. Nino",
             "code": "5SAIP21 - 8000R - C1c",
             "location": null,
@@ -3574,6 +3639,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "750",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Road From Prk Baybay to Prk Nawasa (Circumferential Road), Napolan ,Pagadian City",
             "code": "5SAIP21-8000R-C1d",
             "location": "[\"10\"]",
@@ -3630,6 +3696,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "751",
           "attributes": {
+            "project_status": "Completed",
             "name": " Road Widening from Existing Road of Barangay Ditoray Leading to Upper Sibatang, Barangay Ditoray\n",
             "code": "5SAIP21 - 8000R - C1e",
             "location": null,
@@ -3686,6 +3753,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "752",
           "attributes": {
+            "project_status": "Bidded",
             "name": "Construction of Sidewalk And Underground Drainage From National Highway to North Diversion Road (One Side Only), Barangay Bulatok\n",
             "code": "5SAIP21 - 8000R - C1f",
             "location": null,
@@ -3742,6 +3810,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "753",
           "attributes": {
+            "project_status": "Bidded",
             "name": " Construction of Deborok Barangay Road to Ditoray Road, Barangay Deborok\n",
             "code": "5SAIP21 - 8000R - C1g",
             "location": null,
@@ -3798,6 +3867,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "754",
           "attributes": {
+             "project_status": "Completed",
             "name": "Construction of Road at Purok Talisay B (Near Kapa Subdivision) 1/2 Lane, Barangay Kawit\n",
             "code": "5SAIP21 - 8000R - C1h",
             "location": null,
@@ -3854,6 +3924,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "755",
           "attributes": {
+            "project_status": "Completed",
             "name": " Construction of Road Along Dablo St. Beside Water Park, Barangay San Pedro\n",
             "code": "5SAIP21 - 8000R - C1i",
             "location": null,
@@ -3910,6 +3981,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "756",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Wet Market, Barangay Danlugan\n",
             "code": "5SAIP21 - 8000R - C2a",
             "location": null,
@@ -3966,6 +4038,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "757",
           "attributes": {
+            "project_status": "Completed",
             "name": "Rehab/Impvt of Covered Court, Barangay Tawagan Sur\n",
             "code": "5SAIP21 - 8000R - C2b",
             "location": null,
@@ -4022,6 +4095,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "758",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Barangay Hall Phase II, Barangay Gatas\n",
             "code": "5SAIP21 - 8000R - C2c",
             "location": null,
@@ -4072,6 +4146,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "759",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Construction of Bureau of Local Government and Finance Building (BLGF) Regional Center, Balintawak\n",
             "code": "NATIONAL FUND",
             "location": null,
@@ -4128,6 +4203,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "760",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Construction of DOJ-PPA Regional Office IX Building, Regional Center Site, Balintawak",
             "code": "NATIONAL FUND",
             "location": null,
@@ -4184,6 +4260,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "761",
           "attributes": {
+            "project_status": "Completed",
             "name": "Provision of Streetlights at the City's Resettlement Project, Nazareth",
             "code": "RGAP DHSUD",
             "location": null,
@@ -4240,6 +4317,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "762",
           "attributes": {
+             "project_status": "Completed",
             "name": "Provision of Streetlights at the City's Resettlement Project, Timberland",
             "code": "RGAP DHSUD",
             "location": null,
@@ -4296,6 +4374,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "763",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Solid Waste Mgt. Program (SWAMP)",
             "code": "DF23-3000-A2",
             "location": null,
@@ -4346,6 +4425,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "764",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Loan Financing Program",
             "code": "DF23-8000-B8",
             "location": null,
@@ -4396,6 +4476,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "765",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Solid Waste Mgt. Strengthening Program (SWAMP) Equipment",
             "code": "DF23-3000-A1",
             "location": null,
@@ -4446,6 +4527,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "766",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Impvt./Repair of Support services/facilities, incl. farmers training center, technical dev't center, library & viewing room, seed warehouse and research laboratory",
             "code": "DF23-8000-B2-n",
             "location": null,
@@ -4496,6 +4578,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "767",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "City Counterpart/Equity to Grants-in-Aid",
             "code": "DF23-8000-B7",
             "location": null,
@@ -4546,6 +4629,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "768",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Development of Fish Sanctuary",
             "code": "DF23-8000-A1",
             "location": null,
@@ -4596,6 +4680,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "769",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Completion/Counterpart of Lourdes Bridge",
             "code": "DF23-8000-B1a",
             "location": null,
@@ -4646,6 +4731,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "770",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Concreting of Road and Unpaved Areas of the Entire Pagadian City Leisure Park",
             "code": "DF23-8000-B1b",
             "location": null,
@@ -4696,6 +4782,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "772",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Repair/Rehab. Of Fifth Floor at City Commercial Center Brgy. Santiago",
             "code": "DF23-8000-B2-b",
             "location": null,
@@ -4746,6 +4833,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "773",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Commercial Center Building with Parking Area, RGC, Balintawak",
             "code": "DF23-8000-B2-c",
             "location": null,
@@ -4796,6 +4884,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "774",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Completion/Counterpart of Multi-Purpose Bldg. & Reg. Center",
             "code": "DF23-8000-B2-d",
             "location": null,
@@ -4846,6 +4935,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "775",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Completion of Covered Court Improvement (Roofing & Louvers), City Plaza",
             "code": "DF23-8000-B2-e",
             "location": null,
@@ -4896,6 +4986,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "776",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Tile Works and Improvement of Evacuation Center, Brgy. Bulatok",
             "code": "DF23-8000-B2-f",
             "location": null,
@@ -4946,6 +5037,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "777",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Improvement of Nazareth Market, Brgy. Buenavista",
             "code": "DF23-8000-B2-g",
             "location": null,
@@ -4996,6 +5088,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "778",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Completion of Danlugan Wet Market",
             "code": "DF23-8000-B2-h",
             "location": null,
@@ -5046,6 +5139,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "779",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Completion of Vegetable Section & Meat Section Bldg. @ Agora Market",
             "code": "DF23-8000-B2-i",
             "location": null,
@@ -5096,6 +5190,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "780",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Rehabilitation/Repair/Improvement of Pagadian City Fishport",
             "code": "DF23-8000-B2-j",
             "location": null,
@@ -5146,6 +5241,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "781",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Multi-Purpose Hall/Building 1 at Old Solid Waste, Bagong Silang, Balangasan Phase II",
             "code": "DF23-8000-B2-k",
             "location": null,
@@ -5196,6 +5292,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "782",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Multi-Purpose Hall/Building Hall 2 at Old Solid waste, Bagong Silang Phase I",
             "code": "DF23-8000-B2-l",
             "location": null,
@@ -5246,6 +5343,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "784",
           "attributes": {
+            "project_status": "Preparation",
             "name": "Completion of Multi-Purpose Building at Baywalk",
             "code": "DF23-8000-B2-o",
             "location": "[]",
@@ -5296,6 +5394,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "785",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Land Development of the Newly Purchased Lots for Regional Offices at Regional Center, Brgy. Balintawak",
             "code": "DF23-8000-B3-a",
             "location": null,
@@ -5346,6 +5445,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "786",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Development of Water System at Regional Center Site, Brgy. Balintawak",
             "code": "DF23-8000-B4-a",
             "location": null,

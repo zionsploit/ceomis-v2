@@ -18,6 +18,7 @@ impl MigrationTrait for Migration {
         convert_projects_into_active_model_v2(&json!({
           "id": "891",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Parent Effectiveness Services",
             "code": "LCPC23-3000-D3",
             "location": null,
@@ -68,6 +69,7 @@ impl MigrationTrait for Migration {
 convert_projects_into_active_model_v2(&json!({
           "id": "892",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Develop Cycle Menu",
             "code": "LCPC23-3000-D4",
             "location": null,
@@ -118,6 +120,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "893",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Barangay Administration towards the Dev't. of People's Capacitation ",
             "code": "RF23-1000-1-1",
             "location": null,
@@ -168,6 +171,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "894",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Support to Federations / Leagues of Elective & Appointive Officials (per Sec. 510 RA 7160)",
             "code": "RF23-1000-1-11",
             "location": null,
@@ -218,6 +222,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "895",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": " Pagadian One-Stop Business Center, incl. Printing of bus. permit forms, info. Campaigns, etc.)",
             "code": "RF23-1000-1-12-a",
             "location": null,
@@ -268,6 +273,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "896",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "City Commercial Center \"C3 Mgt. Operation",
             "code": "RF23-1000-1-13-d",
             "location": null,
@@ -318,6 +324,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "897",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Pagadian City Processing Complex",
             "code": "RF23-1000-1-13-e",
             "location": null,
@@ -368,6 +375,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "898",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Bagsakan",
             "code": "RF23-1000-1-13-h",
             "location": null,
@@ -418,6 +426,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "899",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Investment and Promotion Support Program",
             "code": "RF23-1000-1-14-a",
             "location": null,
@@ -468,6 +477,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "900",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Promotion/Advertisement for City Gov't Affairs & Other Similar Activities",
             "code": "RF23-1000-1-16",
             "location": null,
@@ -518,6 +528,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "901",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Katarungang Pambarangay System",
             "code": "RF23-1000-1-17",
             "location": null,
@@ -568,6 +579,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "902",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Strenghtening/Enhancement Program (Judicial & Other National Agencies)",
             "code": "RF23-1000-1-18",
             "location": null,
@@ -618,6 +630,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "903",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "People's Law nforcement Board (PLEB)",
             "code": "RF23-1000-1-19",
             "location": null,
@@ -668,6 +681,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "904",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Legal Assistance Services to Law Enforcement Offices",
             "code": "RF23-1000-1-20",
             "location": null,
@@ -718,6 +732,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "905",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Crime Prevention Enhancement Program",
             "code": "RF23-1000-2A-1a2",
             "location": null,
@@ -768,6 +783,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "906",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "PNP/BFP/BJMP Personnel Assistance Program (PAP)",
             "code": "RF23-1000-2A-1c",
             "location": null,
@@ -818,6 +834,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "907",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "PNP and Other Law Enforcement Support Program",
             "code": "RF23-1000-2A-1d",
             "location": null,
@@ -868,6 +885,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "908",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Repair/Rehabilitation of Patrol Boat Used for Patrolling against Sea Piracy",
             "code": "RF23-1000-2A-1h",
             "location": null,
@@ -918,6 +936,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "909",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Augmentation Force (Army, Reservist, RMG, CAFGU, SCAA,etc.,)",
             "code": "RF23-1000-2A-1i",
             "location": null,
@@ -968,6 +987,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "910",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Peace & Order Council (POC) Activities ",
             "code": "RF23-1000-2A-1k",
             "location": null,
@@ -1018,6 +1038,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "911",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Capability Bldg. of Brgy. Tanod, Bantay Dagat, BINs",
             "code": "RF23-1000-2A-1m",
             "location": null,
@@ -1068,6 +1089,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "912",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": " Barangay Tanod Operation",
             "code": "RF23-1000-2A-1n",
             "location": null,
@@ -1118,6 +1140,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "913",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Baywide Bantay Dagat Operation",
             "code": "RF23-1000-2A-1o",
             "location": null,
@@ -1168,6 +1191,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "914",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Brgy. Intelligence Networking (BIN) Operation",
             "code": "RF23-1000-2A-1p",
             "location": null,
@@ -1218,6 +1242,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "915",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Brgy. Peacekeepping Action Team (PATS) Operation",
             "code": "RF23-1000-2A-1q",
             "location": null,
@@ -1268,6 +1293,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "916",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Community Based Drug Rehabilitation Program",
             "code": "RF23-1000-2A-2a",
             "location": null,
@@ -1318,6 +1344,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "917",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Mass Media Campaign Against Illegal Drugs, Drug Abuse and other Crimes (TV, Radio, Print Ads)",
             "code": "RF23-1000-2A-2c",
             "location": null,
@@ -1368,6 +1395,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "918",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Pagadian City Anti-Drug Abuse Council (PACADAC) for PPAs",
             "code": "RF23-1000-2A-2d",
             "location": null,
@@ -1418,6 +1446,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "919",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Barangay Anti-Drug Abuse Council (BADAC) for PPAs of 54 barangays",
             "code": "RF23-1000-2A-2e",
             "location": null,
@@ -1468,6 +1497,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "920",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Anti-Insurgency Support Program and Initiaves/ELCAC",
             "code": "RF23-1000-2A-3a",
             "location": null,
@@ -1518,6 +1548,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "921",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Traffic Management Program",
             "code": "RF23-1000-2B-1a",
             "location": null,
@@ -1568,6 +1599,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "922",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Maintenance of Traffic Lights and Sign Boards Operation",
             "code": "RF23-1000-2B-1e",
             "location": null,
@@ -1618,6 +1650,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "923",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "People Empowerment, Advancement, Capacitation & Enhancement (PEACE)",
             "code": "RF23-1000-2B-2a",
             "location": null,
@@ -1668,6 +1701,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "924",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Maint. of Green House Nursery/Beautification",
             "code": "RF23-3000-A1",
             "location": null,
@@ -1718,6 +1752,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "925",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Brgy. Support Program (BSP) -  to all 54 brgys",
             "code": "RF23-3000-J",
             "location": null,
@@ -1768,6 +1803,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "926",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Barangay Physical Enhancement Program (BPEP) to all 54 barangays",
             "code": "RF23-3000-K",
             "location": null,
@@ -1818,6 +1854,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "927",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": " Information Advocacy on Legislation (Various Radio and Print Media)",
             "code": "RF23-1000-1-7",
             "location": null,
@@ -1868,6 +1905,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "928",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Strenghtening/Enhancement of Legislative Activities (CVM)",
             "code": "RF23-1000-1-8a",
             "location": null,
@@ -1918,6 +1956,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "929",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Strenghtening/Enhancement of Legislative ",
             "code": "RF23-1000-1-8b",
             "location": null,
@@ -1968,6 +2007,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "930",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "City Library (inlcudes purchase of books, references, etc, trainings and other activities)",
             "code": "RF23-1000-1-12-b",
             "location": null,
@@ -2018,6 +2058,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "931",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Development Planning & programming/Technical Activities relating to the MDP/CLUP, PAIC, LPRP & similar activities",
             "code": "RF23-1000-1-2a",
             "location": null,
@@ -2068,6 +2109,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "932",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Local Dev't  Council (LDC) Activities, e.g., Meetings, Monitoring, Coordinating Seminars    Strategic Planning Workshops, etc.",
             "code": "RF23-1000-1-2b",
             "location": null,
@@ -2118,6 +2160,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "933",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "CLUP Advocacy towards Sustainable and Effective Administration & Magt. of Land & Environment",
             "code": "RF23-1000-1-2d",
             "location": null,
@@ -2168,6 +2211,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "934",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Printing of  updated Plans with standard required colored maps/other dev't. plans",
             "code": "RF23-1000-1-2e",
             "location": null,
@@ -2218,6 +2262,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "935",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Small and Medium Enterpreneurship Dev't. (SMED) Council",
             "code": "RF23-1000-1-3a",
             "location": null,
@@ -2268,6 +2313,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "936",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Seal of Good Local Governance (SGLG)/Full Disclosure Policy",
             "code": "RF23-1000-1-3b",
             "location": null,
@@ -2318,6 +2364,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "937",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "City Project Monitoring Committee (CPMC) Activities (DILG MC's 89-376 & 93-93)",
             "code": "RF23-1000-1-3c",
             "location": null,
@@ -2368,6 +2415,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "938",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": " Local Poverty Reduction Program (LRRP) Activities (DILG MC 2001-105)",
             "code": "RF23-1000-1-3d",
             "location": null,
@@ -2418,6 +2466,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "939",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "City Investment Incentive Board/LIIC",
             "code": "RF23-1000-1-14-c",
             "location": null,
@@ -2468,6 +2517,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "940",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Bids & Awards Committee (Supplies, etc.)",
             "code": "RF23-1000-1-13-g",
             "location": null,
@@ -2518,6 +2568,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "941",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Conduct of Inventory & Physical Inspection of City Govt't. Properties and Equipment",
             "code": "RF23-1000-1-15",
             "location": null,
@@ -2568,6 +2619,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "942",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Improvement/Maintenance of City Plaza",
             "code": "RF23-8000-3D-2",
             "location": null,
@@ -2618,6 +2670,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "943",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Improvement/Maintenance of City Hall Grounds",
             "code": "RF23-8000-3D-3",
             "location": null,
@@ -2668,6 +2721,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "944",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Impvt./Maint. of City Street Shoulders & Islands",
             "code": "RF23-8000-3D-4",
             "location": null,
@@ -2718,6 +2772,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "945",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Maint. Of City Plaza and Facilities incl. Dancing  Fountain",
             "code": "RF23-8000-3D-6",
             "location": null,
@@ -2768,6 +2823,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "946",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Enhancement of Financial Planning, Programming and Budgeting on City & Barangay Budget Administration",
             "code": "RF23-1000-1-4",
             "location": null,
@@ -2818,6 +2874,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "947",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Accounting System and Procedure for City/Brgy.",
             "code": "RF23-1000-1-5",
             "location": null,
@@ -2868,6 +2925,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "948",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Tax Information Campaign",
             "code": "RF23-1000-1-6",
             "location": null,
@@ -2918,6 +2976,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "949",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Legal Litigation and other Legal Services",
             "code": "RF23-1000-1-21",
             "location": null,
@@ -2968,6 +3027,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "950",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": " Local Gov't. Supervision/Monitoring for Na'l. Programs/Projects",
             "code": "RF23-1000-1-10",
             "location": null,
@@ -3018,6 +3078,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "951",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Barangay Food Production, Security and Mgt.",
             "code": "RF23-8000-1a",
             "location": null,
@@ -3068,6 +3129,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "952",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Establishment of Seed Farms and Seedling Nurseries",
             "code": "RF23-8000-1b",
             "location": null,
@@ -3118,6 +3180,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "953",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Prevention and Control of Plant Diseases",
             "code": "RF23-8000-1c",
             "location": null,
@@ -3168,6 +3231,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "954",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Fingerling Dispersal and Other Seedling Materials for Aquaculture (Seaweed Propagules)",
             "code": "RF23-8000-1d",
             "location": null,
@@ -3218,6 +3282,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "955",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Conservation of Mangroves",
             "code": "RF23-8000-1e",
             "location": null,
@@ -3268,6 +3333,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "956",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Liquid Nitrogen Plant",
             "code": "RF23-1000-1-13-f",
             "location": null,
@@ -3318,6 +3384,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "957",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Animal Health Program",
             "code": "RF23-8000-2a",
             "location": null,
@@ -3368,6 +3435,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "958",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Meat Inspection Services",
             "code": "RF23-8000-2b",
             "location": null,
@@ -3418,6 +3486,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "959",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Anti-Rabies Vaccination",
             "code": "RF23-8000-2c",
             "location": null,
@@ -3468,6 +3537,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "960",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Operation and Management of Poultry Multiplier Farm/Production Center",
             "code": "RF23-8000-2d",
             "location": null,
@@ -3518,6 +3588,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "961",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Development of Animal Breeding Stations and Dairy Farms",
             "code": "RF23-8000-2e",
             "location": null,
@@ -3568,6 +3639,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "962",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Coastal Rehabilitation/Coastal Mgt. Research",
             "code": "RF23-3000-B1",
             "location": null,
@@ -3618,6 +3690,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "963",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Watershed Management",
             "code": "RF23-3000-C",
             "location": null,
@@ -3668,6 +3741,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "964",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Management of Communal Forest",
             "code": "RF23-3000-D1a",
             "location": null,
@@ -3718,6 +3792,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "965",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Management of Integrated Social Forestry",
             "code": "RF23-3000-D1b",
             "location": null,
@@ -3768,6 +3843,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "966",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Establishment of Tree Parks and Greenbelts",
             "code": "RF23-3000-D1c",
             "location": null,
@@ -3818,6 +3894,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "967",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Upland Ecosystem Mitigation & Resilience Program",
             "code": "RF23-3000-F2",
             "location": null,
@@ -3868,6 +3945,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "968",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Management and Maintenance of Air Quality Program",
             "code": "RF23-3000-F3",
             "location": null,
@@ -3918,6 +3996,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "969",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Management of Water Quality Protection, Improvement, and/or Rehabilitation",
             "code": "RF23-3000-F4",
             "location": null,
@@ -3968,6 +4047,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "970",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Clean and Green Program",
             "code": "RF23-3000-G",
             "location": null,
@@ -4018,6 +4098,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "971",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Materials Laboratory",
             "code": "RF23-1000-1-13-c",
             "location": null,
@@ -4068,6 +4149,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "972",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Miscellaneous Investigation and Survey",
             "code": "RF23-8000-3D-1",
             "location": null,
@@ -4118,6 +4200,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "973",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Investment and Promotion",
             "code": "RF23-1000-1-14-b",
             "location": null,
@@ -4168,6 +4251,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "974",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Titling of Acquired City Gov't. Lots",
             "code": "RF23-1000-1-22",
             "location": null,
@@ -4218,6 +4302,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "975",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "City Computerization Program (Software/Hardware)",
             "code": "RF23-1000-1-23",
             "location": null,
@@ -4268,6 +4353,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "976",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Crime Prevention Support Program",
             "code": "RF23-1000-2A-1a1",
             "location": null,
@@ -4318,6 +4404,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "977",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "PNP Physical Enhancement Program  (PEP), e.g, Acquisition /Purchase  of long and Short Firearms, Bullets & Bullet Reloading Machine ",
             "code": "RF23-1000-2A-1b",
             "location": null,
@@ -4368,6 +4455,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "978",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Police Communication Enhancement Program (PCEP), i.e, Base Radios & Handheld Radio Sets & Telephone Lines)",
             "code": "RF23-1000-2A-1e",
             "location": null,
@@ -4418,6 +4506,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "979",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Purchase /Installation of CCTV Facial Recognition including Control Tower, Antennae, Digital Video Recorder (DVR) and Accessories for Surveillance/Information at various strategic  location incl. installation of Solar Lights",
             "code": "RF23-1000-2A-1f",
             "location": null,
@@ -4468,6 +4557,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "980",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Purchase of Motor Vehicles/Motorcycles",
             "code": "RF23-1000-2A-1g",
             "location": null,
@@ -4518,6 +4608,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "981",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Peace & Order Council (Purchase of IT Eqpt.., LED Big Screen TV for Multi-media )",
             "code": "RF23-1000-2A-1l",
             "location": null,
@@ -4568,6 +4659,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "982",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Installation of Roads/Traffic Signages",
             "code": "RF23-1000-2B-1b",
             "location": null,
@@ -4618,6 +4710,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "983",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Acquisition/Purchase of Lot for Regional Government Center",
             "code": "RF23-8000-4-a",
             "location": null,
@@ -4668,6 +4761,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "984",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Strenghtening the LDC and its Secretariat, e.g., Equipment, Facilities, etc.",
             "code": "RF23-1000-1-2c",
             "location": null,
@@ -4718,6 +4812,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "985",
           "attributes": {
+             "project_status": "Not Yet Started",
             "name": "Auditing Procedures/System for City/Barangay ",
             "code": "RF23-1000-1-9",
             "location": null,
@@ -4768,6 +4863,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "986",
           "attributes": {
+            "project_status": "Completed",
             "name": "Completion of Police Outpost (PHASE 3) at Boulevard",
             "code": "RF23-1000-1-2A-1j1",
             "location": "[\"16\"]",
@@ -4824,6 +4920,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "988",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Construction of Bahay Silangan Building (for drug free city)",
             "code": "RF23-1000-2A-2b",
             "location": "[]",
@@ -4874,6 +4971,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "989",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Installation/Establishment of Street Names ( All street Corners )  ( All street Corners )",
             "code": "RF23-8000-2B-1c",
             "location": null,
@@ -4924,6 +5022,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "990",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Acquisition/Installation of Traffic Signalization System including Configuration and Commissioning at 3 major Road Junctions",
             "code": "RF23-8000-2B-1d",
             "location": null,
@@ -4974,6 +5073,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "991",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Rehab./Repair/Maint. Of Barangay Roads",
             "code": "RF23-8000-3A-1",
             "location": null,

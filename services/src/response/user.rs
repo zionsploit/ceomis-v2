@@ -6,7 +6,11 @@ use ts_rs::TS;
 #[ts(export, export_to = "../../../client/src/types/Users.ts")]
 pub struct ResponseLogin {
     pub jwt_token: String,
-    pub session_id: String
+    pub session_id: String,
+    pub info_id: Option<i32>,
+    pub info_first_name: Option<String>,
+    pub info_middle_name: Option<String>,
+    pub info_last_name: Option<String>,
 }
 
 #[derive(Deserialize, Serialize, FromQueryResult)]
