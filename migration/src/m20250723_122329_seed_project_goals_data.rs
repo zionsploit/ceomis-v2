@@ -14,43 +14,71 @@ impl MigrationTrait for Migration {
        let make_projects_goals_data = [
             settings_sdg::ActiveModel {
                 name: Set("No Poverty".to_string()),
-                ..Default::default()
+                id: Set(1)
             },
             settings_sdg::ActiveModel {
                 name: Set("Zero Hunger".to_string()),
-                ..Default::default()
+                id: Set(2)
             },
             settings_sdg::ActiveModel {
                 name: Set("Good Health and Well-Being".to_string()),
-                ..Default::default()
+                id: Set(3)
             },
             settings_sdg::ActiveModel {
                 name: Set("Quality Education".to_string()),
-                ..Default::default()
+                id: Set(4)
             },
             settings_sdg::ActiveModel {
                 name: Set("Gender Equality".to_string()),
-                ..Default::default()
+                id: Set(5)
             },
             settings_sdg::ActiveModel {
                 name: Set("Clean Water and Sanitation".to_string()),
-                ..Default::default()
+                id: Set(6)
             },
             settings_sdg::ActiveModel {
                 name: Set("Affordable and Clean Energy".to_string()),
-                ..Default::default()
+                id: Set(7)
             },
             settings_sdg::ActiveModel {
                 name: Set("Decent Work and Economic Growth".to_string()),
-                ..Default::default()
+                id: Set(8)
             },
             settings_sdg::ActiveModel {
                 name: Set("Industry, Innovation and Infrastructure".to_string()),
-                ..Default::default()
+                id: Set(9)
             },
             settings_sdg::ActiveModel {
                 name: Set("Reduced Inequalities".to_string()),
-                ..Default::default()
+                id: Set(10)
+            },
+            settings_sdg::ActiveModel {
+                name: Set("Sustainable Cities and Communities".to_string()),
+                id: Set(11)
+            },
+            settings_sdg::ActiveModel {
+                name: Set("Responsible Consumption and Production".to_string()),
+                id: Set(12)
+            },
+            settings_sdg::ActiveModel {
+                name: Set("Life Below Water".to_string()),
+                id: Set(13)
+            },
+            settings_sdg::ActiveModel {
+                name: Set("Climate Action".to_string()),
+                id: Set(14)
+            },
+            settings_sdg::ActiveModel {
+                name: Set("Life on Land".to_string()),
+                id: Set(15)
+            },
+            settings_sdg::ActiveModel {
+                name: Set("Peace, Justice and Strong Institutions".to_string()),
+                id: Set(16)
+            },
+            settings_sdg::ActiveModel {
+                name: Set("Partnerships for the Goals".to_string()),
+                id: Set(17)
             },
        ];
 

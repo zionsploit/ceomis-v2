@@ -17,7 +17,7 @@ pub struct ResponseProjectsOverview {
     pub total_completed: Option<i64>,
 }
 
-#[derive(Serialize, Default, TS, Deserialize, FromQueryResult)]
+#[derive(Serialize, Default, TS, Deserialize, FromQueryResult, Debug)]
 #[ts(export, export_to = "../../../client/src/types/Settings.ts")]
 pub struct ResponseProjectsStatsTypes {
     pub name: String,
@@ -87,7 +87,7 @@ pub struct ResponseProjectsById {
    pub projects_name: String,
    pub projects_code: String,
    pub project_year: i32,
-   pub projects_status: String,
+   pub projects_status: Option<String>,
    pub projects_appropriation: Option<i32>,
    pub projects_approved_budget_contract: Option<i32>,
    pub projects_accomplished: Option<i16>,

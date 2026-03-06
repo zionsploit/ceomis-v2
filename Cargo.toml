@@ -19,11 +19,10 @@ sea-orm = { version = "1.1.12", features = ["sqlx-postgres", "runtime-tokio-nati
 redis = { version = "0.31.0", features = ["tokio-native-tls-comp"]}
 tower-http = { version = "0.6.6", features = ["cors"]}
 tower = "0.5.2"
-aws-config = { version = "1.1.7", features = ["behavior-version-latest"] }
-aws-sdk-s3 = { version = "1.94.0", features = ["behavior-version-latest"]}
 futures = "0.3.31"
 tokio-stream = { version = "0.1.17", features = ["sync"]}
 serde_json = "1.0.140"
+minio = "0.3.0"
 
 [profile.release]
 opt-level = 3

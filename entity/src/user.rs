@@ -3,7 +3,7 @@ use std::{collections::{BTreeMap, HashMap}, time::{Duration, SystemTime, UNIX_EP
 
 use hmac::{Hmac, Mac};
 use jwt::{SignWithKey, ToBase64};
-use sea_orm::entity::prelude::*;
+use sea_orm::{entity::prelude::*, FromQueryResult};
 use serde::{Deserialize, Serialize};
 use sha2::{Digest, Sha256};
 use uuid::Builder;
@@ -24,49 +24,22 @@ pub struct Model {
     pub is_delete: bool
 }
 
-impl Model {
-    pub fn jwt_signed_with_key(&self, key: &str) -> Vec<String> {
-        
-        let key: Hmac<Sha256> = Hmac::new_from_slice(format!("{}", key).as_bytes()).unwrap();
-        let mut claims = BTreeMap::new();
-
-        let timestamp = {
-            let seven_days = Duration::from_secs(60 * 60 * 24 * 7);
-            let future_time = SystemTime::now() + seven_days;
-
-            future_time.duration_since(UNIX_EPOCH).expect("Time went backwards").as_secs()
-        };
-
-        let mut claims_data: HashMap<String, String> = HashMap::new();
-        claims_data.insert("id".to_string(), self.id.to_string());
-        claims_data.insert("email".to_string(), self.email.to_string());
-        claims_data.insert("timestamp".to_string(), timestamp.to_string());
-        
-        claims.insert("sub", claims_data.to_base64().unwrap().to_string());
-        claims.insert("exp", timestamp.to_string());
-
-        let token_str = claims.sign_with_key(&key).expect("Signing Token Invalid");
-        
-        let build_refresh_token = {
-            let sha_token = Sha256::digest(self.email.as_bytes());
-            let sha_token_16: [u8; 16] = sha_token[..16].try_into().unwrap();
-            Builder::from_sha1_bytes(sha_token_16).into_uuid()
-        };
-        
-        vec![token_str, build_refresh_token.to_string()]
-    }
+#[derive(Copy, Clone, Debug, EnumIter)]
+pub enum Relation {
+    UserRoles,
+    UserInfo
 }
 
-#[derive(Copy, Clone, Debug, EnumIter, DeriveRelation)]
-pub enum Relation {
-    #[sea_orm(
-        belongs_to = "super::user_roles::Entity",
-        from = "Column::UserRolesId",
-        to = "super::user_roles::Column::Id"
-    )]
-    UserRoles,
-    #[sea_orm(has_one = "super::user_info::Entity")]
-    UserInfo
+impl RelationTrait for Relation  {
+    fn def(&self) -> RelationDef {
+        match self {
+            Self::UserInfo => Entity::has_one(super::user_info::Entity).into(),
+            Self::UserRoles => Entity::belongs_to(super::user_roles::Entity)
+                .from(Column::UserRolesId)
+                .to(super::user_roles::Column::Id)
+                .into()
+        }
+    }
 }
 
 impl Related<super::user_roles::Entity> for Entity {
@@ -82,3 +55,50 @@ impl Related<super::user_info::Entity> for Entity {
 }
 
 impl ActiveModelBehavior for ActiveModel {}
+
+
+// INTERFACE
+#[derive(FromQueryResult, Debug)]
+pub struct ILoginUsersFromQuery {
+    pub account_id: i32,
+    pub account_email: String,
+    pub account_password: String,
+    pub info_id: Option<i32>,
+    pub info_first_name: Option<String>,
+    pub info_middle_name: Option<String>,
+    pub info_last_name: Option<String>,
+    pub info_user_id: Option<i32>
+}
+
+impl ILoginUsersFromQuery {
+    pub fn jwt_signed_with_key(&self, key: &str) -> Vec<String> {
+        
+        let key: Hmac<Sha256> = Hmac::new_from_slice(format!("{}", key).as_bytes()).unwrap();
+        let mut claims = BTreeMap::new();
+
+        let timestamp = {
+            let seven_days = Duration::from_secs(60 * 60 * 24 * 7);
+            let future_time = SystemTime::now() + seven_days;
+
+            future_time.duration_since(UNIX_EPOCH).expect("Time went backwards").as_secs()
+        };
+
+        let mut claims_data: HashMap<String, String> = HashMap::new();
+        claims_data.insert("id".to_string(), self.account_id.to_string());
+        claims_data.insert("email".to_string(), self.account_email.to_string());
+        claims_data.insert("timestamp".to_string(), timestamp.to_string());
+        
+        claims.insert("sub", claims_data.to_base64().unwrap().to_string());
+        claims.insert("exp", timestamp.to_string());
+
+        let token_str = claims.sign_with_key(&key).expect("Signing Token Invalid");
+        
+        let build_refresh_token = {
+            let sha_token = Sha256::digest(self.account_email.as_bytes());
+            let sha_token_16: [u8; 16] = sha_token[..16].try_into().unwrap();
+            Builder::from_sha1_bytes(sha_token_16).into_uuid()
+        };
+        
+        vec![token_str, build_refresh_token.to_string()]
+    }
+}

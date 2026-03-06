@@ -18,6 +18,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
           "id": "1197",
           "attributes": {
+             "project_status": "Preparation",
             "name": "Rehab of River Control at Purok Kawayan, Barangay Balangasan\n",
             "code": "1SAIP23 - 8000 - C1",
             "location": "[\"1\"]",
@@ -68,6 +69,7 @@ impl MigrationTrait for Migration {
 convert_projects_into_active_model_v2(&json!({
           "id": "1198",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Slope Protection at Barangay Hall Site, Barangay Dumagoc\n",
             "code": "1SAIP23 - 8000 - C2",
             "location": "[]",
@@ -124,6 +126,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1199",
           "attributes": {
+            "project_status": "Preparation",
             "name": "Construction of Spillway at Purok Caimito, Barangay Lison Valley\n",
             "code": "1SAIP23 - 8000 - C3",
             "location": "[\"40\"]",
@@ -174,6 +177,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "1200",
           "attributes": {
+            "project_status": "Preparation",
             "name": "Repair of Spillwat at Purok Tres, Barangay Lourdes\n",
             "code": "1SAIP23 - 8000 - C4",
             "location": "[\"41\"]",
@@ -224,6 +228,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1201",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Rehab of Shore Protection at Zone 3 (w/ RCCP Installation) Barangay Muricay\n",
             "code": "1SAIP23 - 8000 - C5",
             "location": "[\"46\"]",
@@ -274,6 +279,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1202",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Expansion of Box Culvert and Road Reblocking at Zone 5, Barangay Tiguma\n",
             "code": "1SAIP23 - 8000 - C6",
             "location": "[\"18\"]",
@@ -330,6 +336,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1203",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of River Control, Barangay Tulawas\n",
             "code": "1SAIP23 - 8000 - C7",
             "location": "[\"52\"]",
@@ -386,6 +393,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1204",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Drainage from Purok Kawayan & Purok Romblon Barangay Balangasan\n",
             "code": "1SAIP23-8000-D1",
             "location": "[\"1\"]",
@@ -442,6 +450,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1205",
           "attributes": {
+            "project_status": "Completed",
             "name": " Construction of Sidewalk Underground Drainage Along Cabrera Street (Jct Aquino St - Salera St) Barangay Gatas",
             "code": "1SAIL23-8000-D2",
             "location": "[\"7\"]",
@@ -498,6 +507,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1206",
           "attributes": {
+            "project_status": "Preparation",
             "name": "Construction of Sidewalk Along Urro Street (Jct Aquino St - Datoc St) Southern Side, Barangay Gatas\n",
             "code": "1SAIP23 - 8000 - D3",
             "location": "[\"7\"]",
@@ -548,6 +558,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1207",
           "attributes": {
+            "project_status": "Completed",
             "name": " Construction of Sidewalk Underground Drainage After San Pedro Bridge, (Eastern Side) Barangay Kawit",
             "code": "1SAIL23-8000-D4",
             "location": "[\"8\"]",
@@ -604,6 +615,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1208",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Construction of Underground Drainage w/Sidewalk Along FS Pajares Ave. Fronting Barangay Hall (Jct Sabate Leading to Rotunda), Barangay San Jose\n",
             "code": "1SAIP23 - 8000 - D5",
             "location": "[\"12\"]",
@@ -654,6 +666,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1209",
           "attributes": {
+            "project_status": "Suspended",
             "name": "Construction of Sidewalk w/ Underground Drainage Along Alano St (Jct R. Magsaysay - Dablo St) Northern Side, Barangay Santiago\n",
             "code": "1SAIP23-8000-D6",
             "location": "[\"16\"]",
@@ -710,6 +723,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "1210",
           "attributes": {
+            "project_status": "Preparation",
             "name": "Improvement of Drainage System at Prk Aguinaldo, Sto. Nino\n",
             "code": "1SAIP23 - 8000 - D7",
             "location": "[]",
@@ -760,6 +774,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1211",
           "attributes": {
+             "project_status": "Preparation",
             "name": "Improvement of Drainage System at DA Road, Prk Magsaysay, Sto. Nino\n",
             "code": "1SAIP23 - 8000 - D8",
             "location": "[]",
@@ -810,6 +825,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1212",
           "attributes": {
+             "project_status": "Preparation",
             "name": "Construction of Sidewalk w/ Underground Drainage at Tawagan Sur (Along National Highway) Bothsides, Tawagan Sur\n",
             "code": "1SAIP23 - 8000 - D9",
             "location": "[]",
@@ -860,6 +876,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1213",
           "attributes": {
+            "project_status": "Completed",
             "name": "Rehab of Water System and Construction of Water Tank, Barangay Balintawak\n",
             "code": "1SAIP23 - 8000 - E1",
             "location": "[\"2\"]",
@@ -916,6 +933,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1214",
           "attributes": {
+            "project_status": "Preparation",
             "name": "Construction of Water Tank w/ Pipe Distribution, Barangay Lapedian\n",
             "code": "1SAIP23 - 8000 - E2",
             "location": "[\"38\"]",
@@ -966,6 +984,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1215",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Reservoir and Replacement of One Unit (2,000 lit) Stainless Tank, Barangay Poloyagan",
             "code": "1SAIP23-8000-E3",
             "location": "[\"49\"]",
@@ -1022,6 +1041,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1216",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Construction of Pathway and Open Drainage Leading to Elementary School Site, Barangay Dumagoc\n",
             "code": "1SAIP23 - 8000 - F1",
             "location": "[\"6\"]",
@@ -1078,6 +1098,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1217",
           "attributes": {
+            "project_status": "Preparation",
             "name": "Construction of Dumagoc Port, Barangay Dumagoc\n",
             "code": "1SAIP23 - 8000 - F2",
             "location": "[]",
@@ -1128,6 +1149,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1218",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Solar Dryer at Prk Sili, Barangay Kahayagan\n",
             "code": "1SAIP23-8000-F3",
             "location": "[\"34\"]",
@@ -1184,6 +1206,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1219",
           "attributes": {
+            "project_status": "Preparation",
             "name": "Rehab of Irrigation Canal (Riprap & Grouted Riprap) Materials Only, Barangay La Suerte\n",
             "code": "1SAIP23 - 8000 - F4",
             "location": "[]",
@@ -1234,6 +1257,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "1220",
           "attributes": {
+            "project_status": "Preparation",
             "name": "Concreting of Pathway (1.0m Width), Barangay Pedulunan\n",
             "code": "1SAIP23 - 8000 - F5",
             "location": "[]",
@@ -1284,6 +1308,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1221",
           "attributes": {
+             "project_status": "Preparation",
             "name": "Construction of Pathway at Purok Lupoy to Purok Lapu-Lapu, White Beach\n",
             "code": "1SAIP23 - 8000 - F6",
             "location": "[]",
@@ -1334,6 +1359,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1222",
           "attributes": {
+            "project_status": "Completed",
             "name": "Completion of Police Outpost at Boulevard",
             "code": "RF22-1000-1-2A-1j",
             "location": "[]",
@@ -1390,6 +1416,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1223",
           "attributes": {
+            "project_status": "Preparation",
             "name": "Improvement of Multi-purpose Hall, Brgy. Tiguma",
             "code": "R-71-S-2020",
             "location": "[\"18\"]",
@@ -1440,6 +1467,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1224",
           "attributes": {
+            "project_status": "Completed",
             "name": "Improvement of Water System at Brgy. Lison Valley",
             "code": "RS#001-/202316",
             "location": "[\"40\"]",
@@ -1490,6 +1518,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1226",
           "attributes": {
+            "project_status": "Preparation",
             "name": "Construction of Senior Citizens Bldg. (Completion)",
             "code": "SCWP23 - 3000 - A4",
             "location": "[]",
@@ -1540,6 +1569,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1227",
           "attributes": {
+            "project_status": "",
             "name": "Conc of Road Towards Prk Daisy to Cadena de Amor Leading to Kagawasan (1/2 Lane), Barangay Alegria",
             "code": "1SAIL23 - 8000 - A1",
             "location": "[]",
@@ -1590,6 +1620,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1229",
           "attributes": {
+            "project_status": "Completed",
             "name": "Concreting of Road at Purok 3, Barangay Manga",
             "code": "1SAIL23-8000-A51",
             "location": "[\"45\"]",
@@ -1646,6 +1677,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "1230",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Conc of Road Towards Prk Daisy to Cadena de Amor Leading to Kagawasan (1/2 Lane), Barangay Alegria",
             "code": "Barangay Fund",
             "location": "[\"19\"]",
@@ -1696,6 +1728,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1231",
           "attributes": {
+            "project_status": "Not Yet Started",
             "name": "Road Concreting of Alley at Purok Lower LOmboy, Brgy. Tuburan",
             "code": "Barangay Fund",
             "location": "[]",
@@ -1746,6 +1779,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1232",
           "attributes": {
+            "project_status": "Completed",
             "name": "Road Concreting of Alley @ Purok Nangka at Barangay Tuburan",
             "code": "Barangay Fund",
             "location": "[\"19\"]",
@@ -1796,6 +1830,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1233",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Construction of Open Drainage @ Purok Marang, Brgy. Tuburan",
             "code": "Barangay Fund",
             "location": "[\"19\"]",
@@ -1846,6 +1881,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1236",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Sidewalk and Underground Drainage Along Sagun St. Near Lawiswis Drive (Both sides)",
             "code": "2SAIP23-8000-C1A3",
             "location": "[\"11\"]",
@@ -1902,6 +1938,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1237",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Repair of Ceiling of 9-Classrooms of PCPS & Electrical Installation, Barangay San Jose",
             "code": "SEF",
             "location": "[\"12\"]",
@@ -1952,6 +1989,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1239",
           "attributes": {
+            "project_status": "Completed",
             "name": "Completion of Regional Center Welcome Arch",
             "code": "DF22-8000-B5-b",
             "location": "[\"2\"]",
@@ -2008,6 +2046,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "1243",
           "attributes": {
+            "project_status": "Completed",
             "name": " Construction of Sidewalk & Underground Drainage Along Sagun St. (Jct Datoc St - Sagun Bridge) Northern Side",
             "code": "DRRMF21-1000-2-a12",
             "location": "[]",
@@ -2064,6 +2103,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1246",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of DOJ-PPA Regional Office IX Building, Regional Center Site, Balintawak",
             "code": "NATIONAL FUND",
             "location": "[\"2\"]",
@@ -2120,6 +2160,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1247",
           "attributes": {
+            "project_status": "Completed",
             "name": "Repair of Classrooms at Danlugan E/S, Alegria E/S, Alegria E/S, Tulangan E/S, Kahayagan E/S, Pagadian City NHS, Dominador Sr. E/S, Pagadian City (SEF)",
             "code": "SEF",
             "location": "[\"20\",\"27\",\"34\",\"51\"]",
@@ -2176,6 +2217,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1248",
           "attributes": {
+            "project_status": "Completed",
             "name": "Improvement of ECO - Tourism Park, Barangay Manga",
             "code": "2022-LGSF",
             "location": "[\"45\"]",
@@ -2232,6 +2274,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1249",
           "attributes": {
+            "project_status": "Completed",
             "name": "Repair/Renovation of Bogo Barangay Hall, Barangay Bogo",
             "code": "1SAIL23-8000-B3",
             "location": "[\"22\"]",
@@ -2288,6 +2331,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "1250",
           "attributes": {
+            "project_status": "Completed",
             "name": " Concreting of Road at Prk Talong to Prk Balatong Uno (Phase III), Barangay Kahayagan",
             "code": "1SAIL23-8000-A27",
             "location": "[\"34\"]",
@@ -2344,6 +2388,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1251",
           "attributes": {
+            "project_status": "Completed",
             "name": "Repair/Rehab. of 3-Classroom School Building ( Buenavista ES), Brgy. Buenavista",
             "code": "SEF",
             "location": "[\"4\"]",
@@ -2400,6 +2445,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1252",
           "attributes": {
+            "project_status": "Completed",
             "name": "\"Construction of Concrete Fence & Gates of Balintawak E/S and Fence & Gates, Balintawak E/S, Barangay Balintawak  \"\"SEF (SEF2019 :1-07-04-020) SEF ( SEF2018: 1-07-04-020)\"\"\"",
             "code": "\"SEF (SEF2019 :1-07-04-020) SEF ( SEF2018: 1-07-04-020)\"",
             "location": "[\"2\"]",
@@ -2456,6 +2502,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1254",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Gymnasium at Nazareth Area, Barangay Buenavista",
             "code": "1SAIL23-8000-B5",
             "location": "[\"4\"]",
@@ -2512,6 +2559,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1255",
           "attributes": {
+             "project_status": "On-Going",
             "name": "Construction  of Drainage Including Widening of Road at JCT Dao and Diversion Road, Dao",
             "code": "DF22-8000-B2-k",
             "location": "[\"5\"]",
@@ -2568,6 +2616,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1256",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Construction of Covered Court at Dao ES",
             "code": "SEF-2023 1-07-04-010",
             "location": "[\"5\"]",
@@ -2624,6 +2673,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1257",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Const. of Sidewalk and Underground Drainage along B.F Arao Ave. ( near IBT Section)",
             "code": "2SAIP23-8000-C1A7",
             "location": "[]",
@@ -2680,6 +2730,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1258",
           "attributes": {
+            "project_status": "On-Going",
             "name": "City Counterpart for D.A (City Slaughterhouse & Trading Center) per res. 2017-0266",
             "code": "SIPO2-K17-DF-C3",
             "location": "[\"10\"]",
@@ -2730,6 +2781,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1259",
           "attributes": {
+            "project_status": "Completed",
             "name": "Rehab and Restoration of Existing Barangay Road with Construction of Open Drainage and Slope Protection at Barangay Baloyboan",
             "code": "1SAIL22-8000-A1a",
             "location": "[\"21\"]",
@@ -2786,6 +2838,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "1260",
           "attributes": {
+            "project_status": "Completed",
             "name": "REPAIR OF CLASSROOM AT ZAMBOANGA DEL SUR SCHOOL OF ARTS AND TRADES - SEF",
             "code": "SEF",
             "location": "[]",
@@ -2842,6 +2895,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1261",
           "attributes": {
+            "project_status": "Completed",
             "name": "CONSTRUCTION & IMPROVEMENT OF KAWIT ELEMENTARY SCHOOL COVERED COURT",
             "code": "SEF",
             "location": "[\"8\"]",
@@ -2898,6 +2952,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1263",
           "attributes": {
+            "project_status": "Completed",
             "name": "Concreting of Road and Drainage System leading to PACIGEA Sites and services",
             "code": "DF24-8000-A3-d",
             "location": "[\"4\"]",
@@ -2948,6 +3003,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1264",
           "attributes": {
+            "project_status": "Completed",
             "name": "Const. of Retaining Wall Reinforcement Side Portion of 2-Storey 6-Classroom Building, Barangay Tulawas",
             "code": "SEF",
             "location": "[\"52\"]",
@@ -3004,6 +3060,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1265",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Improvement of Pagadian city Fish Port",
             "code": "RF19-8000-3A-6",
             "location": "[\"13\"]",
@@ -3060,6 +3117,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1266",
           "attributes": {
+            "project_status": "Completed",
             "name": "Widening and Improvement of Road at Pagadian Beach Resort , Poloyagan",
             "code": "DF22-8000-B1f",
             "location": "[\"49\"]",
@@ -3116,6 +3174,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1267",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Construction of Rotunda Glass Gym Phase 2",
             "code": "2SAIP23-8000-C1B4",
             "location": "[\"5\"]",
@@ -3172,6 +3231,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1268",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Construction of Agora Perimeter Building along Dablo St. (Phase II)",
             "code": "DF24-8000-A1-f",
             "location": "[\"14\"]",
@@ -3228,6 +3288,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1269",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Road at Barangay Danlugan Connecting New Road to Barangay Kahayagan",
             "code": "DF24-8000-A3-e",
             "location": "[\"34\"]",
@@ -3284,6 +3345,7 @@ convert_projects_into_active_model_v2(&json!({
         convert_projects_into_active_model_v2(&json!({
           "id": "1270",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Construction of Stalls at Rotunda",
             "code": "2SAIP23-8000-C1B1",
             "location": "[\"5\"]",
@@ -3340,6 +3402,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1271",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Concreting of Roads at White Beach(Phase IV)",
             "code": "DF24-8000-A3-b",
             "location": "[\"54\"]",
@@ -3396,6 +3459,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1272",
           "attributes": {
+             "project_status": "On-Going",
             "name": "New Construction of 2-CL at White Beach E/S (Phase 1) - SEF",
             "code": "SEF-2021",
             "location": "[]",
@@ -3446,6 +3510,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1273",
           "attributes": {
+             "project_status": "Completed",
             "name": "Construction of Bureau of Local Government and Finance Building (BLGF) Regional Center, Balintawak",
             "code": "NATIONAL FUND",
             "location": "[\"2\"]",
@@ -3502,6 +3567,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1274",
           "attributes": {
+            "project_status": "Completed",
             "name": "Slope protection at BFP Office, Regional Center, Balintawak",
             "code": "DF24-8000-A5-b",
             "location": "[\"2\"]",
@@ -3558,6 +3624,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1275",
           "attributes": {
+            "project_status": "Completed",
             "name": "Construction of Administration Building at Bagong Silang Dumpsite (Phase II)",
             "code": "DF24-8000-A1-e",
             "location": "[\"1\"]",
@@ -3614,6 +3681,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1276",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Slope Protection at Parole/DOJ Office, Regional Center, Balintawak",
             "code": "DF24-8000-A5-a",
             "location": "[\"2\"]",
@@ -3670,6 +3738,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1277",
           "attributes": {
+            "project_status": "Completed",
             "name": "Embankment at Kawit Elementary School",
             "code": "SEF-2023,1-07-04-010",
             "location": "[\"8\"]",
@@ -3726,6 +3795,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1278",
           "attributes": {
+            "project_status": "On-Going",
             "name": "Construction of Water Park Building/Interior Design/Landscaping (Completion)",
             "code": "DF24-8000-A1-h",
             "location": "[\"13\"]",
@@ -3782,6 +3852,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
           "id": "1279",
           "attributes": {
+             "project_status": "Completed",
             "name": "Const./Improvement of School Building at Balintawak ES, Brgy. Balintawak",
             "code": "SEF-2023 1-07-04-020",
             "location": "[\"2\"]",

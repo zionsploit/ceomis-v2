@@ -1,7 +1,7 @@
 use std::sync::Arc;
 
-use axum::{extract::Path, http::{header, Response, StatusCode}, response::IntoResponse, Extension, Json};
-use entity::{user, user_info, user_roles};
+use axum::{extract::Path, http::{header, StatusCode}, response::{IntoResponse, Response}, Extension, Json};
+use entity::{user::{self, ILoginUsersFromQuery}, user_info, user_roles};
 use sea_orm::{prelude::*, ActiveValue::{NotSet, Set}, InsertResult, IntoActiveModel, QueryOrder, QuerySelect};
 use services::{db_connection::DB, redis::Redis, request::user::{RequestAddUpdateUserInfoById, RequestAddUser, RequestDeleteUserById, RequestUpdateUser, RequestUserInfo, RequestUserLogin}, response::user::{ResponseAccountInfo, ResponseLogin, ResponseUsers, ResponseUsersWithFullInfo, ResponseUsersWithRoles}};
 
@@ -258,19 +258,44 @@ pub async fn post_login(
     Json(request): Json<RequestUserLogin>
 ) -> impl IntoResponse {
 
-    let find_users: Option<user::Model> = user::Entity::find()
-        .filter(user::Column::Email.eq(&request.email)).one(&db.db_connection).await.unwrap();
+    let find_users = user::Entity::find()
+        .filter(user::Column::Email.eq(&request.email))
+        .join_rev(sea_orm::JoinType::LeftJoin, user_info::Relation::User.def())
+        .select_only()
+        .column_as(user::Column::Id, "account_id")
+        .column_as(user::Column::Email, "account_email")
+        .column_as(user::Column::Password, "account_password")
+        .column_as(user_info::Column::Id, "info_id")
+        .column_as(user_info::Column::FirstName, "info_first_name")
+        .column_as(user_info::Column::MiddleName, "info_middle_name")
+        .column_as(user_info::Column::LastName, "info_last_name")
+        .column_as(user_info::Column::UserId, "info_user_id")
+        .into_model::<ILoginUsersFromQuery>()
+        .one(&db.db_connection)
+        .await.unwrap();
+
+    // if let None = find_users {
+    //     return Response::builder()
+    //         .status(StatusCode::UNAUTHORIZED)
+    //         .body(().into_response())
+    //         .unwrap();
+    // }
+
+    // info!("ACCOUNT INFO: {:#?}", find_users)
+
+    // println!("{:?}", find_users)
 
     if let None = find_users {
         return Response::builder()
             .status(StatusCode::UNAUTHORIZED)
-            .body(())
-            .unwrap().body().into_response();
+            .body(().into_response())
+            .unwrap();
     }
 
-    let users: user::Model = find_users.unwrap();
+    let users = find_users.unwrap();
 
-    if let Some(_) = request.verify_account(&users.password) {
+    
+    if let Some(_) = request.verify_account(&users.account_password) {
 
         let users_token = users.jwt_signed_with_key("PASSWORD_TEST");
         
@@ -279,7 +304,11 @@ pub async fn post_login(
 
         let make_response_body = ResponseLogin {
             jwt_token: users_token[0].to_string(),
-            session_id: users_token[1].to_string()
+            session_id: users_token[1].to_string(),
+            info_id: users.info_id,
+            info_first_name: users.info_first_name,
+            info_middle_name: users.info_middle_name,
+            info_last_name: users.info_last_name,
         };
 
 
@@ -287,14 +316,14 @@ pub async fn post_login(
             .status(StatusCode::CREATED)
             .header(header::COOKIE, format!("Authorization={}", users_token[0].to_string()))
             .header(header::COOKIE, format!("_sid={}", users_token[1].to_string()))
-            .body(Json(&make_response_body))
-            .unwrap().headers().clone().into_response();
+            .body(Json(&make_response_body).into_response())
+            .unwrap();
     }
 
     Response::builder()
             .status(StatusCode::UNAUTHORIZED)
-            .body(())
-            .unwrap().body().into_response()
+            .body(().into_response())
+            .unwrap()
 }
 
 pub async fn delete_user(

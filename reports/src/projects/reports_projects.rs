@@ -205,7 +205,7 @@ pub async fn reports_projects_by_id(
             .styled(style::Effect::Bold)
             .styled(style::Style::new().with_font_size(10))
     ));
-    project_status.push(left_text_paragraph(Paragraph::new(get_parse_projects.projects_info.projects_status)));
+    project_status.push(left_text_paragraph(Paragraph::new(get_parse_projects.projects_info.projects_status.unwrap())));
 
     row_project_accomplishment_status.push_element(project_accomplishment);
     row_project_accomplishment_status.push_element(project_status);

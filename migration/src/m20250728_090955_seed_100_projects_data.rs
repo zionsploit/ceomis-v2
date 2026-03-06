@@ -18,6 +18,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
               "id": "63",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Construction of Concrete Curb at all Center Islands both Sides along National Highway and Pajares St.",
                 "code": "DF22-8000-B5-g",
                 "location": null,
@@ -68,6 +69,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "64",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Construction of Sidewalk and Underground Drainage Along Datoc St. (Jct. Urro St.- Sagun St.) Western Side",
                 "code": "DRRMF22-1000-2-a3",
                 "location": "[]",
@@ -124,6 +126,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "65",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Construction of Sidewalk and Underground Drainage Along Alano St. (National Highway- R. Magsaysay Ave.) Eastern Side",
                 "code": "DRRMF22-1000-2-a11",
                 "location": "[]",
@@ -180,6 +183,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "66",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Construction of Sidewalk and Underground Drainage Along Datoc St. (Jct. Jamisola St.- R. Magsaysay Ave.) Bothsides",
                 "code": "DRRMF22-1000-2-a12",
                 "location": "[]",
@@ -236,6 +240,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "67",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Const. of Senior Citizens Bldg (Completion)",
                 "code": "SCPWD22-3000-A3",
                 "location": null,
@@ -286,6 +291,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "69",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Repair/Maintenance/Installation of All City and Barangay Streetlights and Sidewalk Ligths",
                 "code": "RF22-1000-1-2B-1d",
                 "location": "[]",
@@ -336,6 +342,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
               "id": "70",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Const./Conc./Impvt. Of Roads (Various Barangays)\n",
                 "code": "RF22-8000-3A-1",
                 "location": null,
@@ -386,6 +393,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "71",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Improvement/Concreting of Road at PACIGEA Site \n",
                 "code": "RF22-8000-3A-4",
                 "location": "[]",
@@ -436,6 +444,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "72",
               "attributes": {
+                "project_status": "On-Going",
                 "name": "Miscellaneous Investigation and Survey\n",
                 "code": "RF22-8000-3D-1",
                 "location": null,
@@ -486,6 +495,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "73",
               "attributes": {
+                "project_status": "Suspended",
                 "name": "Concreting at Old Dumpsite and Perimeter Fence, Bagong Silang, Balangasan",
                 "code": "RF22-8000-4a",
                 "location": "[\"1\"]",
@@ -542,6 +552,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "74",
               "attributes": {
+                "project_status": "On-Going",
                 "name": "Expansion and Improvement of Danlugan Infirmary Complex- (JOINT FUND 2022&2023)",
                 "code": "\"GAD22-3000-B6 (5M)   / GAD23-3000-B6 (3M)- JOINT FUND \"",
                 "location": "[\"27\"]",
@@ -598,6 +609,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "76",
               "attributes": {
+                 "project_status": "Not Yet Started",
                 "name": "Development of Fish Sanctuary\n",
                 "code": "DF22-8000-A1",
                 "location": null,
@@ -648,6 +660,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "77",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Improvement/Concreting of Road Fronting Evacuation/Isolation Center\n",
                 "code": "DF22-8000-B1l",
                 "location": null,
@@ -698,6 +711,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "78",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Construction of Sidewalk & Underground Drainage at Entrance Tiguma (Eastern Side)- Lenienza Barangay Road to Box Culvert\n",
                 "code": "DF22-8000-B2-a",
                 "location": null,
@@ -748,6 +762,7 @@ impl MigrationTrait for Migration {
     convert_projects_into_active_model_v2(&json!({
               "id": "79",
               "attributes": {
+                "project_status": "On-Going",
                 "name": "Construction of Sidewalk & Underground Drainage at New Barangay Hall Site (Salera St.), Gatas\n",
                 "code": "DF22-8000-B2-b",
                 "location": "[\"7\"]",
@@ -804,6 +819,7 @@ impl MigrationTrait for Migration {
 convert_projects_into_active_model_v2(&json!({
               "id": "80",
               "attributes": {
+                "project_status": "Suspended",
                 "name": "Completion of Underground Drainage Along Alano St. (Jct. Sanson-Sagun St.) and Along Sanson St. (Jct. Alano St.- Sabado St.) SCC Side\n",
                 "code": "DF22-8000-B2-d",
                 "location": "[]",
@@ -854,6 +870,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "81",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Drainage Improvement at IBT Complex/Evacuation Center (RCCP Installation and Open Drainage)\n",
                 "code": "DF22-8000-B2-h",
                 "location": null,
@@ -904,6 +921,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "82",
               "attributes": {
+                "project_status": "On-Going",
                 "name": "Impvt./Rehab. Of Sidewalk Along F.S Pajares Ave. (Jct.Mercedes St.- Urro St.- Urro St. Eastern Side",
                 "code": "DF22-8000-B2-n",
                 "location": "[]",
@@ -960,6 +978,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "83",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Impvt./Rehab. Of Sidewalk Along Urro St. (Jct. F.S Pajares Ave.- Duterte St.) Northern Side\n",
                 "code": "DF22-8000-B2-q",
                 "location": "[\"12\"]",
@@ -1016,6 +1035,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "84",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Impvt./Rehab. Of Sidewalk Along Alano Urro St. (Jct. Urro St.- Datoc St.) Southern Side\n",
                 "code": "DF22-8000-B2-r",
                 "location": null,
@@ -1066,6 +1086,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "85",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Impvt./Rehab. Of Sidewalk Along Alano St.(Jct. Urro St.- Sagun St.) Eastern Side\n",
                 "code": "DF22-8000-B2-s",
                 "location": "[]",
@@ -1122,6 +1143,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "86",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Construction of Proposed PWD Office Building Completion",
                 "code": "SCPWD22-3000-B-5",
                 "location": null,
@@ -1172,6 +1194,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "87",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Completion of Underground Drainage with Sidewalk from Banale Boundary  to Barangay Sto Nino\n",
                 "code": "DF22-8000-B2-t",
                 "location": "[\"3\"]",
@@ -1228,6 +1251,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "88",
               "attributes": {
+                "project_status": "On-Going",
                 "name": "Dredging of Tawagan River\n",
                 "code": "DF22-8000-B3-a",
                 "location": null,
@@ -1278,6 +1302,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "89",
               "attributes": {
+                "project_status": "On-Going",
                 "name": "Dredging of Balangasan River\n",
                 "code": "DF22-8000-B3-b",
                 "location": null,
@@ -1328,6 +1353,7 @@ convert_projects_into_active_model_v2(&json!({
             convert_projects_into_active_model_v2(&json!({
               "id": "90",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Maintenance of City/Barangay Roads & Bridges - Barangay",
                 "code": "DF22-8000-B6-a",
                 "location": null,
@@ -1378,6 +1404,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "91",
               "attributes": {
+                "project_status": "On-Going",
                 "name": "Dredging of Gatas River\n",
                 "code": "DF22-8000-B3-c",
                 "location": null,
@@ -1428,6 +1455,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "92",
               "attributes": {
+                "project_status": "On-Going",
                 "name": "Dredging of Tiguma River\n",
                 "code": "DF22-8000-B3-d",
                 "location": null,
@@ -1478,6 +1506,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "93",
               "attributes": {
+                 "project_status": "Preparation",
                 "name": "Repair/Rehab. Of Tulangan Bridge\n",
                 "code": "DF22-8000-B3-e",
                 "location": "[]",
@@ -1528,6 +1557,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "94",
               "attributes": {
+                "project_status": "On-Going",
                 "name": "Construction of 2-Storey Docking Area (Phase II) (3SAIP21 - 8000C- C1b3 2M)",
                 "code": "DF22-8000-B4-a",
                 "location": "[\"13\"]",
@@ -1584,6 +1614,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "95",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Expansion of Pagadian Beach Resort, Poloyagan",
                 "code": "DF22-8000-B8-a",
                 "location": null,
@@ -1634,6 +1665,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "96",
               "attributes": {
+                "project_status": "On-Going",
                 "name": "Maintenance of City/Barangay Roads & Bridges-City Roads/Alleys",
                 "code": "DF22-8000-B6-b",
                 "location": null,
@@ -1684,6 +1716,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "97",
               "attributes": {
+                "project_status": "On-Going",
                 "name": "Improvement/Expansion of Pagadian Dumpsite Area,Buenavista",
                 "code": "DF22-8000-B5-c",
                 "location": null,
@@ -1734,6 +1767,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "98",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Embankment at Pagadian City Infirmary",
                 "code": "DF22-8000-B5-e",
                 "location": "[]",
@@ -1784,6 +1818,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "99",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Construction/Improvement of Palpalan Viewing Deck (Phase II)",
                 "code": "DF22-8000-B8-c",
                 "location": "[\"47\"]",
@@ -1840,6 +1875,7 @@ convert_projects_into_active_model_v2(&json!({
             convert_projects_into_active_model_v2(&json!({
               "id": "100",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Construction of Sidewalk and Underground Drainage Along De Siete St. (Jct.Alano St.- Roxas St.)Bothsides",
                 "code": "DRRMF22-1000-2-a6",
                 "location": null,
@@ -1896,6 +1932,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "101",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Youth Welfare Development Activities",
                 "code": "RF22 - 3000 - 1A - 1",
                 "location": null,
@@ -1946,6 +1983,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "102",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Sports Development",
                 "code": "RF22 - 3000 - 1B",
                 "location": null,
@@ -1996,6 +2034,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "103",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Maintenance of Green House Nursery/Beautification",
                 "code": "RF22 - 3000 - C - 1",
                 "location": null,
@@ -2046,6 +2085,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "104",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Coastal Rehabilitation/Coastal Management Research",
                 "code": "RF22 - 3000 - D - 1",
                 "location": null,
@@ -2096,6 +2136,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "105",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "City Counterpart to IBRA - IX",
                 "code": "RF22 - 3000 - D - 2",
                 "location": null,
@@ -2146,6 +2187,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "106",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "WATERSHED MANAGEMENT",
                 "code": "RF22 - 3000 - E",
                 "location": null,
@@ -2196,6 +2238,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "107",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Management of Communal Forest",
                 "code": "RF22 - 3000 - F1a",
                 "location": null,
@@ -2246,6 +2289,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "108",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Management of Integrated Social Forestry",
                 "code": "RF22 - 3000 - F1b",
                 "location": null,
@@ -2296,6 +2340,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "109",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Establishment of Tree Parks and Greenbelts",
                 "code": "RF22 - 3000 - F1c",
                 "location": null,
@@ -2346,6 +2391,7 @@ convert_projects_into_active_model_v2(&json!({
             convert_projects_into_active_model_v2(&json!({
               "id": "110",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Upland Ecosystem Mitigation & Resillience Program",
                 "code": "RF22 - 3000 - F2",
                 "location": null,
@@ -2396,6 +2442,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "111",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Management and Maintenance of Air Quality Program",
                 "code": "RF22 - 3000 - F3",
                 "location": null,
@@ -2446,6 +2493,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "112",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Management of Water Quality Protection, Improvement and Rehabilitation",
                 "code": "RF22 - 3000 - F4",
                 "location": null,
@@ -2496,6 +2544,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "113",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "CLEAN AND GREEN PROGRAM",
                 "code": "RF22 - 3000 - G",
                 "location": null,
@@ -2546,6 +2595,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "114",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Purchase of Covid-19 Rapid Testing Kits Including Reagents",
                 "code": "RF22 - 3000 - H - 1",
                 "location": null,
@@ -2596,6 +2646,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "115",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Purchase of Disinfectants, Sprayers and Other Disinfecting Supplies",
                 "code": "RF22 - 3000 - H - 2",
                 "location": null,
@@ -2646,6 +2697,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "116",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Const/Conc/impvt of Roads (Various Barangays",
                 "code": "RF22 - 8000 - 3A-1",
                 "location": null,
@@ -2696,6 +2748,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "117",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Completion of Communal Toilet Building at White Beach\n",
                 "code": "DF22-8000-B4-e",
                 "location": null,
@@ -2752,6 +2805,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "118",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Rehab/Repair/Maint of Barangay Roads",
                 "code": "RF22 - 8000 - 3A-2",
                 "location": null,
@@ -2802,6 +2856,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "119",
               "attributes": {
+                "project_status": "Bidded",
                 "name": "Completion of the Construction of Prk Subida Road Alley, Barangay Dao",
                 "code": "RF22 - 8000 - 3A-3",
                 "location": null,
@@ -2852,6 +2907,7 @@ convert_projects_into_active_model_v2(&json!({
             convert_projects_into_active_model_v2(&json!({
               "id": "121",
               "attributes": {
+                "project_status": "Completed",
                 "name": "Repair of Bio-Waste Shredder and Composter Building Area at Old Dumpsite Area, Bagong Silang Balangasan",
                 "code": "DF22-8000-B4-d",
                 "location": "[\"1\"]",
@@ -2902,6 +2958,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "122",
               "attributes": {
+                "project_status": "Bidded",
                 "name": "Improvement/Widening of Road at Buenavista from JCT National Highway Leading to Nazareth",
                 "code": "RF22 - 8000 - 3A-5",
                 "location": null,
@@ -2952,6 +3009,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "123",
               "attributes": {
+                "project_status": "Bidding",
                 "name": "Rehabilitation/Construction of Slaughter House at Brgy Napolan (Including Purchase of Equipment)",
                 "code": "RF22 - 8000 - 3B - 1",
                 "location": null,
@@ -3002,6 +3060,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "125",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Miscellaneous Investigative Survey",
                 "code": "RF22 - 8000 - 3D - 1",
                 "location": null,
@@ -3052,6 +3111,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "126",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Impvt/Maintenance Of City Plaza",
                 "code": "RF22 - 8000 - 3D - 2",
                 "location": null,
@@ -3102,6 +3162,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "127",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Impvt/Maintenance Of City Hall Grounds",
                 "code": "RF22 - 8000 - 3D - 3",
                 "location": null,
@@ -3152,6 +3213,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "128",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Impt/Maintenance of City Street Shoulders & Islands",
                 "code": "RF22 - 8000 - 3D - 4",
                 "location": null,
@@ -3202,6 +3264,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "129",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Repair/Rehabilitation of Existing Public Cemetery",
                 "code": "RF22 - 8000 - 3D - 5",
                 "location": "[]",
@@ -3252,6 +3315,7 @@ convert_projects_into_active_model_v2(&json!({
             convert_projects_into_active_model_v2(&json!({
               "id": "130",
               "attributes": {
+                 "project_status": "Not Yet Started",
                 "name": "Maintenance of City Plaza and Facilities Including Dancing Fountain",
                 "code": "RF22 - 8000 - 3D - 6",
                 "location": null,
@@ -3302,6 +3366,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "131",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Rehab/Repair of Heavy Equipment Vehicles",
                 "code": "RF22 - 8000 - 3D - 7",
                 "location": null,
@@ -3352,6 +3417,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "133",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Acquisition/Purchase of Lot for Regional Government Center",
                 "code": "RF22 - 8000 - 4b",
                 "location": null,
@@ -3402,6 +3468,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "134",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Tourism Council Program & Activities",
                 "code": "RF22 - 8000 - 5a",
                 "location": null,
@@ -3452,6 +3519,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "135",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Tourism Promotion Program/Tourism Support Activities",
                 "code": "RF22 - 8000 - 5b",
                 "location": null,
@@ -3502,6 +3570,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "136",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Pasalamat Festival",
                 "code": "RF22 - 8000 - 5c1",
                 "location": null,
@@ -3552,6 +3621,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "137",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Araw ng Pagadian",
                 "code": "RF22 - 8000 - 5c2",
                 "location": null,
@@ -3602,6 +3672,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "138",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Paskuhan",
                 "code": "RF22 - 8000 - 5c3",
                 "location": null,
@@ -3652,6 +3723,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "139",
               "attributes": {
+                 "project_status": "Not Yet Started",
                 "name": "Other Celebrations (Chinese New Year, Paskuhan, Araw ng ZDS, Rizal Day, Independence Day, Etc)",
                 "code": "RF22 - 8000 - 5c4",
                 "location": null,
@@ -3702,6 +3774,7 @@ convert_projects_into_active_model_v2(&json!({
             convert_projects_into_active_model_v2(&json!({
               "id": "140",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Trainings and Seminars for Product Development",
                 "code": "RF22 - 8000 - 5d",
                 "location": null,
@@ -3752,6 +3825,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "141",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Culture and Arts Development Program",
                 "code": "RF22 - 8000 - 6",
                 "location": null,
@@ -3802,6 +3876,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "142",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "GENERAL PUBLIC SERVICES",
                 "code": "1000",
                 "location": null,
@@ -3852,6 +3927,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "143",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Acquisition/Installation of Traffic Signalization System Including Configuration and Commissioning at 5 Major Road Junctions 1. Tiguma (National Highway-Airport0 2. Jct Diversion Road-Dao BR; 3. Pajares & Urro Sts; 4. Pajares & Sagun Sts; 5. Pajares & R. ",
                 "code": "GAD22 - 1000 - A1-a",
                 "location": null,
@@ -3902,6 +3978,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "144",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Maintenance of Traffic Lights and Sign Board Operation",
                 "code": "GAD22 - 1000 - A1-b",
                 "location": null,
@@ -3952,6 +4029,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "145",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Emergency Relief Assitance (Provision of services and intervention to displaced individuals",
                 "code": "GAD22 - 1000 - A2-a",
                 "location": null,
@@ -4002,6 +4080,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "146",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Orientation on GAD Legal Basis and Gender Mainstreaming Saminar/Workshop for GFPS and City Employees, including other Sectors and Groups",
                 "code": "GAD22 - 1000 - B1 - a",
                 "location": null,
@@ -4052,6 +4131,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "147",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "GAD Annual Planning & Assesment, Monitoring & Evaluation of GAD Plans and Program Implementation",
                 "code": "GAD22 - 1000 - B1 - b",
                 "location": null,
@@ -4102,6 +4182,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "148",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "GAD Focal Point System (GFPS) Meetings",
                 "code": "GAD22 - 1000 - B1 - c",
                 "location": null,
@@ -4152,6 +4233,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "149",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Participation in GAD related Activities by PCW, CSC and Other Government Agencies",
                 "code": "GAD22 - 1000 - B1 - d",
                 "location": null,
@@ -4202,6 +4284,7 @@ convert_projects_into_active_model_v2(&json!({
             convert_projects_into_active_model_v2(&json!({
               "id": "150",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Attendance/Participation of all Employees on Evaluation, Review and Assessment",
                 "code": "GAD22 - 1000 - B1 - e",
                 "location": null,
@@ -4252,6 +4335,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "151",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Human Resource Development Program",
                 "code": "GAD22 - 1000 - B1 - f",
                 "location": null,
@@ -4302,6 +4386,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "155",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Development of Fish Sanctuary",
                 "code": "DF22 - 8000 -A1",
                 "location": null,
@@ -4352,6 +4437,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "157",
               "attributes": {
+                "project_status": "On-Going",
                 "name": " Installation of Tile Works at Evacuation Center",
                 "code": "1SAIP22 - 8000R - C1b1",
                 "location": "[]",
@@ -4402,6 +4488,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "158",
               "attributes": {
+                "project_status": "On-Going",
                 "name": "Construction of Materials Laboratory Temporary Building",
                 "code": "1SAIP22 - 8000R - C1b3",
                 "location": "[]",
@@ -4452,6 +4539,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "159",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Repair/Extension of DepEd ROIX, 2 Storey Building (Frontage), Reginal Center, Balintawak",
                 "code": "1SAIP22 - 8000R - C1b4",
                 "location": null,
@@ -4502,6 +4590,7 @@ convert_projects_into_active_model_v2(&json!({
             convert_projects_into_active_model_v2(&json!({
               "id": "160",
               "attributes": {
+                "project_status": "Preparation",
                 "name": " Const of Non-Contact Visitation Facility at BJMP",
                 "code": "1SAIP22 - 8000R - C1b5",
                 "location": null,
@@ -4552,6 +4641,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "161",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Const of Water Tank Including Pipe Installation at Barangay Poloyagan",
                 "code": "1SAIP22 - 8000R - C1c2",
                 "location": null,
@@ -4602,6 +4692,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "162",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Construction of City Hospital Phase 1",
                 "code": "2SAIP22 - 8000R - C1b1",
                 "location": null,
@@ -4652,6 +4743,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "163",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Expansion/Construction of Pagadian City Infirmary",
                 "code": "2SAIP22 - 8000R - C1b2",
                 "location": "[]",
@@ -4702,6 +4794,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "164",
               "attributes": {
+                "project_status": "On-Going",
                 "name": "Construction of PCIC School Building Phase II",
                 "code": "2SAIP22-8000R-C1b3",
                 "location": "[\"12\"]",
@@ -4758,6 +4851,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "165",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Construction of City Engineers Office (CEO) Building",
                 "code": "2SAIP22 - 8000R - C1b4",
                 "location": null,
@@ -4808,6 +4902,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "166",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Construction of Sharia Court Building",
                 "code": "2SAIP22 - 8000R - C1b5",
                 "location": null,
@@ -4858,6 +4953,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "167",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Construction of COMELEC Building",
                 "code": "2SAIP22 - 8000R - C1b6",
                 "location": null,
@@ -4908,6 +5004,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "168",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Construction of Materials Quality Control Testing Buildong",
                 "code": "2SAIP22 - 8000R - C1b7",
                 "location": null,
@@ -4958,6 +5055,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "169",
               "attributes": {
+                "project_status": "On-Going",
                 "name": "Construction of Regional Center Commercial Building",
                 "code": " 2SAIP22-8000R-C1b8",
                 "location": "[\"2\"]",
@@ -5014,6 +5112,7 @@ convert_projects_into_active_model_v2(&json!({
             convert_projects_into_active_model_v2(&json!({
               "id": "170",
               "attributes": {
+                "project_status": "Not Yet Started",
                 "name": "Construction of Regional Center Clubhouse(2SAIP22-8000R-C-1b9- 10M) and Construction of Clubhouse & Admin Building at Regional Center (4SAIP21-8000G-C-1b5- 2M)",
                 "code": "\"2SAIP22-8000R-C1b9/ 4SAIP21-8000G-C-1b5\"",
                 "location": "[\"2\"]",
@@ -5070,6 +5169,7 @@ convert_projects_into_active_model_v2(&json!({
     convert_projects_into_active_model_v2(&json!({
               "id": "171",
               "attributes": {
+                "project_status": "Preparation",
                 "name": "Development of Poloyagan Beach Resort Continuation",
                 "code": "2SAIP22 - 8000R - C1c1",
                 "location": null,

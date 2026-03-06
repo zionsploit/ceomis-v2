@@ -1,11 +1,12 @@
 use std::{collections::{HashMap, HashSet}, sync::Arc};
 
 use axum::{extract::Path, http::StatusCode, response::IntoResponse, Extension, Json};
-use entity::{contractors, projects::{self, ProjectStatus}, projects_infra_code, projects_monitoring_img, projects_monitoring_remarks, projects_payment, settings::{settings_barangay, settings_categories, settings_incharge, settings_sdg, settings_sector, settings_sof, settings_takers, settings_type}, user};
+use entity::{contractors, projects::{self, ProjectStatus}, projects_infra_code, projects_monitoring_img, projects_monitoring_remarks, projects_payment, settings::{settings_barangay, settings_categories, settings_incharge, settings_sdg, settings_sector, settings_sof, settings_takers, settings_type}, user, user_info};
 use sea_orm::{prelude::*, sea_query::{ExprTrait, Func}, ActiveValue::{NotSet, Set}, Condition, EntityTrait, FromQueryResult, IntoActiveModel, QueryFilter, QueryOrder, QuerySelect, SelectColumns};
 use serde::{Deserialize, Serialize};
 use services::{db_connection::DB, redis::Redis, request::projects::{RequestAddProjects, RequestDeleteProjectRemarks, RequestDisposedProjectsById, RequestUpdateProjects, RequestUpsertProjectsInfraCode}, response::{projects::{ResponseProjectPayment, ResponseProjectRemarks, ResponseProjectRemarksImg, ResponseProjectsByFund, ResponseProjectsById, ResponseProjectsOverview, ResponseProjectsSectorWithAppropriation, ResponseProjectsStatsCategory, ResponseProjectsStatsTypes, ResponseProjectsTop10Appropriation, ResponseProjectsTop10Awared, ResponseViewProjectsById}, settings::{ResponseBarangays, ResponseSector, ResponseSustainableDevelopmentGoals}}};
 use tokio::try_join;
+use tracing::info;
 
 // GET
 pub async fn get_projects_infra_code_by_projects_id(
@@ -38,7 +39,7 @@ struct GetProjectsById {
     pub projects_name: String,
     pub projects_code: String,
     pub project_year: i32,
-    pub projects_status: String,
+    pub projects_status: Option<String>,
     pub projects_appropriation: Option<i32>,
     pub projects_approved_budget_contract: Option<i32>,
     pub projects_accomplished: Option<i16>,
@@ -72,7 +73,7 @@ pub async fn get_projects_by_id(
     }
 
     let get_projects_by_id: Option<GetProjectsById> = projects::Entity::find_by_id(id)
-        .filter(projects::Column::IsDisposed.eq(false))
+        .filter(projects::Column::IsDisposed.is_null())
         .left_join(settings_type::Entity)
         .left_join(settings_categories::Entity)
         .left_join(settings_sof::Entity)
@@ -282,9 +283,9 @@ pub async fn get_projects_stats_by_types(
         return (StatusCode::OK, Json(json_data));
     }
 
-    let response = settings_type::Entity::find()
+    let response: Vec<ResponseProjectsStatsTypes> = settings_type::Entity::find().limit(10)
         .join_rev(sea_orm::JoinType::LeftJoin, projects::Relation::SettingsType.def())
-        .filter(projects::Column::IsDisposed.eq(false))
+        .filter(projects::Column::IsDisposed.is_null())
         .select_only()
         .select_column_as(settings_type::Column::Name, "name")
         .expr_as(Func::count(Expr::col((projects::Entity, projects::Column::Id))), "projects_total")
@@ -416,7 +417,10 @@ pub async fn get_projects_top_10_by_appropriation(
     }
 
     let response = projects::Entity::find()
-        .filter(projects::Column::Appropriation.is_not_null())
+        .filter(Condition::all()
+            .add(projects::Column::Appropriation.is_not_null())
+            .add(projects::Column::IsDisposed.is_null())
+        )
         .select_only()
         .column_as(projects::Column::Id, "id")
         .column_as(projects::Column::ProjectName, "name")
@@ -427,7 +431,10 @@ pub async fn get_projects_top_10_by_appropriation(
         .into_model::<ResponseProjectsTop10Appropriation>()
         .all(&db.db_connection).await.unwrap();
 
-    redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
+    if response.len().gt(&0) {
+        redis.stored_value(&serde_json::to_string(&response).unwrap(), None).await.unwrap();
+    }
+
 
     (StatusCode::OK, Json(response))
 
@@ -472,6 +479,9 @@ pub async fn get_projects_by_fund(
     Extension(db): Extension<Arc<DB>>,
     Path(id): Path<i32>
 ) -> impl IntoResponse {
+    
+    info!("{}", id);
+
 
     let mut redis = Redis::new(format!("get_projects_by_fund_{}", id), db.redis_connection.clone());
 
@@ -490,7 +500,7 @@ pub async fn get_projects_by_fund(
     let response: Vec<ResponseProjectsByFund> = projects::Entity::find()
         .filter(Condition::all()
             .add(projects_condition)
-            .add(projects::Column::IsDisposed.eq(false))
+            .add(projects::Column::IsDisposed.is_null())
         )
         .left_join(contractors::Entity)
         .select_column_as(projects::Column::Id, "projects_id")
@@ -565,6 +575,11 @@ pub async fn get_prepare_add_projects(
 }
 
 // POST
+#[derive(FromQueryResult)]
+struct UsersInfoId {
+    id: i32,
+}
+
 pub async fn add_projects(
     Extension(db): Extension<Arc<DB>>,
     Json(request): Json<RequestAddProjects>
@@ -575,6 +590,18 @@ pub async fn add_projects(
     if find_projects.is_some() {
         return (StatusCode::CONFLICT, format!(""))
     }
+
+    let find_users_info = user_info::Entity::find()
+        .filter(user_info::Column::UserId.eq(request.prepared_users_id))
+        .select_only()
+        .column(user_info::Column::Id)
+        .into_model::<UsersInfoId>().one(&db.db_connection).await.unwrap();
+
+    if find_users_info.is_none() {
+        return (StatusCode::UNPROCESSABLE_ENTITY, format!("No users info found"))
+    }
+
+    let users_info_model = find_users_info.unwrap();
 
     let make_add = projects::ActiveModel {
         project_year: Set(request.project_year),
@@ -611,7 +638,8 @@ pub async fn add_projects(
         project_takers_id: Set(request.project_takers_id),
         accomplished: Set(request.accomplished),
         remarks: Set(request.remarks),
-        prepared_users_id: Set(request.prepared_users_id),
+        prepared_users_id: Set(Some(users_info_model.id)),
+        is_disposed: Set(None),
         ..Default::default()
     };
 

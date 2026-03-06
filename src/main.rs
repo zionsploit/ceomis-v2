@@ -1,8 +1,7 @@
 use std::{convert::Infallible, sync::Arc, time::Duration};
 
-use aws_config::Region;
-use aws_sdk_s3::config::{Credentials, SharedCredentialsProvider};
 use futures::{Stream, StreamExt};
+use minio::s3::{creds::StaticProvider, Client};
 use tower::ServiceBuilder;
 use tower_http::cors::{CorsLayer, Any};
 use tracing_subscriber;
@@ -46,22 +45,36 @@ async fn main() {
         panic!();
     }
 
-    let credentials = Credentials::new(
-        env.read_value("garage_key_id"),
-        env.read_value("garage_key_secret"),
-        None, // session_token
-        None, // expires_at
-        "garage-s3-credentials" // provider_name
-    );
+    // let credentials = Credentials::new(
+    //     env.read_value("garage_key_id"),
+    //     env.read_value("garage_key_secret"),
+    //     None, // session_token
+    //     None, // expires_at
+    //     "garage-s3-credentials" // provider_name
+    // );
 
-    let s3_config = aws_config::SdkConfig::builder()
-        .endpoint_url(env.read_value("garage_api_url"))
-        .region(Region::new("garage"))
-        .credentials_provider(SharedCredentialsProvider::new(credentials))
-        .build();
-    let s3_client = aws_sdk_s3::Client::new(&s3_config);
+    // let s3_config = aws_config::SdkConfig::builder()
+    //     .endpoint_url(env.read_value("garage_api_url"))
+    //     .region(Region::new("garage"))
+    //     .credentials_provider(SharedCredentialsProvider::new(credentials))
+    //     .build();
+    // let s3_client = aws_sdk_s3::Client::new(&s3_config);
 
-    info!("S3 Connection Established");
+
+    let minio_server = Client::new(
+            env.read_value("minio_base_url").parse().expect("Failed to parse MINIO BASE URL"),
+            Some(Box::new(StaticProvider::new(
+                env.read_value("minio_access_key").as_str(), 
+                env.read_value("minio_secret_key").as_str(), 
+                None
+            ))), 
+            None, 
+            None
+        );
+
+    if minio_server.is_ok() {
+        info!("Minio Connection Established")
+    }
 
     let con: redis::aio::MultiplexedConnection = redis_client.unwrap().get_multiplexed_async_connection().await.unwrap();
 
@@ -70,7 +83,7 @@ async fn main() {
     let shared_state = Arc::new(DB {
         db_connection: db.unwrap(),
         redis_connection: con,
-        s3_connection: s3_client,
+        minio_connection: minio_server.ok().unwrap(),
         sse_connection: sse_broadcaster,
     });
 

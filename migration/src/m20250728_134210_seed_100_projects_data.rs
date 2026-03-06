@@ -18,6 +18,7 @@ impl MigrationTrait for Migration {
             convert_projects_into_active_model_v2(&json!({
   "id": "576",
   "attributes": {
+     "project_status": "Completed",
     "name": "Conc/Impvt of Road from Junction Leading to E/S Brgy Macasing",
     "code": "2SAIL20-R8000-1A19",
     "location": null,
@@ -74,6 +75,7 @@ impl MigrationTrait for Migration {
 convert_projects_into_active_model_v2(&json!({
   "id": "577",
   "attributes": {
+    "project_status": "Completed",
     "name": "Conc/Impvt of Road at prk Donggoan, Prk Baybay, Napolan",
     "code": "2SAIL20-R8000-1A20",
     "location": null,
@@ -130,6 +132,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "578",
   "attributes": {
+    "project_status": "Completed",
     "name": "Gravelling of Road at Prk Nangka, Pedolunan",
     "code": "2SAIL20-R8000-1A21",
     "location": null,
@@ -186,6 +189,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "579",
   "attributes": {
+    "project_status": "Completed",
     "name": "Conc/Impvt of Road at Lacturan (Westward) brgy. San Pedro",
     "code": "2SAIL20-R8000-1A22",
     "location": "[\"13\"]",
@@ -242,6 +246,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "580",
   "attributes": {
+    "project_status": "Completed",
     "name": "Conc/Impvt of Road at Bay View Heights to Prk Rubia",
     "code": "2SAIL20-R8000-1A23",
     "location": null,
@@ -298,6 +303,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "581",
   "attributes": {
+    "project_status": "Completed",
     "name": "Conc/Impvt of Road at Prk Orchid Beside ZSNHS, Paglaum Road",
     "code": "2SAIL20-R8000-1A24",
     "location": "[]",
@@ -354,6 +360,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "582",
   "attributes": {
+    "project_status": "Completed",
     "name": "Conc/Impvt of Barangay Alley at Prk Cacao, Tuburan",
     "code": "2SAIL20-R8000-1A25",
     "location": null,
@@ -410,6 +417,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "583",
   "attributes": {
+    "project_status": "Not Yet Started",
     "name": "Conc/Impvt of Road to Solar Dryer, Brgy Tulangan",
     "code": "2SAIL20-R8000-1A26",
     "location": null,
@@ -466,6 +474,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "584",
   "attributes": {
+     "project_status": "Completed",
     "name": "Rehabilitation of Road at Brgy. Tulawas",
     "code": "2SAIL20-R8000-1A27",
     "location": null,
@@ -522,6 +531,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "585",
   "attributes": {
+    "project_status": "Completed",
     "name": "Conc/Impvt of Road Leading to Brgy Cemetery, brgy Tulawas",
     "code": "2SAIL20-R8000-1A28",
     "location": null,
@@ -578,6 +588,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "586",
   "attributes": {
+    "project_status": "Completed",
     "name": "Rehabilitation of Road Approaching Tulawas Bridge",
     "code": "2SAIL20-R8000-1A29",
     "location": null,
@@ -634,6 +645,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "587",
   "attributes": {
+    "project_status": "Completed",
     "name": "Widening of Road (1m Both Sides at national Highway Entrance to Upper Sibatang",
     "code": "2SAIL20-R8000-1A30",
     "location": null,
@@ -690,6 +702,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "588",
   "attributes": {
+    "project_status": "Completed",
     "name": "Conc/Impvt of Main Alley Connecting to Mini Port, White Beach",
     "code": "2SAIL20-R8000-1A31",
     "location": null,
@@ -746,6 +759,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "589",
   "attributes": {
+    "project_status": "Completed",
     "name": "Improvement of Drainage & Sidewalk Fronting Danlugan Brgy Hall",
     "code": "2SAIL20-R8000-1B1",
     "location": null,
@@ -802,6 +816,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "590",
   "attributes": {
+    "project_status": "Completed",
     "name": "RCCP Installation at Brgy. Ditoray",
     "code": "2SAIL20-R8000-1B2",
     "location": null,
@@ -858,6 +873,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "591",
   "attributes": {
+    "project_status": "Completed",
     "name": "Repair of Prk Kapalaran Footbridge",
     "code": "2SAIL20-R8000-1B3",
     "location": null,
@@ -914,6 +930,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "592",
   "attributes": {
+    "project_status": "Completed",
     "name": "Const of Open Canal and Drainage at Brgy Dumagoc",
     "code": "2SAIL20-R8000-1B4",
     "location": null,
@@ -970,6 +987,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "593",
   "attributes": {
+    "project_status": "Completed",
     "name": "Const of Drainage at Prk Papaya brgy Lumbia",
     "code": "2SAIL20-R8000-1B5",
     "location": null,
@@ -1026,6 +1044,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "594",
   "attributes": {
+    "project_status": "Completed",
     "name": "Const of Multi-Purpose Hall at Brgy Baloyboan",
     "code": "2SAIL20-R8000-1C1",
     "location": "[\"21\"]",
@@ -1082,6 +1101,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "595",
   "attributes": {
+     "project_status": "Completed",
     "name": "Const of Brgy Stage at Brgy Hall, Bogo",
     "code": "2SAIL20-R8000-1C2",
     "location": null,
@@ -1138,6 +1158,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "596",
   "attributes": {
+    "project_status": "Completed",
     "name": "Construction of Multi-Purpose Hall at Brgy. Hall, Bomba",
     "code": "2SAIL20-R8000-1C3",
     "location": null,
@@ -1194,6 +1215,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "597",
   "attributes": {
+    "project_status": "Completed",
     "name": "Construction of Senior Citizen Office at Brgy Ditoray",
     "code": "2SAIL20-R8000-1C4",
     "location": null,
@@ -1250,6 +1272,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "598",
   "attributes": {
+    "project_status": "Completed",
     "name": "Const of Stage and Bleacher at Brgy Ditoray",
     "code": "2SAIL20-R8000-1C5",
     "location": null,
@@ -1306,6 +1329,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "599",
   "attributes": {
+    "project_status": "Completed",
     "name": "Const of Freedom Stage with CR at Covered Court, Brgy Dumagoc",
     "code": "2SAIL20-R8000-1C6",
     "location": null,
@@ -1362,6 +1386,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "600",
   "attributes": {
+    "project_status": "Suspended",
     "name": "Const. of Barangay Hall/Multi-Purpose Hall at Brgy Gatas",
     "code": "2SAIL20-R8000-1C7",
     "location": "[\"7\"]",
@@ -1418,6 +1443,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "601",
   "attributes": {
+    "project_status": "Completed",
     "name": "Const of Stage and Bleacher at Brgy Kalasan",
     "code": "2SAIL20-R8000-1C8",
     "location": null,
@@ -1474,6 +1500,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "602",
   "attributes": {
+    "project_status": "Completed",
     "name": "Const of Barangay Stage at Brgy Lison Valley",
     "code": "2SAIL20-R8000-1C9",
     "location": "[\"40\"]",
@@ -1530,6 +1557,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "603",
   "attributes": {
+    "project_status": "Completed",
     "name": "Const. of Multi-Purpose Hall at Brgy Muricay",
     "code": "2SAIL20-R8000-1C10",
     "location": "[]",
@@ -1586,6 +1614,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "604",
   "attributes": {
+    "project_status": "Completed",
     "name": "Renovation of Multi-Purpose Building (Barangay Hall) at Napolan",
     "code": "2SAIL20-R8000-1C11",
     "location": null,
@@ -1642,6 +1671,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "605",
   "attributes": {
+    "project_status": "Completed",
     "name": "Const/Impvt of Barangay Hall, San Jose",
     "code": "2SAIL20-R8000-1C12",
     "location": null,
@@ -1698,6 +1728,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "606",
   "attributes": {
+    "project_status": "Completed",
     "name": "Const of Bleacher at Covered Court, Brgy Tawagan",
     "code": "2SAIL20-R8000-1C13",
     "location": null,
@@ -1754,6 +1785,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "607",
   "attributes": {
+    "project_status": "Completed",
     "name": "Const of Stage at Tiguma E/S",
     "code": "2SAIL20-R8000-1C14",
     "location": null,
@@ -1810,6 +1842,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "608",
   "attributes": {
+    "project_status": "Completed",
     "name": "Const of Perimeter Fence at Brgy. Hall & health Center, Bomba",
     "code": "2SAIL20-R8000-1D1",
     "location": null,
@@ -1866,6 +1899,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "609",
   "attributes": {
+    "project_status": "Completed",
     "name": "Stairway Repair at Brgy Dumagoc",
     "code": "2SAIL20-R8000-1D2",
     "location": null,
@@ -1922,6 +1956,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "610",
   "attributes": {
+    "project_status": "Not Yet Started",
     "name": "Construction of Water Tank & Pipe Installation at Brgy. Padolunan",
     "code": "2SAIL20-R8000-1D3",
     "location": null,
@@ -1972,6 +2007,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "611",
   "attributes": {
+    "project_status": "Completed",
     "name": "Completion of Solar Dryer & Fence Construction, Brgy Tulangan",
     "code": "2SAIL20-R8000-1D4",
     "location": null,
@@ -2028,6 +2064,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "612",
   "attributes": {
+    "project_status": "On-Going",
     "name": "Const. of Mini Port terminal at Brgy White Beach",
     "code": "2SAIL20-R8000-1D5",
     "location": null,
@@ -2084,6 +2121,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "616",
   "attributes": {
+    "project_status": "Completed",
     "name": "Improvement/Landscaping of Plaza Luz",
     "code": "LGSF AC",
     "location": "[\"12\"]",
@@ -2140,6 +2178,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "617",
   "attributes": {
+    "project_status": "Completed",
     "name": "Conc/Impvt of Brgy Banale Road (After School)",
     "code": "DF20-8000-B1c",
     "location": null,
@@ -2196,6 +2235,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "618",
   "attributes": {
+    "project_status": "Completed",
     "name": "Conc/Impvt of Kagawasan to Alegria Brgy. Road",
     "code": "DF20-8000-B1e",
     "location": null,
@@ -2252,6 +2292,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "619",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting/Improvement of Barangay Bulatok Road",
     "code": "2SAIP20 - 8000 - C1a5",
     "location": null,
@@ -2308,6 +2349,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "620",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting/Improvement of La Suerte Road (Near Barangay Hall Site)",
     "code": "2SAIP20 - 8000 - C1a6",
     "location": null,
@@ -2364,6 +2406,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "621",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting/Improvement of Lourdes Road (Portion after the Bridge)",
     "code": "2SAIP20 - 8000 - C1a7",
     "location": null,
@@ -2420,6 +2463,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "622",
   "attributes": {
+    "project_status": "Completed",
     "name": "Rehab/Concreting of Road at Lower Sibatang Near Lingue NHS",
     "code": "2SAIP20 - 8000 - C1a9",
     "location": null,
@@ -2476,6 +2520,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "623",
   "attributes": {
+    "project_status": "On-Going",
     "name": "Concreting/Improvement of Road with Box Culvert at Lala - Lumad Brgy Road",
     "code": "2SAIP20 - 8000 - C1a12",
     "location": null,
@@ -2532,6 +2577,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "624",
   "attributes": {
+    "project_status": "On-Going",
     "name": "Concreting of Deborok Barangay Road to Ditoray Barangay Road",
     "code": "3SAIP20 - 8000 - B1c",
     "location": null,
@@ -2588,6 +2634,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "625",
   "attributes": {
+    "project_status": "Bidded",
     "name": "Widening of Lourdes Barangay Road to Lison Valley",
     "code": "4SAIP20 - 8000R - B1a1",
     "location": null,
@@ -2644,6 +2691,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "627",
   "attributes": {
+    "project_status": "Completed",
     "name": "Rehab of Road From Purok Rosas to Prk Bombil, Brgy. Bulawan",
     "code": "2SAIL20-R8000-1A3",
     "location": "[]",
@@ -2700,6 +2748,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "629",
   "attributes": {
+     "project_status": "Not Yet Started",
     "name": "Conc/Impvt of Road at Lower Kahayagan",
     "code": "2SAIL20-R8000-1A9",
     "location": null,
@@ -2756,6 +2805,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "630",
   "attributes": {
+    "project_status": "Bidded",
     "name": "Gravelling of Road at prk Santol to Woodland La Suerte",
     "code": "2SAIL20-R8000-1A12",
     "location": null,
@@ -2812,6 +2862,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "631",
   "attributes": {
+    "project_status": "Bidded",
     "name": "Gravelling/Impvt of Roa from Prk talong, brgy Lumad",
     "code": "2SAIL20-R8000-1A16",
     "location": null,
@@ -2868,6 +2919,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "633",
   "attributes": {
+     "project_status": "Completed",
     "name": "Conc/Impvt of Road Leading to Manga Falls",
     "code": "DF20-8000-B7-c",
     "location": null,
@@ -2924,6 +2976,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "635",
   "attributes": {
+     "project_status": "On-Going",
     "name": "Road Opening/Concreting of Datagan Barangay Road - Kendis Cave to Quarry Site Road",
     "code": "4SAIP20 - 8000R - B1a2",
     "location": null,
@@ -2980,6 +3033,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "636",
   "attributes": {
+    "project_status": "On-Going",
     "name": "Concreting of Rotunda Parking Lot",
     "code": "5SAIP20 - 8000R - A1b",
     "location": null,
@@ -3036,6 +3090,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "638",
   "attributes": {
+    "project_status": "Completed",
     "name": "Construction of Rotunda Stage",
     "code": "5SAIP20 - 8000R - A1d",
     "location": null,
@@ -3092,6 +3147,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "639",
   "attributes": {
+    "project_status": "Completed",
     "name": "Improvement of Plaza Luz",
     "code": "5SAIP20 - 8000R - A1e",
     "location": null,
@@ -3148,6 +3204,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "640",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Motorpool Flooring",
     "code": "5SAIP20 - 8000R - A1f",
     "location": null,
@@ -3204,6 +3261,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "642",
   "attributes": {
+    "project_status": "On-Going",
     "name": "ESTABLISHMENT AND DEVELOPMENT OF PAGADIAN CITY WATERPARK",
     "code": "LGSF AC - 2019",
     "location": null,
@@ -3260,6 +3318,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "643",
   "attributes": {
+    "project_status": "Completed",
     "name": "POLOYAGAN BEACH GARDEN",
     "code": "LGSF AC - 2020",
     "location": "[\"49\"]",
@@ -3316,6 +3375,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "644",
   "attributes": {
+    "project_status": "Completed",
     "name": "CONSTRUCTION OF MULTI-PURPOSE BUILDING ( Boulevard-BARKO)",
     "code": "LGSF-FA TO LGUS 2020",
     "location": "[\"13\"]",
@@ -3372,6 +3432,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "645",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Alley at Puroks Bagong Buhay, Kapalaran and Tugas, Balangasan\n",
     "code": "2SAILP21 - 8000R - A1A2",
     "location": null,
@@ -3428,6 +3489,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "646",
   "attributes": {
+    "project_status": "Not Yet Started",
     "name": "Opening of Road/Concreting from Prk Bagong Silang to Villa Hermosa (Bgry Banale), Balangasan\n",
     "code": "2SAILP21 - 8000R - A1A3",
     "location": null,
@@ -3478,6 +3540,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "647",
   "attributes": {
+    "project_status": "Bidded",
     "name": "Completion of Road Concreting at Prk Sili to Barangay  Palpalan, Balintawak\n",
     "code": "2SAILP21 - 8000R - A1A4",
     "location": null,
@@ -3534,6 +3597,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "648",
   "attributes": {
+    "project_status": "Completed",
     "name": "Road Widening from Purok Tinangkong to Purok Sili 3 (One Side Only) Balintawak",
     "code": "2SAILP21-8000R-A1A5",
     "location": "[\"2\"]",
@@ -3590,6 +3654,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "649",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Road at Barangay Bogo (Leading to Iglesia Ni Kristo Church), Bogo\n",
     "code": "2SAILP21 - 8000R - A1A6",
     "location": null,
@@ -3646,6 +3711,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "650",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Road at Nazareth Area (Prk San Francisco & Prk Hillside), Buenavista",
     "code": "2SAILP21 - 8000R - A1A7",
     "location": null,
@@ -3702,6 +3768,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "651",
   "attributes": {
+    "project_status": "Completed",
     "name": "Widening of Bulatok Barangay Road",
     "code": "2SAILP21 - 8000R - A1A8",
     "location": null,
@@ -3758,6 +3825,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "652",
   "attributes": {
+     "project_status": "Completed",
     "name": " Road Improvement at Zone 7 (Fronting IBT), Bulatok",
     "code": "2SAILP21 - 8000R - A1A9",
     "location": null,
@@ -3814,6 +3882,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "653",
   "attributes": {
+    "project_status": "Bidded",
     "name": "Improvement/Opening of Road at Prk Bombil (Difficult Portion), Bulawan",
     "code": "2SAILP21 - 8000R - A1A10",
     "location": null,
@@ -3870,6 +3939,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "654",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Road From Prk Fatima to Boundary Brgy Dao",
     "code": "2SAILP21 - 8000R - A1A11",
     "location": null,
@@ -3926,6 +3996,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "655",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Ditoray Barangay Road to Deborok Barangay Road (Difficult Portion), Ditoray",
     "code": "2SAILP21 - 8000R - A1A12",
     "location": null,
@@ -3982,6 +4053,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "656",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Alley (Besdie Sy Luy - End of Ps Bank) Gatas",
     "code": "2SAILP21 - 8000R - A1A13",
     "location": null,
@@ -4038,6 +4110,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "657",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Road Leading to E/S (Inc. Reblocking Fronting Barangay Hall) Gubac",
     "code": "2SAILP21-8000R-A1A14",
     "location": "[\"31\"]",
@@ -4094,6 +4167,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "658",
   "attributes": {
+    "project_status": "Completed",
     "name": "Road Improvement at Prk Bologon, Gubang",
     "code": "2SAILP21 - 8000R - A1A15",
     "location": null,
@@ -4150,6 +4224,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "659",
   "attributes": {
+    "project_status": "On-Going",
     "name": "Concreting of Road at Purok Waling2 (Difficult Portion) Kagawasan",
     "code": "2SAILP21-8000R-A1A16",
     "location": "[\"33\"]",
@@ -4206,6 +4281,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "660",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Road from Prk Talong II to Prk Balatong 1 (Difficult Portion) Kahayagan",
     "code": "2SAILP21 - 8000R - A1A17",
     "location": null,
@@ -4262,6 +4338,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "661",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Road at Muslim Village, Kawit",
     "code": "2SAILP21 - 8000R - A1A18",
     "location": "[]",
@@ -4318,6 +4395,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "662",
   "attributes": {
+    "project_status": "On-Going",
     "name": "Rehabilitation of San Pedro Bridge Approach (Kawit Side)",
     "code": "2SAILP21-8000R-A1A19",
     "location": "[\"13\"]",
@@ -4374,6 +4452,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "663",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Road From Prk Pinya to Prk Santol, La Suerte",
     "code": "2SAILP21 - 8000R - A1A20",
     "location": null,
@@ -4430,6 +4509,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "664",
   "attributes": {
+     "project_status": "Completed",
     "name": "Concreting of Road at Three (3) Puroks Up to Lumad Boundary (At 600T Each), Lala",
     "code": "2SAILP21 - 8000R - A1A21",
     "location": null,
@@ -4486,6 +4566,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "665",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Alley at Prk Masinugtanon, Lala",
     "code": "2SAILP21 - 8000R - A1A22",
     "location": null,
@@ -4542,6 +4623,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "666",
   "attributes": {
+    "project_status": "Bidded",
     "name": "Concreting of Road From Prk Sandayong to prk Tres (Inc RCCP Installation Fronting IFFFC Church), Lapedian",
     "code": "2SAILP21 - 8000R - A1A23",
     "location": null,
@@ -4598,6 +4680,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "667",
   "attributes": {
+    "project_status": "Completed",
     "name": "Continuation of Road Concreting at Purok Nangka - Bulatok, Lenienza",
     "code": "2SAILP21 - 8000R - A1A24",
     "location": "[\"39\"]",
@@ -4654,6 +4737,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "668",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Road From Prk Kamansi - Alta Tierra, Lenienza",
     "code": "2SAILP21 - 8000R - A1A25",
     "location": "[]",
@@ -4710,6 +4794,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "669",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Road at Purok Manga, Lenienza",
     "code": "2SAILP21 - 8000R - A1A26",
     "location": "[\"39\"]",
@@ -4766,6 +4851,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "670",
   "attributes": {
+     "project_status": "Bidded",
     "name": "Concreting of Road at Purok Sirawag, lison Valley",
     "code": "2SAILP21 - 8000R - A1A27",
     "location": null,
@@ -4822,6 +4908,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "671",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Road From Market to E/S (Half Lane), Lourdes",
     "code": "2SAILP21 - 8000R - A1A28",
     "location": null,
@@ -4878,6 +4965,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "672",
   "attributes": {
+    "project_status": "Bidded",
     "name": "Conc/Reblocking of Road at Purok Santol (Near Lingue H/S) Lower Sibatang",
     "code": "2SAILP21 - 8000R - A1A29",
     "location": null,
@@ -4934,6 +5022,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "673",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Road From Brgy Proper (1/2 Lane) to Lala Boundary, Lumad",
     "code": "2SAILP21 - 8000R - A1A30",
     "location": null,
@@ -4990,6 +5079,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "674",
   "attributes": {
+    "project_status": "Completed",
     "name": "Rehab of Boulevard at Prk. Fisherville & Prk Alindahaw, Lumbia",
     "code": "2SAILP21 - 8000R - A1A31",
     "location": "[]",
@@ -5046,6 +5136,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "675",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Road from Lower Lumbia to Prk Alindahaw",
     "code": "2SAILP21 - 8000R - A1A32",
     "location": null,
@@ -5102,6 +5193,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "676",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Road at Prk Palmera, Napolan",
     "code": "2SAILP21 - 8000R - A1A33",
     "location": null,
@@ -5158,6 +5250,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "677",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Road at Prk Makiangayon, Napolan",
     "code": "2SAILP21 - 8000R - A1A34",
     "location": null,
@@ -5214,6 +5307,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "678",
   "attributes": {
+    "project_status": "Bidded",
     "name": "Opening/Concreting of Road Along Sabate St (Near Provincial Jail), San Jose",
     "code": "2SAILP21 - 8000R - A1A35",
     "location": null,
@@ -5270,6 +5364,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "679",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Alley at Prk Bougainvilla, San Pedro",
     "code": "2SAILP21-8000R-A1A36",
     "location": "[\"13\"]",
@@ -5326,6 +5421,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "680",
   "attributes": {
+    "project_status": "Not Yet Started",
     "name": "Concreting of Alley at Purok Paglaum, Sta. Lucia",
     "code": "2SAILP21 - 8000R - A1A37",
     "location": "[]",
@@ -5376,6 +5472,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "681",
   "attributes": {
+     "project_status": "Completed",
     "name": "Concreting of Road at Salera St. (jct Pulmones St - Dablo St) Sta. Lucia",
     "code": "2SAILP21 - 8000R - A1A38",
     "location": null,
@@ -5432,6 +5529,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "682",
   "attributes": {
+     "project_status": "Completed",
     "name": "Opening of Alley at Prk Makiangayon (Beside Luis) Jct Duterte - Datoc St, Sta Lucia",
     "code": "2SAILP21-8000R-A1A39",
     "location": "[\"14\"]",
@@ -5488,6 +5586,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "683",
   "attributes": {
+    "project_status": "Completed",
     "name": "Opening of Alley at Purok Madasigon, (Jct Natl Highway - Jamisola St), Sta. Lucia",
     "code": "2SAILP21 - 8000R - A1A40",
     "location": "[]",
@@ -5544,6 +5643,7 @@ convert_projects_into_active_model_v2(&json!({
 convert_projects_into_active_model_v2(&json!({
   "id": "684",
   "attributes": {
+    "project_status": "Completed",
     "name": "Concreting of Alley at Prk Spring and Prk Malipayon (Beside Buffalo) Sta. Lucia",
     "code": "2SAILP21 - 8000R - A1A41",
     "location": null,
