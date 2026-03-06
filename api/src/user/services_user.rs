@@ -285,6 +285,13 @@ pub async fn post_login(
 
     // println!("{:?}", find_users)
 
+    if let None = find_users {
+        return Response::builder()
+            .status(StatusCode::UNAUTHORIZED)
+            .body(().into_response())
+            .unwrap();
+    }
+
     let users = find_users.unwrap();
 
     
